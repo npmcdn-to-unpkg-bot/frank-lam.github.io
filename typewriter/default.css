@@ -1,9 +1,8 @@
 body {
 	margin: 0;
 	padding: 0;
-	background: #ffe;
 	font-size: 12px;
-	overflow: auto
+	overflow: auto;
 }
 #mainDiv {
 	width: 100%;
@@ -56,7 +55,10 @@ body {
 	height: 400px;
 	color: #333;
 	font-family: "Consolas", "Monaco", "Bitstream Vera Sans Mono", "Courier New", "sans-serif";
-	font-size: 12px
+	font-size: 15px;
+	line-height: 22px;
+	/* margin-left: 16px; */
+	/* margin-top: 14px; */
 }
 #code .string {
 	color: #2a36ff
