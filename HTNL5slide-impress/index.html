@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>impress.js</title>
+
+    <meta name="author" content="Fox Sun" />
+
+    <!--<link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />-->
+
+    <link href="css/impress-demo.css" rel="stylesheet" />
+    <link href="css/custom.css" rel="stylesheet" />
+    
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+<body>
+
+<div id="impress" class="impress-not-supported">
+
+    <div class="fallback-message">
+        <p>你的浏览器<b>不支持</b> impress.js, 所以当前展示的是简化版。</p>
+        <p>为了获得更好的体验，请使用最新的 <b>Chrome</b>, <b>Safari</b> 或者 <b>Firefox</b> 浏览器。</p>
+    </div>
+
+    <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
+        <span class="try">最佳技术分享工具</span>
+        <h1>impress.js<sup>*</sup></h1>
+        <span class="footnote"> <a href="#/exp1">浏览</a> <a href="#/dev1">创建</a> <a href="#/last">结语</a></span> 
+    </div>
+
+    <!-- exp -->
+    <div id="exp1" class="step" data-x="-1300" data-y="1300" data-rotate="720">
+        <q>最新的 <b>Chrome</b>, <b>Safari</b> 或者 <b>Firefox</b> 浏览器，不支持IE、Opera。使用Chrome效果最佳。（请按空格键）</q>
+    </div>
+
+    <div id="exp2" class="step" data-x="0" data-y="1300" data-rotate="720">
+        <q>浏览快捷键</q><br />
+        <q>上一页 <code>pg up</code> <code>left</code> <code>up</code><br />
+        下一页 <code>tab</code> <code>space</code> <code>pg down</code> <code>right</code> <code>down</code></q>
+    </div>
+
+    <div id="exp3" class="step" data-x="1300" data-y="1300" data-rotate="720">
+        <q>也可以使用<a href="#/title"><code>链接</code></a>返回指定页面，也支持浏览器返回按钮。</q>
+    </div> 
+
+    <!-- dev -->
+    <div id="dev1" class="step" data-x="-2500" data-y="1000" data-rotate="90">
+        <q>1. 配置：标准的Html5页面<br /></q>
+<pre class="codeblock">
+&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="utf-8" /&gt;
+    &lt;title&gt;impress.js&lt;/title&gt;
+    &lt;link href="css/impress-demo.css" rel="stylesheet" /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id="impress" class="impress-not-supported"&gt;
+&lt;/div&gt;
+&lt;script src="js/impress.js"&gt;&lt;/script&gt;
+&lt;script&gt;impress();&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+    </div>
+
+    <div id="dev2" class="step" data-x="-2500" data-y="2000" data-rotate="90">
+        <q>2. 创建幻灯片：</q><br />
+        <p class="normal">每个幻灯片是一个&lt;div&gt;元素，其class名称叫做’step’。</p>
+<pre class="codeblock">
+&lt;div class="step"&gt;
+    My first slide
+&lt;/div&gt;
+</pre>
+    </div>
+
+    <div id="" class="step" data-x="-2500" data-y="3000" data-rotate="90">
+        <q>3. 数据属性：</q><br />
+        <p class="normal">用来描述幻灯片大小，切换等效果。</p>
+<pre class="codeblock">
+    data-x = 幻灯片的x坐标
+    data-y = 幻灯片的y坐标
+    data-scale = 通过指定一个值来进行缩放，data-scale为5则将会在你幻灯片原始尺寸基础放大5倍
+    data-rotate = 通过一个数字度数来确定旋转你的幻灯片
+    data-rotate-x = 为3D用，这个数字度数是它应该相对x轴旋转多少度。（前倾/后仰）
+    data-rotate-y = 为3D用，这个数字度数是它应该相对y轴旋转多少度。 （左摆/右摆）
+    data-rotate-z = 为3D用，这个数字度数是它应该相对z轴旋转多少度。
+</pre>
+    </div>
+
+    <div id="" class="step" data-x="2500" data-y="1000" data-rotate="-90">
+        <q>第一张幻灯片：</q><br />
+        <p class="normal">让我们从一个初始的幻灯片开始，这个幻灯片已将它自己的x和y数据属性设置为0，所以会出现在页面的中间。</p>
+<pre class="codeblock">
+&lt;div class="step" data-x="0" data-y="0"&gt;
+    This is my first slide
+&lt;/div&gt;
+</pre>
+    </div>
+
+    <div id="" class="step" data-x="2500" data-y="2000" data-rotate="-90">
+        <q>第二张幻灯片：</q><br />
+        <p class="normal">第二个幻灯片的x值为500，但y值为0，这意味着当它活动的时候它将会出现在穿过x轴(向左滑动)500px的地方。</p>
+<pre class="codeblock">
+&lt;div class="step" data-x="500" data-y="0"&gt;
+    This is slide 2
+&lt;/div&gt;
+</pre>
+    </div>
+
+    <div id="" class="step" data-x="2500" data-y="3000" data-rotate="-90">
+        <q>第三张幻灯片：</q><br />
+        <p class="normal">下一个幻灯片将同第2个幻灯片同样的x位置开始，但其y位置为-400，这将会是从顶部400px处滑入。</p>
+<pre class="codeblock">
+&lt;div class="step" data-x="500" data-y="-400"&gt;
+    This is slide 3
+&lt;/div&gt;
+</pre>
+    </div>
+
+    <div id="" class="step" data-x="2500" data-y="4000" data-rotate="-90">
+        <q>第四张幻灯片：</q><br />
+        <p class="normal">使用缩放值来显示一个幻灯片如何放大缩小。</p>
+<pre class="codeblock">
+&lt;div class="step" data-x="500" data-y="-800" data-scale="0.5"&gt;
+    This is slide 4
+&lt;/div&gt;
+</pre>
+        <p class="normal">它的scale值为0.5，意味着它应该是一半的尺寸。当它变成活动的演示时将通过必需的倍数调节所有幻灯片的缩放尺寸。在这个示例中它的意思就是这个幻灯片应该正常显示（比例为1），它将需要被放大2倍 (0.5*2 = 1)，所有的其他幻灯片也将被放大至2倍而变成2倍大小。</p>
+    </div>
+
+    <div id="" class="step" data-x="2500" data-y="5000" data-rotate="-90">
+        <q>第五张幻灯片：</q><br />
+        <p class="normal">旋转属性允许你旋转一个幻灯片到当前视图，幻灯片5被设置旋转50度。</p>
+<pre class="codeblock">
+&lt;div class="step" data-x="0" data-y="-800" data-rotate="90"&gt;
+    This is slide 5 and it rotates in.
+&lt;/div&gt;
+</pre>
+        <p class="normal">旋转属性允许你旋转一个幻灯片到当前视图，幻灯片5被设置旋转50度。</p>
+    </div>
+
+    <div id="" class="step" data-x="2500" data-y="6000" data-rotate="-90">
+        <q>3D转换：</q><br />
+        <p class="normal">你可为每个维度的轴指定旋转属性(x,y,z)。</p>
+<pre class="codeblock">
+&lt;div class="step" data-x="-2600" data-y="-800" 
+    data-rotate-x="30" data-rotate-y="-30" data-rotate-z="90" data-scale="4"&gt;
+This is slide 6 and it has a 3D transition AND a scale.
+&lt;/div&gt;
+</pre>
+        <p class="normal">x轴是横轴，意思是你可使事物倾斜(正值)或向后(负值)，y轴是竖轴，所以你可使事物向左摇摆(负值)或向右(正值)，z轴是纵轴，这将是旋转的东西向上（负值）和向下（正值）。</p>
+    </div>
+
+
+    <div id="" class="step" data-x="-2500" data-y="4000" data-rotate="90">
+        <q>组合：</q><br />
+        <p class="normal">你可以以你的想象力用不可思议的和令人惊奇的方式合并这些效果来创建你自己的幻灯片展示风格。</p>
+<pre class="codeblock">
+    实时数据演示(ajax请求后台数据)
+    定时器自动播放
+    触摸屏演示系统
+</pre>
+    </div>
+
+    <div id="" class="step" data-x="-2500" data-y="5000" data-rotate="90">
+        <q>API：</q><br />
+        <p class="normal">使用impress.js提供的api来控制幻灯片的显示。</p>
+<pre class="codeblock">
+    var api = impress();
+    `api.next()` - 跳到下一张幻灯片,
+    `api.prev()` - 跳到上一张幻灯片
+    `api.goto(stepElement) - 跳到制定的幻灯片.
+</pre>
+    </div>
+
+    <div id="" class="step" data-x="-2500" data-y="6000" data-rotate="90">
+        <q>不支持的浏览器：</q><br />
+        <p class="normal">Impress自动检测浏览器支持与否，并且如果不支持则自动向wrapper“&lt;div&gt;”添加一个样式名称为“impress-not-supported”的样式，使用一些css我们可以在浏览器上向人们显示不支持Impress的信息。在开始的&lt;div id="impress"&gt;添加下面的内容：</p>
+<pre class="codeblock">
+&lt;div class="no-support-message"&gt;
+    Your browser doesn't support impress.js.  Try Chrome or Safari.
+&lt;/div&gt;
+</pre>
+        <p class="normal">然后，创建一个样式表单或引入一个已经存在的样式表单：</p>
+<pre class="codeblock">
+.no-support-message { display:none; }
+.impress-not-supported .no-support-message { display:block; }
+</pre>
+        <p class="normal">默认是隐藏消息的，但如果浏览器不支持时当前样式就会变成impress-not-supported。</p>
+    </div>
+
+    <div id="" class="step" data-x="-2500" data-y="7000" data-rotate="90">
+        <q>全局预览：</q><br />
+        <p class="normal">增加一个id为overview的幻灯片</p>
+<pre class="codeblock">
+    &lt;div id="overview" class="step" data-x="1000" data-y="2000" data-scale="10"&gt;
+    &lt;/div&gt;
+</pre>
+    </div>
+
+    <div id="last" class="step" data-x="0" data-y="3000" data-scale="3" data-rotate="720">
+        <q>结语：</q><br />
+        <p class="normal">没有做不到的，只有想不到的。</p>
+        <p class="normal">我的网站：<a href="http://www.tzqmiracle.com" target="_blank">www.tzqmiracle.com</a></p>
+        <p class="normal">官方演示：<a href="http://www.tzqmiracle.com/slide/impress.html" target="_blank">Click on me</a></p>
+        <p class="normal">简易演示：<a href="http://www.tzqmiracle.com/slide/example.html" target="_blank">Click on me</a></p>
+    </div>
+
+    <div id="overview" class="step" data-x="1000" data-y="2000" data-scale="10">
+    </div>
+
+</div>
+
+
+<script src="js/impress.js"></script>
+<script>impress();</script>
+
+</body>
+</html>
