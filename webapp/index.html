@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="">
+
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,34 +17,35 @@
 			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 		<![endif]-->
 		<style type="text/css">
-			*{
+			* {
 				font-family: 'Microsoft Yahei';
 			}
-			#commit:hover{
+			
+			#commit:hover {
 				cursor: pointer;
 			}
 		</style>
 	</head>
+
 	<body>
 		<div class="container">
 			<div class="page-header">
-			  <h1>小贷系统<small>control center</small></h1>
+				<h1>小贷系统<small>control center</small></h1>
 			</div>
 			<div class="panel panel-info">
 				<div class="panel-heading">
 					<h3 class="panel-title">CONTROL CMD</h3>
 				</div>
 				<div class="panel-body">
-<!-- 					<label for="input-id" class="col-sm-2">用户uid</label>
+					<!-- 					<label for="input-id" class="col-sm-2">用户uid</label>
 					<input type="text" name="" id="input"  value="" required="required" pattern="" title="">
 					<button type="button" class="btn btn-default">确定</button> -->
 					<div class="input-group">
-					   <span class="input-group-addon">请输入<code>01u_5diya</code>表中id的值</span>
-					   <input type="text" class="form-control" id="diyaid">
-					   <span class="input-group-addon" id="commit" onclick="insertinfo()">确定</span>
+						<span class="input-group-addon">请输入<code>01u_5diya</code>表中id的值</span>
+						<input type="text" class="form-control" id="diyaid">
+						<span class="input-group-addon" id="commit" onclick="insertinfo()">确定</span>
 					</div>
 				</div>
-
 
 			</div>
 		</div>
@@ -53,10 +55,50 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 		<script type="text/javascript">
-			function insertinfo(){
-				var value=$('#diyaid').val();
-				alert(value);
+			function insertinfo() {
+//				var value = $('#diyaid').val();
+//				alert(value);
+				test();
+			}
+
+			function test() {
+				$.ajax({
+					//提交数据的类型 POST GET
+					type: "POST",
+					//提交的网址
+					url: "http://172.16.100.199:8080/?action=login",
+					//提交的数据
+					data: {
+						userid:'llc73',
+						password: '123456'
+					},
+					//返回数据的格式
+					datatype: "json", //"xml", "html", "script", "json", "jsonp", "text".
+					//在请求之前调用的函数
+					beforeSend: function() {
+						//    return true;
+					},
+					//成功返回之后调用的函数             
+					success: function(data) {
+						jsonDate = JSON.parse(data);
+						var data = JSON.stringify(jsonDate); //JSON转换成string
+						alert(data):
+					},
+					//调用执行后调用的函数
+					complete: function(XMLHttpRequest, textStatus) {
+						//alert(XMLHttpRequest.responseText);
+						//alert(textStatus);
+						//HideLoading();
+					},
+					//调用出错执行的函数
+					error: function() {
+						//请求出错处理
+						// alert('ajax请求出错');
+						$.toast("AJAX请求失败", "cancel");
+					}
+				});
 			}
 		</script>
 	</body>
+
 </html>
