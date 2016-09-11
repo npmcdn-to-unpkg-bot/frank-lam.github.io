@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>书列表</title>
+    <!--加载CSS样式 开始-->
+    <link rel="stylesheet" href="/Public/Css/weui.min.css">
+    <link rel="stylesheet" href="/Public/Css/jquery-weui.css">
+    <link rel="stylesheet" href="/Public/Css/demos.css">
+    <link rel="stylesheet" href="/Public/Css/exam.css">
+    <!--加载CSS样式 结束-->
+    <!-- <link rel="stylesheet" href="css/Pager.css"> -->
+    <style>
+        .bl-tit {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .weui_cells {
+            font-size: 15px;
+        }
+
+        #pager ul.pages {
+            display: block;
+            border: none;
+            text-transform: uppercase;
+            font-size: 10px;
+            margin: 10px 0 20px;
+            padding: 0;
+        }
+
+        #pager ul.pages li {
+            list-style: none;
+            float: left;
+            border: 1px solid #ccc;
+            text-decoration: none;
+            margin: 0 5px 0 0;
+            padding: 5px;
+        }
+
+        #pager ul.pages li:hover {
+            border: 1px solid #003f7e;
+        }
+
+        #pager ul.pages li.pgEmpty {
+            border: 1px solid #eee;
+            color: #eee;
+        }
+
+        #pager ul.pages li.pgCurrent {
+            border: 1px solid #003f7e;
+            color: #000;
+            font-weight: 700;
+            background-color: #eee;
+        }
+
+        ul {
+            text-decoration: none;
+            overflow: hidden;
+            padding-bottom: 60px;
+            padding-top: 20px;
+        }
+
+        #list li {
+            float: left;
+            text-align: center;
+            padding: 4px 10px;
+            background: #ccc;
+            color: #fff;
+            margin: 0 10px;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+
+        #list li.on {
+            background: #4e95ed;
+        }
+    </style>
+</head>
+
+<body ontouchstart>
+<div class="hd">
+    <h1 class="page_title">书列表</h1>
+</div>
+<div class="weui_cells weui_cells_access" id="showlist"></div>
+<textarea id="mysid" style="display: none">
+        {for item in bList}
+        <a class="weui_cell" href="admin_bookinfo.html?book_id=${item.id}">
+            <div class="weui_cell_hd">
+                <img src=${item.pic_url} alt="icon" style="width:20px;margin-right:5px;display:block">
+            </div>
+            <div class="weui_cell_bd weui_cell_primary">
+                <p id="bookName">${item.name}</p>
+            </div>
+        </a>
+        {/for}
+    </textarea>
+<!--</div>-->
+<div id="pager"></div>
+<ul id="list"></ul>
+<di id="public"></di>
+<!-- <div id="result"></div> -->
+<!--加载js文件 开始-->
+<script src="/Public/js/jquery-2.1.4.js"></script>
+<script src="/public/js/template.js"></script>
+<script src="/public/js/base.js"></script>
+<script src="/Public/Js/jquery-weui.js"></script>
+<script src="/Public/Js/function.js"></script>
+<!--加载js文件 结束-->
+<script>
+    var total = 0; //书本数
+    var page = 0; //书页数
+    var pageIndex = 0; //当前页码
+    var t = 0;
+
+    function getList(pageIndex) {
+        BaseControl.loadJsonNoAsync({
+            url: "/index.php/Home/User/booklist?start=" + (pageIndex - 1) * 10 + "&limit=" + 10,
+            type: "post"
+        }, function(json) {
+            total = json.tot * 1; //总共多少页
+            page = Math.ceil(total / 10);
+            BaseControl.converTemplateToHtml(json, "mysid", "showlist");
+            BaseControl.SetItemToK_Id(json);
+            $("#list .home").eq(pageIndex-1).addClass("on").siblings().removeClass("on");
+
+//            createPage();
+
+        });
+
+    }
+    getList(1);
+    //先考虑有分页的情况下
+
+    function createPage() {
+        var html = "";
+//        var prevPage = "<li id='prev'>"+"上一页"+"</li>";
+//        var nextPage = "<li onclick='getList("+ pageIndex +")'>"+"下一页"+"</li>";
+        for (var i = 1; i < page + 1; i++) {
+            html += '<li onclick="getList(' + i + ')" class="home">' + i + '</li>';
+        }
+        $("#list").html(html);
+        $("#list .home").first().addClass("on");
+    }
+
+    createPage();
+    function nextList(){
+        getList();
+    }
+    // getList(1);
+</script>
+</body>
+
+</html>
+<!-- var blen = Math.ceil(json.bList.length)/10 $("#pager").pager({ pagenumber: 1, pagecount: blen, buttonClickCallback: PageClick }); PageClick = function(pageclickednumber) { $("#pager").pager({ pagenumber: pageclickednumber, pagecount: blen, buttonClickCallback: PageClick }); $("#result").html("当前第" + pageclickednumber + "页"); } -->

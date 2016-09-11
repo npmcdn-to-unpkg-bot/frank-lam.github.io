@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>已借图书</title>
+    <!--加载CSS样式 开始-->
+    <link rel="stylesheet" href="/Public/Css/weui.min.css">
+    <link rel="stylesheet" href="/Public/Css/jquery-weui.css">
+    <link rel="stylesheet" href="/Public/Css/demos.css">
+    <link rel="stylesheet" href="/Public/Css/exam.css">
+    <style>
+        .weui_media_box:before{
+            border:1px solid #e6e6e6;
+        }
+        .weui_media_box.weui_media_text .weui_media_info{
+           	color: #1fbbee;
+        }
+        .weui_media_box .weui_media_title{
+            color: #545454;
+            font-size: 14px;
+        }
+    </style>
+    <!--加载CSS样式 结束-->
+</head>
+
+<body ontouchstart>
+    <div class="weui_panel">
+        <div style="height:2rem;line-height:2rem;background:#1fbbee;text-align:center;color:#fff;font-size:16px;">润万物者莫润乎水</div>
+        <div class="weui_panel_bd" id="showlist"></div>
+        <textarea id="mysid" style="display: none">
+        {for item in data}
+            <div class="weui_media_box weui_media_text">
+                <h4 class="weui_media_title">${item.book_name}</h4>
+                <ul class="weui_media_info">
+                    <li class="weui_media_info_meta">${item.username}</li>
+                    <li class="weui_media_info_meta weui_media_info_meta_extra">借书日期：2016.8.10</li>
+                    <li class="weui_media_info_meta weui_media_info_meta_extra">借书期限：${item.validity}天</li>
+                </ul>
+            </div>
+        {/for}
+        </textarea>
+            <!--<div class="weui_media_box weui_media_text">
+                <h4 class="weui_media_title">javascript高级程序设计</h4>
+                <ul class="weui_media_info">
+                    <li class="weui_media_info_meta">杜泽</li>
+                    <li class="weui_media_info_meta weui_media_info_meta_extra">借书日期：2016.10.22</li>
+                    <li class="weui_media_info_meta weui_media_info_meta_extra">借书期限：30天</li>
+                </ul>
+            </div>
+            <div class="weui_media_box weui_media_text">
+                <h4 class="weui_media_title">javascript高级程序设计javascript高级程序设计</h4>
+                <ul class="weui_media_info">
+                    <li class="weui_media_info_meta">杜泽</li>
+                    <li class="weui_media_info_meta weui_media_info_meta_extra">借书日期：2016.10.22</li>
+                    <li class="weui_media_info_meta weui_media_info_meta_extra">借书期限：30天</li>
+                </ul>
+            </div>-->
+        <!--</div>-->
+    </div>
+    <!--加载js文件 开始-->
+    <script src="/Public/Js/jquery-2.1.4.js"></script>
+    <script src="/Public/Js/jquery-weui.js"></script>
+    <script src="/Public/Js/function.js"></script>
+    <script src="/public/js/template.js"></script>
+    <script src="/public/js/base.js"></script>
+    <script>
+        var _url = "/index.php/Home/User/?action=book_borrow_er";
+        BaseControl.loadJson({url:_url,type:"get"},function (json) {
+            BaseControl.converTemplateToHtml(json, "mysid", "showlist");
+            BaseControl.SetItemToK_Id(json);
+        });
+    </script>
+    <!--加载js文件 结束-->
+</body>
+
+</html>

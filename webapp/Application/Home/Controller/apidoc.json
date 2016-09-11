@@ -1,0 +1,12 @@
+{
+  "name": "仁润员工在线社区",
+  "version": "0.3.0",
+  "description": "webapp 1.0 接口说明文档",
+  "title": "接口文档",
+  "url" : "http://att.renrunkeji.cn",
+  "sampleUrl": "http://att.renrunkeji.cn",
+  "template": {
+    "withCompare": true,
+    "withGenerator": true
+  }
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>个人中心</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+		<!--加载CSS样式 开始-->
+		<link rel="stylesheet" href="/Public/Css/weui.min.css">
+		<link rel="stylesheet" href="/Public/Css/jquery-weui.css">
+		<link rel="stylesheet" href="/Public/Css/demos.css">
+		<link rel="stylesheet" href="/Public/Css/exam.css">
+		<!--加载CSS样式 结束-->
+	</head>
+
+	<body ontouchstart>
+		<header class='demos-header'>
+			<h1 class="demos-title">个人中心</h1>
+			<h4 class="page_title" style="font-size: 20px;display: block;" id="userinfo"></h4>
+		</header>
+		
+		<div class="weui_grids">
+			<a href="booklist.html" class="weui_grid js_grid" data-id="button">
+				<div class="weui_grid_icon">
+					<img src="/Public/images/book1.png" alt="">
+				</div>
+				<p class="weui_grid_label">
+					今日上班TOP15
+				</p>
+			</a>
+			<a href="javascript:;" class="weui_grid js_grid" data-id="cell">
+				<div class="weui_grid_icon">
+					<img src="/Public/images/book2.png" alt="">
+				</div>
+				<p class="weui_grid_label">
+					昨日下班TOP15
+				</p>
+			</a>
+			<a href="/weui/web/demos/book_apply.html" class="weui_grid js_grid" data-id="toast">
+				<div class="weui_grid_icon">
+					<img src="/Public/images/book3.png" alt="">
+				</div>
+				<p class="weui_grid_label">
+					今日特权
+				</p>
+			</a>
+			<a href="javascript:;" class="weui_grid js_grid" data-id="toast">
+				<div class="weui_grid_icon">
+					<img src="/Public/images/book1.png" alt="">
+				</div>
+				<p class="weui_grid_label">
+					仁润书库
+				</p>
+			</a>
+			<a href="javascript:;" class="weui_grid js_grid" data-id="toast">
+				<div class="weui_grid_icon">
+					<img src="/Public/images/book1.png" alt="">
+				</div>
+				<p class="weui_grid_label">
+					已借图书‘
+				</p>
+			</a>
+			<a href="javascript:;" class="weui_grid js_grid" data-id="toast">
+				<div class="weui_grid_icon">
+					<img src="/Public/images/book1.png" alt="">
+				</div>
+				<p class="weui_grid_label">
+					借阅排行
+				</p>
+			</a>
+			<a href="rank.html" class="weui_grid js_grid" data-id="toast">
+				<div class="weui_grid_icon">
+					<img src="/Public/images/book7.png" alt="">
+				</div>
+				<p class="weui_grid_label">
+					购书申请
+				</p>
+			</a>
+			<a href="javascript:;" class="weui_grid js_grid" data-id="toast">
+				<div class="weui_grid_icon">
+					<img src="/Public/images/book8.png" alt="">
+				</div>
+				<p class="weui_grid_label" style="color:#999;">
+					个人信息
+				</p>
+			</a>
+			<a href="/webapp/login.html" class="weui_grid js_grid" data-id="toast">
+				<div class="weui_grid_icon">
+					<img src="/Public/images/book8.png" alt="">
+				</div>
+				<p class="weui_grid_label" style="color:#999;">
+					退出登录
+				</p>
+			</a>
+		</div>
+		
+
+		<!--加载js文件 开始-->
+		<script src="/Public/Js/jquery-2.1.4.js"></script>
+		<script src="/Public/Js/jquery-weui.js"></script>
+		<script src="/Public/Js/function.js"></script>
+		<!--加载js文件 结束-->
+
+		<script>
+			getInfo();
+			function getInfo(){
+				if(getCookie("userid")==null){
+					window.location="/webapp/login.html";
+				}
+				else{
+					getInfoByUserid();
+				}
+			}
+			function getInfoByUserid() {
+				$.ajax({
+					async:false,
+					//提交数据的类型 POST GET
+					type: "POST",
+					//提交的网址
+					url: "/?action=getInfoByUserid",
+					//提交的数据
+					data: {
+						userid : getCookie("userid")
+					},
+					//返回数据的格式
+					datatype: "json", //"xml", "html", "script", "json", "jsonp", "text".
+					//在请求之前调用的函数
+					beforeSend: function() {
+						//    return true;
+					},
+					//成功返回之后调用的函数             
+					success: function(data) {
+						jsonDate = JSON.parse(data);
+						var data = JSON.stringify(jsonDate); //JSON转换成string
+//						alert(data);
+						
+						
+						//设置 #userinfo 的值
+						//JSON返回数据 {"cardid":"73","name":"林立城","deptname":"技术开发部","password":"123456","userid":"llc73","code":1}
+						$("#userinfo").text(jsonDate['deptname']+":"+jsonDate['name']);
+						
+					
+					},
+					//调用执行后调用的函数
+					complete: function(XMLHttpRequest, textStatus) {
+//						$.showLoading();  //$.hideLoading();
+						//alert(XMLHttpRequest.responseText);
+						//alert(textStatus);
+						//HideLoading();
+					},
+					//调用出错执行的函数
+					error: function() {
+						//请求出错处理
+						// alert('ajax请求出错');
+						$.toast("AJAX请求失败", "cancel");
+					}
+				});
+			}
+
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,1421 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"t_st",
+				"t_start_t"
+			],
+			[
+				"t_sta",
+				"t_start_t"
+			],
+			[
+				"t_",
+				"t_stop"
+			],
+			[
+				"ts",
+				"t_start"
+			],
+			[
+				"str",
+				"strtotime"
+			],
+			[
+				"from",
+				"from"
+			],
+			[
+				"pri",
+				"private"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"bli",
+				"bliarr"
+			],
+			[
+				"bc",
+				"b_c_list"
+			],
+			[
+				"ta",
+				"table"
+			],
+			[
+				"col",
+				"columlist"
+			],
+			[
+				"bas",
+				"bas_c"
+			],
+			[
+				"colum",
+				"colum_name"
+			],
+			[
+				"re",
+				"result"
+			],
+			[
+				"res",
+				"result"
+			],
+			[
+				"co",
+				"columlist"
+			],
+			[
+				"ret",
+				"return"
+			],
+			[
+				"book",
+				"book_info"
+			],
+			[
+				"tab",
+				"table_name"
+			],
+			[
+				"boo",
+				"book_base"
+			],
+			[
+				"is",
+				"isbn13"
+			],
+			[
+				"p",
+				"param"
+			],
+			[
+				"pu",
+				"public"
+			],
+			[
+				"i",
+				"item"
+			],
+			[
+				"va",
+				"vage"
+			],
+			[
+				"strto",
+				"strtotime"
+			],
+			[
+				"u",
+				"urldecode"
+			],
+			[
+				"12z_0",
+				"12z_0product_item"
+			],
+			[
+				"S",
+				"SELECT"
+			],
+			[
+				"arr",
+				"arr_base"
+			],
+			[
+				"chec",
+				"checktime"
+			],
+			[
+				"read",
+				"read_record"
+			],
+			[
+				"com",
+				"comment"
+			],
+			[
+				"whe",
+				"where"
+			],
+			[
+				"book_",
+				"book_library"
+			],
+			[
+				"U",
+				"UPDATE"
+			],
+			[
+				"exec",
+				"execute"
+			],
+			[
+				"int",
+				"intval"
+			],
+			[
+				"limi",
+				"limit"
+			],
+			[
+				"where",
+				"WHERE"
+			],
+			[
+				"qu",
+				"query"
+			],
+			[
+				"b",
+				"booklist"
+			],
+			[
+				"li",
+				"limit"
+			],
+			[
+				"f",
+				"false"
+			],
+			[
+				"ti",
+				"title"
+			],
+			[
+				"l",
+				"fieldLabel"
+			],
+			[
+				"pro",
+				"product"
+			],
+			[
+				"js",
+				"json_return"
+			],
+			[
+				"sql",
+				"sqlsrv"
+			],
+			[
+				"Q",
+				"query"
+			],
+			[
+				"user",
+				"userid"
+			],
+			[
+				"ar",
+				"args"
+			],
+			[
+				"bu",
+				"buttons"
+			],
+			[
+				"m",
+				"msg_out_done"
+			],
+			[
+				"url",
+				"urlencode"
+			],
+			[
+				"itr",
+				"itrus001_pri"
+			],
+			[
+				"or",
+				"order_no"
+			],
+			[
+				"order",
+				"order_no"
+			],
+			[
+				"pa",
+				"params_str"
+			],
+			[
+				"j",
+				"json_decode"
+			],
+			[
+				"api",
+				"apilist2"
+			],
+			[
+				"app",
+				"app接口"
+			],
+			[
+				"req",
+				"REQ"
+			],
+			[
+				"Real",
+				"Pay_Reapal_FB"
+			],
+			[
+				"in",
+				"intval"
+			],
+			[
+				"H",
+				"Html"
+			],
+			[
+				"pay",
+				"pay_html"
+			],
+			[
+				"cha",
+				"channelId"
+			],
+			[
+				"a",
+				"array"
+			],
+			[
+				"r",
+				"r"
+			],
+			[
+				"tre",
+				"treeDataSource"
+			],
+			[
+				"html",
+				"Html"
+			],
+			[
+				"ech",
+				"echo"
+			],
+			[
+				"get",
+				"getValue"
+			],
+			[
+				"te",
+				"text"
+			],
+			[
+				"dat",
+				"dataType"
+			],
+			[
+				"load",
+				"loadURL"
+			],
+			[
+				"ob",
+				"ob_end_clean"
+			],
+			[
+				"obget",
+				"ob_get_contents"
+			],
+			[
+				"data",
+				"data"
+			],
+			[
+				"bank",
+				"bankCode"
+			],
+			[
+				"de",
+				"debugger"
+			],
+			[
+				"Create",
+				"CreateBankList"
+			],
+			[
+				"_",
+				"_tplfile"
+			],
+			[
+				"OO",
+				"OOComboBox"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"qd",
+				"qd_name"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"di",
+				"div	Tag"
+			],
+			[
+				"mo",
+				"mobile"
+			],
+			[
+				"G",
+				"GetStr"
+			],
+			[
+				"bin",
+				"bind"
+			],
+			[
+				"us",
+				"username"
+			],
+			[
+				"all",
+				"all_result"
+			],
+			[
+				"con",
+				"config"
+			],
+			[
+				"ok",
+				"ok"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"d",
+				"data"
+			],
+			[
+				"lo",
+				"location"
+			],
+			[
+				"en",
+				"encrypt"
+			],
+			[
+				"err",
+				"error_log"
+			],
+			[
+				"er",
+				"error_log"
+			],
+			[
+				"ac",
+				"account"
+			],
+			[
+				"_p",
+				"_paramsStr"
+			],
+			[
+				"array_s",
+				"array_slice"
+			],
+			[
+				"tr",
+				"true"
+			],
+			[
+				"wdtx",
+				"wdtxUserId"
+			],
+			[
+				"Get",
+				"GetStr"
+			],
+			[
+				"wd",
+				"wdtx_token"
+			],
+			[
+				"array",
+				"array"
+			],
+			[
+				"Ge",
+				"GetStr"
+			],
+			[
+				"log",
+				"login"
+			],
+			[
+				"ev",
+				"event"
+			],
+			[
+				"do",
+				"doflag"
+			],
+			[
+				"wdt",
+				"wdtx_id"
+			],
+			[
+				"fr",
+				"from"
+			],
+			[
+				"inve",
+				"investURL"
+			],
+			[
+				"inv",
+				"investURL"
+			],
+			[
+				"to",
+				"token"
+			],
+			[
+				"pf",
+				"pfUserId"
+			],
+			[
+				"ui",
+				"uinfo"
+			],
+			[
+				"ms",
+				"msg"
+			],
+			[
+				"GetRow",
+				"GetRows"
+			],
+			[
+				"ban",
+				"bankName"
+			],
+			[
+				"acc",
+				"access_token"
+			],
+			[
+				"ub",
+				"ub_info"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Application/Home/Controller/UserController.class.php",
+			"settings":
+			{
+				"buffer_size": 8991,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "#  power by phpStudy  2014  www.phpStudy.net  ¹ÙÍøÏÂÔØ×îÐÂ°æ\n#\n# This is the main Apache HTTP server configuration file.  It contains the\n# configuration directives that give the server its instructions.\n# See <URL:http://httpd.apache.org/docs/2.4/> for detailed information.\n# In particular, see \n# <URL:http://httpd.apache.org/docs/2.4/mod/directives.html>\n# for a discussion of each configuration directive.\n#\n# Do NOT simply read the instructions in here without understanding\n# what they do.  They're here only as hints or reminders.  If you are unsure\n# consult the online docs. You have been warned.  \n#\n# Configuration and logfile names: If the filenames you specify for many\n# of the server's control files begin with \"/\" (or \"drive:/\" for Win32), the\n# server will use that explicit path.  If the filenames do *not* begin\n# with \"/\", the value of ServerRoot is prepended -- so \"logs/access_log\"\n# with ServerRoot set to \"/usr/local/apache2\" will be interpreted by the\n# server as \"/usr/local/apache2/logs/access_log\", whereas \"/logs/access_log\" \n# will be interpreted as '/logs/access_log'.\n#\n# NOTE: Where filenames are specified, you must use forward slashes\n# instead of backslashes (e.g., \"c:/apache\" instead of \"c:\\apache\").\n# If a drive letter is omitted, the drive on which httpd.exe is located\n# will be used by default.  It is recommended that you always supply\n# an explicit drive letter in absolute paths to avoid confusion.\n\n#\n# ServerRoot: The top of the directory tree under which the server's\n# configuration, error, and log files are kept.\n#\n# Do not add a slash at the end of the directory path.  If you point\n# ServerRoot at a non-local disk, be sure to specify a local disk on the\n# Mutex directive, if file-based mutexes are used.  If you wish to share the\n# same ServerRoot for multiple httpd daemons, you will need to change at\n# least PidFile.\n#\n#ServerRoot \"C:/Users/Administrator/Documents/work-file/phpStudy/Apache\"\nServerRoot \"D:/work/tool/phpStudy/Apache\"\n#\n# Mutex: Allows you to set the mutex mechanism and mutex file directory\n# for individual mutexes, or change the global defaults\n#\n# Uncomment and change the directory if mutexes are file-based and the default\n# mutex file directory is not on a local disk or is not appropriate for some\n# other reason.\n#\n# Mutex default:logs\n\n#\n# Listen: Allows you to bind Apache to specific IP addresses and/or\n# ports, instead of the default. See also the <VirtualHost>\n# directive.\n#\n# Change this to Listen on specific IP addresses as shown below to \n# prevent Apache from glomming onto all bound IP addresses.\n#\nListen localhost:8500\nListen 8080\nlisten 8081\nlisten 8082\nlisten 8888\nlisten 8500\nlisten 8101\nlisten 8102\n\n\n#\n# Dynamic Shared Object (DSO) Support\n#\n# To be able to use the functionality of a module which was built as a DSO you\n# have to place corresponding `LoadModule' lines at this location so the\n# directives contained in it are actually available _before_ they are used.\n# Statically compiled modules (those listed by `httpd -l') do not need\n# to be loaded here.\n#\n# Example:\n# LoadModule foo_module modules/mod_foo.so\n#\nLoadModule access_compat_module modules/mod_access_compat.so\nLoadModule actions_module modules/mod_actions.so\nLoadModule alias_module modules/mod_alias.so\nLoadModule allowmethods_module modules/mod_allowmethods.so\nLoadModule asis_module modules/mod_asis.so\nLoadModule auth_basic_module modules/mod_auth_basic.so\n#LoadModule auth_digest_module modules/mod_auth_digest.so\n#LoadModule authn_anon_module modules/mod_authn_anon.so\nLoadModule authn_core_module modules/mod_authn_core.so\n#LoadModule authn_dbd_module modules/mod_authn_dbd.so\n#LoadModule authn_dbm_module modules/mod_authn_dbm.so\nLoadModule authn_file_module modules/mod_authn_file.so\n#LoadModule authn_socache_module modules/mod_authn_socache.so\n#LoadModule authnz_ldap_module modules/mod_authnz_ldap.so\nLoadModule authz_core_module modules/mod_authz_core.so\n#LoadModule authz_dbd_module modules/mod_authz_dbd.so\n#LoadModule authz_dbm_module modules/mod_authz_dbm.so\nLoadModule authz_groupfile_module modules/mod_authz_groupfile.so\nLoadModule authz_host_module modules/mod_authz_host.so\n#LoadModule authz_owner_module modules/mod_authz_owner.so\nLoadModule authz_user_module modules/mod_authz_user.so\nLoadModule autoindex_module modules/mod_autoindex.so\n#LoadModule buffer_module modules/mod_buffer.so\n#LoadModule cache_module modules/mod_cache.so\n#LoadModule cache_disk_module modules/mod_cache_disk.so\n#LoadModule cern_meta_module modules/mod_cern_meta.so\nLoadModule cgi_module modules/mod_cgi.so\n#LoadModule charset_lite_module modules/mod_charset_lite.so\n#LoadModule data_module modules/mod_data.so\n#LoadModule dav_module modules/mod_dav.so\n#LoadModule dav_fs_module modules/mod_dav_fs.so\n#LoadModule dav_lock_module modules/mod_dav_lock.so\n#LoadModule dbd_module modules/mod_dbd.so\n#LoadModule deflate_module modules/mod_deflate.so\nLoadModule dir_module modules/mod_dir.so\n#LoadModule dumpio_module modules/mod_dumpio.so\nLoadModule env_module modules/mod_env.so\n#LoadModule expires_module modules/mod_expires.so\n#LoadModule ext_filter_module modules/mod_ext_filter.so\n#LoadModule file_cache_module modules/mod_file_cache.so\n#LoadModule filter_module modules/mod_filter.so\n#LoadModule headers_module modules/mod_headers.so\n#LoadModule heartbeat_module modules/mod_heartbeat.so\n#LoadModule heartmonitor_module modules/mod_heartmonitor.so\n#LoadModule ident_module modules/mod_ident.so\n#LoadModule imagemap_module modules/mod_imagemap.so\nLoadModule include_module modules/mod_include.so\n#LoadModule info_module modules/mod_info.so\nLoadModule isapi_module modules/mod_isapi.so\n#LoadModule lbmethod_bybusyness_module modules/mod_lbmethod_bybusyness.so\n#LoadModule lbmethod_byrequests_module modules/mod_lbmethod_byrequests.so\n#LoadModule lbmethod_bytraffic_module modules/mod_lbmethod_bytraffic.so\n#LoadModule lbmethod_heartbeat_module modules/mod_lbmethod_heartbeat.so\n#LoadModule ldap_module modules/mod_ldap.so\n#LoadModule logio_module modules/mod_logio.so\nLoadModule log_config_module modules/mod_log_config.so\n#LoadModule log_debug_module modules/mod_log_debug.so\n#LoadModule log_forensic_module modules/mod_log_forensic.so\n#LoadModule lua_module modules/mod_lua.so\nLoadModule mime_module modules/mod_mime.so\n#LoadModule mime_magic_module modules/mod_mime_magic.so\nLoadModule negotiation_module modules/mod_negotiation.so\n#LoadModule proxy_module modules/mod_proxy.so\n#LoadModule proxy_ajp_module modules/mod_proxy_ajp.so\n#LoadModule proxy_balancer_module modules/mod_proxy_balancer.so\n#LoadModule proxy_connect_module modules/mod_proxy_connect.so\n#LoadModule proxy_express_module modules/mod_proxy_express.so\n#LoadModule proxy_fcgi_module modules/mod_proxy_fcgi.so\n#LoadModule proxy_ftp_module modules/mod_proxy_ftp.so\n#LoadModule proxy_html_module modules/mod_proxy_html.so\n#LoadModule proxy_http_module modules/mod_proxy_http.so\n#LoadModule proxy_scgi_module modules/mod_proxy_scgi.so\n#LoadModule ratelimit_module modules/mod_ratelimit.so\n#LoadModule reflector_module modules/mod_reflector.so\n#LoadModule remoteip_module modules/mod_remoteip.so\n#LoadModule request_module modules/mod_request.so\n#LoadModule reqtimeout_module modules/mod_reqtimeout.so\nLoadModule rewrite_module modules/mod_rewrite.so\n#LoadModule sed_module modules/mod_sed.so\n#LoadModule session_module modules/mod_session.so\n#LoadModule session_cookie_module modules/mod_session_cookie.so\n#LoadModule session_crypto_module modules/mod_session_crypto.so\n#LoadModule session_dbd_module modules/mod_session_dbd.so\nLoadModule setenvif_module modules/mod_setenvif.so\n#LoadModule slotmem_plain_module modules/mod_slotmem_plain.so\n#LoadModule slotmem_shm_module modules/mod_slotmem_shm.so\n#LoadModule socache_dbm_module modules/mod_socache_dbm.so\n#LoadModule socache_memcache_module modules/mod_socache_memcache.so\nLoadModule socache_shmcb_module modules/mod_socache_shmcb.so\n#LoadModule speling_module modules/mod_speling.so\nLoadModule ssl_module modules/mod_ssl.so\n#LoadModule fcgid_module modules/mod_fcgid.so\n#LoadModule status_module modules/mod_status.so\n#LoadModule substitute_module modules/mod_substitute.so\n#LoadModule unique_id_module modules/mod_unique_id.so\n#LoadModule userdir_module modules/mod_userdir.so\n#LoadModule usertrack_module modules/mod_usertrack.so\n#LoadModule version_module modules/mod_version.so\n#LoadModule vhost_alias_module modules/mod_vhost_alias.so\n#LoadModule watchdog_module modules/mod_watchdog.so\n#LoadModule xml2enc_module modules/mod_xml2enc.so\n\n\n<IfModule unixd_module>\n#\n# If you wish httpd to run as a different user or group, you must run\n# httpd as root initially and it will switch.  \n#\n# User/Group: The name (or #number) of the user/group to run httpd as.\n# It is usually good practice to create a dedicated user and group for\n# running httpd, as with most system services.\n#\nUser daemon\nGroup daemon\n\n</IfModule>\n\n# 'Main' server configuration\n#\n# The directives in this section set up the values used by the 'main'\n# server, which responds to any requests that aren't handled by a\n# <VirtualHost> definition.  These values also provide defaults for\n# any <VirtualHost> containers you may define later in the file.\n#\n# All of these directives may appear inside <VirtualHost> containers,\n# in which case these default settings will be overridden for the\n# virtual host being defined.\n#\n\n#\n# ServerAdmin: Your address, where problems with the server should be\n# e-mailed.  This address appears on some server-generated pages, such\n# as error documents.  e.g. admin@your-domain.com\n#\nServerAdmin admin@phpStudy.net\n\n#\n# ServerName gives the name and port that the server uses to identify itself.\n# This can often be determined automatically, but we recommend you specify\n# it explicitly to prevent problems during startup.\n#\n# If your host doesn't have a registered DNS name, enter its IP address here.\n#\nServerName 172.16.0.119\n\n#\n# Deny access to the entirety of your server's filesystem. You must\n# explicitly permit access to web content directories in other \n# <Directory> blocks below.\n#\nDocumentRoot  \"D:/work/wd/web\"\n<Directory />\n    Options +Indexes +FollowSymLinks +ExecCGI\n    AllowOverride All\n    Order allow,deny\n    Allow from all\n    Require all granted\n</Directory>\n\n#\n# Note that from this point forward you must specifically allow\n# particular features to be enabled - so if something's not working as\n# you might expect, make sure that you have specifically enabled it\n# below.\n#\n\n#\n# DocumentRoot: The directory out of which you will serve your\n# documents. By default, all requests are taken from this directory, but\n# symbolic links and aliases may be used to point to other locations.\n#\n\n\n#\n# DirectoryIndex: sets the file that Apache will serve if a directory\n# is requested.\n#\n<IfModule dir_module>\nDirectoryIndex index.html index.php index.htm\n</IfModule>\n\n#\n# The following lines prevent .htaccess and .htpasswd files from being \n# viewed by Web clients. \n#\n<Files \".ht*\">\n    Require all denied\n</Files>\n\n#\n# ErrorLog: The location of the error log file.\n# If you do not specify an ErrorLog directive within a <VirtualHost>\n# container, error messages relating to that virtual host will be\n# logged here.  If you *do* define an error logfile for a <VirtualHost>\n# container, that host's errors will be logged there and not here.\n#\n#ErrorLog \"logs/error.log\"\n#ErrorLog \"|bin/rotatelogs.exe -l logs/error-%Y-%m-%d.log 2M\"\n\n#\n# LogLevel: Control the number of messages logged to the error_log.\n# Possible values include: debug, info, notice, warn, error, crit,\n# alert, emerg.\n#\nLogLevel error\n\n<IfModule log_config_module>\n    #\n    # The following directives define some format nicknames for use with\n    # a CustomLog directive (see below).\n    #\n    LogFormat \"%h %l %u %t \\\"%r\\\" %>s %b \\\"%{Referer}i\\\" \\\"%{User-Agent}i\\\"\" combined\n    LogFormat \"%h %l %u %t \\\"%r\\\" %>s %b\" common\n\n    <IfModule logio_module>\n      # You need to enable mod_logio.c to use %I and %O\n      LogFormat \"%h %l %u %t \\\"%r\\\" %>s %b \\\"%{Referer}i\\\" \\\"%{User-Agent}i\\\" %I %O\" combinedio\n    </IfModule>\n\n    #\n    # The location and format of the access logfile (Common Logfile Format).\n    # If you do not define any access logfiles within a <VirtualHost>\n    # container, they will be logged here.  Contrariwise, if you *do*\n    # define per-<VirtualHost> access logfiles, transactions will be\n    # logged therein and *not* in this file.\n    #\n    ##CustomLog \"logs/access.log\" common\n\n    #\n    # If you prefer a logfile with access, agent, and referer information\n    # (Combined Logfile Format) you can use the following directive.\n    #\n    #CustomLog \"logs/access.log\" combined\n</IfModule>\n\n<IfModule alias_module>\n    #\n    # Redirect: Allows you to tell clients about documents that used to \n    # exist in your server's namespace, but do not anymore. The client \n    # will make a new request for the document at its new location.\n    # Example:\n    # Redirect permanent /foo http://www.example.com/bar\n\n    #\n    # Alias: Maps web paths into filesystem paths and is used to\n    # access content that does not live under the DocumentRoot.\n    # Example:\n    # Alias /webpath /full/filesystem/path\n    #\n    # If you include a trailing / on /webpath then the server will\n    # require it to be present in the URL.  You will also likely\n    # need to provide a <Directory> section to allow access to\n    # the filesystem path.\n\n    #\n    # ScriptAlias: This controls which directories contain server scripts. \n    # ScriptAliases are essentially the same as Aliases, except that\n    # documents in the target directory are treated as applications and\n    # run by the server when requested rather than as documents sent to the\n    # client.  The same rules about trailing \"/\" apply to ScriptAlias\n    # directives as to Alias.\n    #\n    #ScriptAlias /cgi-bin/ \"C:/Users/Administrator/Documents/work-file/phpStudy/Apache/cgi-bin/\"\n\n</IfModule>\n\n<IfModule cgid_module>\n    #\n    # ScriptSock: On threaded servers, designate the path to the UNIX\n    # socket used to communicate with the CGI daemon of mod_cgid.\n    #\n    #Scriptsock cgisock\n</IfModule>\n\n#\n# \"c:/Apache4/cgi-bin\" should be changed to whatever your ScriptAliased\n# CGI directory exists, if you have that configured.\n#\n<Directory \"C:/Users/Administrator/Documents/work-file/phpStudy/Apache/cgi-bin\">\n    AllowOverride None\n    Options None\n    Require all granted\n</Directory>\n\n<IfModule mime_module>\n    #\n    # TypesConfig points to the file containing the list of mappings from\n    # filename extension to MIME-type.\n    #\n    TypesConfig conf/mime.types\n\n    #\n    # AddType allows you to add to or override the MIME configuration\n    # file specified in TypesConfig for specific file types.\n    #\n    #AddType application/x-gzip .tgz\n    #\n    # AddEncoding allows you to have certain browsers uncompress\n    # information on the fly. Note: Not all browsers support this.\n    #\n    #AddEncoding x-compress .Z\n    #AddEncoding x-gzip .gz .tgz\n    #\n    # If the AddEncoding directives above are commented-out, then you\n    # probably should define those extensions to indicate media types:\n    #\n    AddType application/x-compress .Z\n    AddType application/x-gzip .gz .tgz\n\n    #\n    # AddHandler allows you to map certain file extensions to \"handlers\":\n    # actions unrelated to filetype. These can be either built into the server\n    # or added with the Action directive (see below)\n    #\n    # To use CGI scripts outside of ScriptAliased directories:\n    # (You will also need to add \"ExecCGI\" to the \"Options\" directive.)\n    #\n    #AddHandler cgi-script .cgi\n\n    # For type maps (negotiated resources):\n    #AddHandler type-map var\n\n    #\n    # Filters allow you to process content before it is sent to the client.\n    #\n    # To parse .shtml files for server-side includes (SSI):\n    # (You will also need to add \"Includes\" to the \"Options\" directive.)\n    #\n    #AddType text/html .shtml\n    #AddOutputFilter INCLUDES .shtml\n    #AddType application/x-httpd-php .php .phtml\n</IfModule>\n\n#\n# The mod_mime_magic module allows the server to use various hints from the\n# contents of the file itself to determine its type.  The MIMEMagicFile\n# directive tells the module where the hint definitions are located.\n#\n#MIMEMagicFile conf/magic\n\n#\n# Customizable error responses come in three flavors:\n# 1) plain text 2) local redirects 3) external redirects\n#\n# Some examples:\n#ErrorDocument 500 \"The server made a boo boo.\"\n#ErrorDocument 404 /missing.html\n#ErrorDocument 404 \"/cgi-bin/missing_handler.pl\"\n#ErrorDocument 402 http://www.example.com/subscription_info.html\n#\n\n#\n# MaxRanges: Maximum number of Ranges in a request before\n# returning the entire resource, or one of the special\n# values 'default', 'none' or 'unlimited'.\n# Default setting is to accept 200 Ranges.\n#MaxRanges unlimited\n\n#\n# EnableMMAP and EnableSendfile: On systems that support it, \n# memory-mapping or the sendfile syscall may be used to deliver\n# files.  This usually improves server performance, but must\n# be turned off when serving from networked-mounted \n# filesystems or if support for these functions is otherwise\n# broken on your system.\n# Defaults: EnableMMAP On, EnableSendfile Off\n#\n#EnableMMAP off\n#EnableSendfile on\n\n# Supplemental configuration\n#\n# The configuration files in the conf/extra/ directory can be \n# included to add extra features or to modify the default configuration of \n# the server, or you may simply copy their contents here and change as \n# necessary.\n\n# Server-pool management (MPM specific)\nInclude conf/extra/httpd-mpm.conf\nInclude conf/extra/httpd-php-sapi54.conf\n\n# Multi-language error messages\n#Include conf/extra/httpd-multilang-errordoc.conf\n\n# Fancy directory listings\n#Include conf/extra/httpd-autoindex.conf\n\n# Language settings\n#Include conf/extra/httpd-languages.conf\n\n# User home directories\n#Include conf/extra/httpd-userdir.conf\n\n# Real-time info on requests and configuration\n#Include conf/extra/httpd-info.conf\n\n# Virtual hosts\n#Include conf/extra/httpd-vhosts.conf\n\n# Local access to the Apache HTTP Server Manual\n#Include conf/extra/httpd-manual.conf\n\n# Distributed authoring and versioning (WebDAV)\n#Include conf/extra/httpd-dav.conf\n\n# Various default settings\n#Include conf/extra/httpd-default.conf\n\n# Configure mod_proxy_html to understand HTML4/XHTML1\n#<IfModule proxy_html_module>\n#Include conf/extra/proxy-html.conf\n#</IfModule>\n\nInclude conf/vhosts.conf\n\n# Secure (SSL/TLS) connections\n#Include conf/extra/httpd-ssl.conf\n#\n# Note: The following must must be present to support\n#       starting without SSL on platforms with no /dev/random equivalent\n#       but a statically compiled-in mod_ssl.\n#\n\nSSLSessionCache        \"shmcb:logs/ssl_scache(512000)\"\nSSLSessionCacheTimeout  300\n\n<IfModule ssl_module>\nSSLRandomSeed startup builtin\nSSLRandomSeed connect builtin\n</IfModule>\n\n# Deal with user agents that deliberately violate open standards\n#\n<IfModule setenvif_module>\nBrowserMatch \"MSIE 10.0;\" bad_DNT\n</IfModule>\n<IfModule headers_module>\nRequestHeader unset DNT env=bad_DNT\n</IfModule>\n",
+			"file": "/D/work/tool/phpStudy/Apache/conf/httpd.conf",
+			"file_size": 19630,
+			"file_write_time": 131147971714784516,
+			"settings":
+			{
+				"buffer_size": 19112,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/work/tool/phpStudy/php70n/php.ini",
+			"settings":
+			{
+				"buffer_size": 68893,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Application/Home/Controller/test.php",
+			"settings":
+			{
+				"buffer_size": 2027,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "ThinkPHP/Library/Think/Db.class.php",
+			"settings":
+			{
+				"buffer_size": 5480,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Administrator/Documents/work-file/phpStudy/Apache/conf/vhosts.conf",
+			"settings":
+			{
+				"buffer_size": 3445,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/phpStudy/Apache/conf/vhosts.conf",
+			"settings":
+			{
+				"buffer_size": 252,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/phpStudy/Apache/conf/httpd.conf",
+			"settings":
+			{
+				"buffer_size": 18906,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "pcip",
+		"selected_items":
+		[
+			[
+				"pcip",
+				"Package Control: Install Package"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/work/webapp",
+		"/D/work/webapp/Application",
+		"/D/work/webapp/Application/Home",
+		"/D/work/webapp/Application/Home/Controller"
+	],
+	"file_history":
+	[
+		"/D/work/tool/phpStudy/Apache/conf/vhosts.conf",
+		"/D/phpStudy/Apache/conf/vhosts.conf",
+		"/C/Users/Administrator/Documents/work-file/phpStudy/Apache/conf/httpd.conf",
+		"/D/work/tool/phpStudy/Apache/conf/httpd.conf",
+		"/D/work/webapp/Application/Home/Controller/apidoc.json",
+		"/C/Users/Administrator/Documents/work-file/phpStudy/Apache/conf/vhosts.conf",
+		"/D/work/tool/phpStudy/MySQL/my.ini",
+		"/D/work/webapp/Application/Home/Controller/index.html",
+		"/D/work/wd/sqllog/201608/2016-08-04.sql",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/TortoiseSVN/TortoiseSVN.sublime-settings",
+		"/D/work/webapp/webapp.sublime-project",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/TortoiseSVN/Default (Windows).sublime-keymap",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/User/TortoiseSVN.sublime-settings",
+		"/D/work/wd/web_admin/mod/07_crowdfund/1.php",
+		"/D/work/wd/wd_clt/clt/cjn.js",
+		"/D/work/wd/wd_clt/clt/js/_11kefu/10_OO.Panel.UidAutoList.js",
+		"/D/work/wd/wd_clt/clt/jslib/cls_ext/15_cls_OOForm.js",
+		"/D/work/wd/wd_clt/clt/js/_11kefu/11_OO.Form.XuDai.js",
+		"/D/work/webapp/IndexController.class.php",
+		"/D/work/cjn/Application/Home/Controller/UserController.class.php",
+		"/D/work/webapp/UserController.class.php",
+		"/D/work/webapp/index.html",
+		"/D/work/webapp/ftpsync.settings",
+		"/D/work/webapp/EmptyController.class.php",
+		"/C/Users/Administrator/Desktop/IndexController.class.php",
+		"/D/work/wd/wd_clt/clt/jslib/cls_ext/12_cls_TabPanel.js",
+		"/D/work/wd/wd_clt/clt/jslib/cls_oo/1_Fun_C.js",
+		"/D/work/wd/wd_clt/clt/js/_11kefu/10_OO.Panel.FenRunList.js",
+		"/D/work/wd/wd_clt/clt/jslib/cls_oo/5_OO.Ext.js",
+		"/D/work/wd/wd_clt/clt/js/_11kefu/10_OO.Panel.UserScore.js",
+		"/D/work/wd/wd_clt/clt/js/_1frame/2_PanRight_Tab_20_YunYing.js",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/Git/Git.sublime-settings",
+		"/D/work/wd/wd_clt/clt/js/_1frame/2_PanRight_Tab_18_GongDan.js",
+		"/D/work/OO/do/Classes/phpqrcode/INSTALL",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/GitGutter/Default (Windows).sublime-keymap",
+		"/D/work/wd/wd_clt/clt/js/site.js",
+		"/C/Users/Administrator/Desktop/tp/ThinkPHP/Library/Think/Db.class.php",
+		"/D/work/wd/web/test/cjn.test.php",
+		"/D/work/OO/do/mod/23_pay/Realpal.php",
+		"/D/work/cjn/ThinkPHP/Library/Think/Db.class.php",
+		"/D/work/cjn/.htaccess",
+		"/D/work/cjn/ThinkPHP/ThinkPHP.php",
+		"/D/work/cjn/ThinkPHP/Library/Think/Controller.class.php",
+		"/D/work/cjn/index.php",
+		"/D/work/cjn/Application/Home/Controller/IndexController.class.php",
+		"/D/work/cjn/Application/README.md",
+		"/D/work/cjn/Application/Common/Conf/config.php",
+		"/D/work/cjn/ThinkPHP/Conf/convention.php",
+		"/D/work/wd/web/api/ifubaba.php",
+		"/D/work/wd/web_admin/INC.php",
+		"/D/work/OO/do/mod/40_cscenter/1.php",
+		"/D/work/OO/do/mod/40_cscenter/template/ByInfo_v2.tpl",
+		"/D/work/wd/ThinkPHP/Extend/Mode/Amf/Db.class.php",
+		"/D/work/cjn/Application/User/Conf/config.php",
+		"/D/work/wd/ThinkPHP/Extend/Driver/Db/DbPgsql.class.php",
+		"/D/work/wd/config/privateconfig.php",
+		"/D/work/wd/config/privateconfig.default.php",
+		"/D/work/wd/ThinkPHP/Lib/Core/Db.class.php",
+		"/D/work/wd/web_admin/0_frr/000class/class.Db.php",
+		"/C/Users/Administrator/Desktop/tp/php扩展/LICENSE",
+		"/D/work/wd/ThinkPHP/Extend/Mode/Cli/functions.php",
+		"/D/work/wd/ThinkPHP/Common/functions.php",
+		"/D/work/wd/web_admin/0_frr/000class/1memory/class.db.php",
+		"/D/work/wd/cEdit/index.html",
+		"/D/work/cjn/ThinkPHP/Library/Think/Db/Driver/Sqlsrv.class.php",
+		"/D/work/cjn/ThinkPHP/Library/Think/Db/Driver.class.php",
+		"/D/work/cjn/ThinkPHP/Mode/Lite/convention.php",
+		"/D/work/wd/sqllog/201409/2014-09-01.sql",
+		"/D/work/OO/do/admin/application/global.php",
+		"/D/work/OO/do/mod/10_oa/class.msdb.php",
+		"/D/work/OO/do/do.php",
+		"/D/work/wd/sqllog/201411/2014-11-06.sql",
+		"/D/work/wd/ThinkPHP/Lib/Driver/Db/DbPdo.class.php",
+		"/D/work/OO/do/mod/23_pay/1.php",
+		"/D/work/wd/wd_clt/clt/js/_1frame/2_PanRight_Tab_18_GongDan_fb.js",
+		"/D/work/wd/wd_clt/clt/index.html",
+		"/D/work/wd/web_admin/mod/000class/class.Pay_Reapal.php",
+		"/D/work/OO/do/mod/23_pay/2.php",
+		"/D/work/OO/do/mod/23_pay/Realpal_FB.php",
+		"/D/work/wd/web_admin/mod/SP_sample/1.php",
+		"/D/work/wd/web_admin/mod/DE_debug/1.php",
+		"/D/work/wd/web_admin/mod/99_sys/1.php",
+		"/D/work/wd/web_admin/mod/27_shop/1.php",
+		"/D/work/wd/web_admin/mod/28_guquan/1.php",
+		"/D/work/wd/web_admin/mod/32_qtatm/1.php",
+		"/D/work/wd/web_admin/mod/33_yeji/1.php",
+		"/D/work/wd/web_admin/mod/90_admin/1.php",
+		"/D/work/wd/web_admin/mod/98_tuoguan/1.php",
+		"/D/work/wd/web_admin/mod/26_fenrun/1.php",
+		"/D/work/wd/web_admin/mod/24_topic/1.php",
+		"/D/work/wd/web_admin/mod/23_secmarket_lc/1.php",
+		"/D/work/wd/web_admin/mod/23_secmarket_36057/1.php",
+		"/D/work/wd/web_admin/mod/22_activity/1.php",
+		"/D/work/wd/web_admin/mod/23_secmarket/1.php",
+		"/D/work/wd/web_admin/mod/19_peizi/1.php",
+		"/D/work/wd/web_admin/mod/12_tender/1.php",
+		"/D/work/wd/web_admin/mod/16_zhongchou/1.php",
+		"/D/work/wd/web_admin/mod/17_jiasule/1.php",
+		"/D/work/wd/web_admin/mod/18_licai/1.php",
+		"/D/work/wd/web_admin/mod/11_userinfo/1.php",
+		"/D/work/wd/web_admin/mod/10_account/1.php",
+		"/D/work/wd/web_admin/mod/09_weixin/1.php",
+		"/D/work/wd/web_admin/mod/08_sms/1.php",
+		"/D/work/wd/web_admin/mod/06_comadmin/1.php",
+		"/D/work/wd/web_admin/mod/01_core/1.php",
+		"/D/work/wd/web_admin/mod/03_uc/1.php",
+		"/D/work/wd/web_admin/0_frr/000fun/functions_role.php",
+		"/D/work/wd/web_admin/mod/05_borrow/1.php",
+		"/D/work/wd/web_admin/mod/06_comadmin/comadmin.php",
+		"/D/work/wd/web_admin/mod/01_core/menu.php",
+		"/D/work/wd/web_admin/Lib/Action/ModifiedHomeBaseAction.class.php",
+		"/D/work/wd/web_admin/mod/01_core/role.php",
+		"/D/work/wd/web_admin/mod/01_core/check.php",
+		"/D/work/wd/wd_clt/clt/js/_11kefu/10_OO.Panel.BankList.js",
+		"/D/work/wd/web_admin/0_frr/000fun/functions.php",
+		"/D/work/wd/wd_clt/clt/js/_11kefu/10_OO.Panel.GroupTenderList.js",
+		"/D/work/OO/do/0_frr/000class/class.Db.php",
+		"/D/work/OO/do/0_frr/inc.php",
+		"/C/Users/Administrator/Desktop/OO加网关支付/新网关/newwg_php/notify.php",
+		"/C/Users/Administrator/Desktop/OO加网关支付/新网关/newwg_php/util.php",
+		"/C/Users/Administrator/Desktop/OO加网关支付/新网关/newwg_php/searchResult.php",
+		"/C/Users/Administrator/Desktop/OO加网关支付/新网关/newwg_php/refund.php",
+		"/C/Users/Administrator/Desktop/OO加网关支付/新网关/newwg_php/refundResult.php",
+		"/C/Users/Administrator/Desktop/OO加网关支付/新网关/newwg_php/search.php",
+		"/C/Users/Administrator/Desktop/OO加网关支付/新网关/newwg_php/config.php",
+		"/C/Users/Administrator/Desktop/OO加网关支付/新网关/newwg_php/index.php",
+		"/C/Users/Administrator/Desktop/OO加网关支付/新网关/newwg_php/indexWeb.php"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"D:\\work\\wd\\wd_clt",
+			"D:\\work\\wd\\sqllog",
+			"D:\\work\\wd\\wd_clt\\clt\\js",
+			"D:\\work\\wd\\wd_clt\\clt\\jslib\\cls_ext",
+			"D:\\work\\wd\\wd_clt\\clt\\js",
+			"D:\\work\\wd\\web_admin",
+			"D:\\work\\wd\\wd_clt",
+			"D:\\work\\wd\\ThinkPHP",
+			"D:\\work\\wd\\web_admin",
+			"D:\\work\\OO\\do",
+			"D:\\work\\wd\\sqllog",
+			"D:\\work\\wd\\wd_clt",
+			"D:\\work\\wd\\web_admin",
+			"D:\\work\\wd\\sqllog",
+			"D:\\work\\OO",
+			"D:\\work\\wd\\wd_clt\\clt\\js",
+			"D:\\work\\wd\\web_admin\\mod\\",
+			"D:\\work\\wd\\web_admin\\mod\\98_tuoguan",
+			"D:\\work\\wd",
+			"D:\\work\\OO",
+			"D:\\work\\wd",
+			"D:\\work\\OO",
+			"D:\\work\\wd\\web_www",
+			"D:\\work\\wd\\web_admin\\mod",
+			"D:\\work\\wd\\",
+			"D:\\work\\wd\\web\\ind_tpl_64rzjf",
+			"D:\\work\\wd\\wd_clt",
+			"D:\\work\\wd\\wd",
+			"D:\\work\\wd\\web_www",
+			"D:\\work\\wd\\web_admin\\mod",
+			"D:\\work\\wd\\wd_clt\\clt\\js",
+			"D:\\work\\wd\\wd_clt\\clt",
+			"D:\\work\\wd\\wd_clt",
+			"D:\\work\\wd\\sqllog",
+			"D:\\work\\wd\\sqllog\\201606",
+			"D:\\work\\wd\\wd_clt",
+			"D:\\work\\wd\\wd_clt\\clt\\js",
+			"D:\\work\\OO\\do\\mod\\40_cscenter",
+			"D:\\work\\GitHub\\uedit\\ueditor1_4_3_2-src\\_src",
+			"D:\\work\\GitHub\\uedit\\ueditor1_4_3_2-src\\_parse",
+			"D:\\work\\GitHub\\uedit",
+			"D:\\work\\wd\\web_admin",
+			"D:\\work\\OO",
+			"D:\\work\\wd\\wd_clt",
+			"D:\\work\\wd\\web_admin",
+			"D:\\work\\OO",
+			"D:\\work\\wd\\wd_clt",
+			"D:\\work\\wd\\wd_clt\\clt\\js",
+			"D:\\work\\wd\\web_admin",
+			"D:\\work\\wd\\sqllog",
+			"D:\\work\\wd\\web_admin\\mod",
+			"D:\\work\\wd\\web_admin",
+			"D:\\work\\wd\\web_www",
+			"D:\\work\\wd\\web_admin",
+			"D:\\work\\wd\\web_admin\\mod",
+			"D:\\work\\wd\\web_www\\Lib\\Action",
+			"D:\\work\\wd\\web_www",
+			"D:\\work\\wd\\web_admin\\mod\\11_userinfo",
+			"D:\\work\\wd\\web\\ind_tpl_64rzjf\\js",
+			"D:\\work\\wd\\web_admin\\mod",
+			"D:\\work\\wd\\web_admin",
+			"D:\\work\\wd\\web_admin\\mod\\000class",
+			"D:\\work\\wd\\web_admin",
+			"D:\\work\\wd\\web_www",
+			"D:\\work\\wd",
+			"D:\\work\\wd\\web_www",
+			"D:\\work\\wd\\web_admin",
+			"D:\\work\\wd\\web_www",
+			"D:\\work\\wd\\web_admin\\mod\\",
+			"D:\\work\\wd\\web_admin\\mod\\000class",
+			"D:\\work\\wd\\web_www\\Lib",
+			"D:\\work\\wd\\web\\ind_tpl_64rzjf",
+			"D:\\work\\wd\\web\\ind_tpl_64rzjf\\js",
+			"D:\\work\\wd\\web\\ind_tpl_64rzjf",
+			"D:\\work\\wd\\web_www",
+			"D:\\work\\wd\\web_www\\Lib\\Action",
+			"D:\\work\\wd\\web_admin",
+			"D:\\work\\wd\\wd_clt\\clt\\js",
+			"D:\\work\\wd\\wd_clt\\clt\\jslib",
+			"D:\\work\\wd\\wd_clt\\clt\\js",
+			"D:\\work\\wd",
+			"D:\\work\\wd\\web_admin\\mod\\000class",
+			"D:\\work\\wd",
+			"D:\\work\\wd\\web_admin\\mod",
+			"D:\\work\\wd\\web_admin\\mod\\00_cb",
+			"D:\\work\\wd\\web_admin",
+			"D:\\work\\wd",
+			"D:\\work\\wd\\wd_clt",
+			"D:\\work\\wd\\web_admin",
+			"D:\\work\\wd\\sqllog",
+			"D:\\work\\wd\\web\\forum",
+			"D:\\work\\wd\\web_www\\Lib\\Action",
+			"D:\\work\\wd\\wd_clt",
+			"D:\\work\\wd\\sqllog",
+			"D:\\work\\wd\\web_admin",
+			"D:\\work\\wd\\wd_clt",
+			"D:\\work\\wd\\sqllog",
+			"D:\\work\\wd\\web_admin"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"php_pdo_sqlsrv",
+			"8102",
+			"_POST",
+			"book_base",
+			"colum_name",
+			"dump",
+			"getReq",
+			"bookinfo",
+			"ooSubmit",
+			"formProductAdd",
+			"v_sellprice",
+			"config",
+			"formProductAdd",
+			"v_pAdd",
+			"sdate",
+			"时间",
+			"Column",
+			"content",
+			"Column",
+			"v_syear",
+			"_commonfield",
+			"gname",
+			"concat",
+			"commonfield",
+			"_commonfield",
+			"_0725add_ProductAdd",
+			"12z_0product_item",
+			"InsertRow",
+			"_0725_ProductList",
+			"_0730_verify_zcproject",
+			"add_library",
+			"tot",
+			"_0724del_ZcDangweiDelete",
+			"_0725_ProductList",
+			"_0730_verify_zcproject",
+			"_0724del_ZcDangweiDelete",
+			"data",
+			"date",
+			"time",
+			"CMD",
+			"text",
+			"添加产品",
+			"formProductAdd",
+			"添加产品",
+			"_item",
+			"ownerCt",
+			"formProductAdd",
+			"Func",
+			"OO.Panel.FenRunListUser",
+			"CreateBase",
+			"v_fenrun",
+			"Column",
+			"OO.User.barbt",
+			"iconCls",
+			"设定投资借款身份",
+			"OO.Panel.FenRunListUser",
+			"中介人员分润",
+			"_4002_ByinfoWeb",
+			"4002",
+			"CreateCaigouTab",
+			"服务采购中心",
+			"panel",
+			"CreateCaigouTab",
+			"服务采购中心",
+			"product",
+			"tenderScoreCreate",
+			"126",
+			"110",
+			"117",
+			"119",
+			"129",
+			"126",
+			"128",
+			"12z_0product_item",
+			"OO.Panel.UserScore",
+			"用户积分日志",
+			"vision",
+			"CreateBankList",
+			"CreatePayto9h",
+			"CreatePayto9h_v2",
+			"test",
+			"_4001_HomeWeb",
+			"test",
+			"banklist",
+			"CreatePayto9h",
+			"CreatePayto9h_fb",
+			"payto",
+			"服务采购",
+			"test",
+			"getInstance",
+			"LIB_PATH",
+			"CORE_PATH",
+			"Db",
+			"URL_ROUTE_RULES",
+			"factory",
+			"parseConfig",
+			"db",
+			"debugstr",
+			"db_dsn",
+			"G_MYSQL_DNS",
+			"Db::G2",
+			"Db::G1",
+			"Db",
+			"$this->linkID[$linkNum]",
+			"socket",
+			"db",
+			"配置",
+			"开关",
+			"CreateBankList",
+			"testcjn",
+			"binded",
+			"notifyApiPay",
+			"API_payWG",
+			"Pay_Reapal",
+			"_2308_API_payWG",
+			"test",
+			"WGnotify",
+			"API_payWG",
+			"doApiPayReq",
+			"addApplyQueue",
+			"_2307_dopay",
+			"debug",
+			"notifyApiPay",
+			"retnotify",
+			"_2303_notifyApiPay",
+			"createSign",
+			"_9972_svnUp",
+			"_9980_keyRegist"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Application/Home/Controller/UserController.class.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8991,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1677,
+								1677
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 714.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/D/work/tool/phpStudy/Apache/conf/httpd.conf",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 19112,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1993,
+								1993
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 210.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/D/work/tool/phpStudy/php70n/php.ini",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 68893,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								33446,
+								33446
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 11886.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Application/Home/Controller/test.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2027,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								275,
+								275
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "ThinkPHP/Library/Think/Db.class.php",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 5480,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 168.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/C/Users/Administrator/Documents/work-file/phpStudy/Apache/conf/vhosts.conf",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3445,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								311,
+								311
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/D/phpStudy/Apache/conf/vhosts.conf",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 252,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								252,
+								252
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 140.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/D/phpStudy/Apache/conf/httpd.conf",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 18906,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1995,
+								1995
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 378.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 100.0
+	},
+	"pinned_build_system": "",
+	"project": "webapp.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"ins",
+				"OO\\do\\Classes\\phpqrcode\\INSTALL"
+			],
+			[
+				"000fun",
+				"OO\\do\\0_frr\\000fun\\functions_number.php"
+			],
+			[
+				"send",
+				"wd\\web_admin\\mod\\000class\\class.send.php"
+			],
+			[
+				"borrowerlist",
+				"wd\\wd_clt\\clt\\js\\_11kefu\\10_OO.Panel.BorrowerList.js"
+			],
+			[
+				"loginw",
+				"wd\\web\\ind_tpl_64rzjf\\js\\loginwdtx.js"
+			],
+			[
+				"loginwd",
+				"wd\\web\\ind_tpl_64rzjf\\loginwdtx.html"
+			],
+			[
+				"wdtx.js",
+				"wd\\web\\ind_tpl_64rzjf\\js\\loginwdtx.js"
+			],
+			[
+				"task_5",
+				"wd\\task\\task_5.php"
+			],
+			[
+				".ja",
+				"apiDemo\\src\\main\\java\\com\\wdtx\\licai\\http\\Tripledes.java"
+			],
+			[
+				"class.even",
+				"wd\\web_admin\\mod\\000class\\class.EventHandler.php"
+			],
+			[
+				"jobfbababatchpush",
+				"wd\\web_admin\\mod\\000class\\class.JobFbabaBatchPush.php"
+			],
+			[
+				"paramset",
+				"wd\\wd_clt\\clt\\js\\_991admin\\11_OO.Form.ParamSet.js"
+			],
+			[
+				"testcjn",
+				"web\\test\\cjn.test.php"
+			],
+			[
+				"pay",
+				"web_www\\Lib\\Action\\PayAction.class.php"
+			],
+			[
+				"tenpayhttpclient",
+				"web_admin\\mod\\000class\\class.TenpayHttpClient.php"
+			],
+			[
+				"paybao",
+				"web_admin\\mod\\000class\\class.Pay_Baofoo.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 303.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

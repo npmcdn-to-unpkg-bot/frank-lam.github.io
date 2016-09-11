@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>上班打卡排行榜</title>
+    <!--加载CSS样式 开始-->
+    <link rel="stylesheet" href="/Public/Css/weui.min.css">
+    <link rel="stylesheet" href="/Public/Css/jquery-weui.css">
+    <link rel="stylesheet" href="/Public/Css/demos.css">
+    <link rel="stylesheet" href="/Public/Css/exam.css">
+    <!--加载CSS样式 结束-->
+    <style>
+        body {
+            background: url("/public/img/rank-bg.png") 50%;
+            opacity: 0.8;
+        }
+
+        .weui_media_box .weui_media_title {
+            color: #666;
+        }
+
+        .weui_media_box.weui_media_appmsg .weui_media_hd {
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        /*.weui_media_box.weui_media_appmsg .namek {
+            flex: 3;
+            -webkit-box-flex: 3;
+        }*/
+
+        .weui_media_box .book-num {
+            color: #6999F1;
+            font-size: 20px;
+        }
+
+        .weui_media_box .zan-col {
+            color: #1A4971;
+            text-align: center;
+        }
+
+        .weui_media_box .zan-num {
+            text-align: center;
+            color: #666;
+        }
+
+        a.a-bg {
+            background: #fafafa;
+        }
+        .zan-col img{
+            width: 20px;
+        }
+    </style>
+</head>
+
+<body ontouchstart>
+<div class="weui_panel_bd">
+    <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg a-bg">
+        <div class="weui_media_hd" style="width: 60px;height: 60px;">
+            <img class="weui_media_appmsg_thumb" id="mface">
+        </div>
+        <div class="weui_media_bd namek">
+            <h4 class="weui_media_title" id="mname">0</h4>
+            <p class="weui_media_desc" id="mrank">第0名</p>
+        </div>
+        <div class="weui_media_bd">
+            <h4 class="weui_media_title book-num" id="mtime">0</h4>
+        </div>
+        <div class="weui_media_bd">
+            <p class="weui_media_desc zan-num" id="mnum">0</p>
+            <p class="weui_media_desc zan-col"><img src="/public/img/zan1.png" /></p>
+        </div>
+    </a>
+</div>
+<div style="height:10px;background:#e9e9e9;"></div>
+<div class="weui_panel weui_panel_access">
+    <div class="weui_panel_bd" id="ranktop15">
+
+        <!--<a href="javascript:void(0);" class="weui_media_box weui_media_appmsg a-bg">
+            <div class="weui_media_hd">
+                <img class="weui_media_appmsg_thumb" src="img/fan.jpg" alt="">
+            </div>
+            <div class="weui_media_bd namek">
+                <h4 class="weui_media_title">陈教男</h4>
+                <p class="weui_media_desc">第1名</p>
+            </div>
+            <div class="weui_media_bd">
+                <h4 class="weui_media_title book-num">2本</h4>
+            </div>
+            <div class="weui_media_bd">
+                <p class="weui_media_desc zan-num">0</p>
+                <p class="weui_media_desc zan-col">赞</p>
+            </div>
+        </a>-->
+    </div>
+</div>
+<!--加载js文件 开始-->
+<script src="/Public/Js/jquery-2.1.4.js"></script>
+<script src="/Public/Js/jquery-weui.js"></script>
+<script src="/Public/Js/function.js"></script>
+<!--加载js文件 结束-->
+<script>
+    var usid = getParam("userid");
+    var now = new Date(), year = now.getFullYear(), month = now.getMonth()+1, day = now.getDate();
+    var dateTime = year + "-" + month + "-" + day;
+    $.ajax({
+        url: "/?action=getAttRank&userid",
+        type: "post",
+        data: {
+            userid: usid,
+            date: dateTime,
+            top:50,
+            order: 'am'
+        },
+        async: false,
+        dataType: 'json',
+        success: function (json) {
+
+            if(!json.rank){
+                $.alert("今日上班还没人打卡")
+            }else{
+                var t = "";
+                $.each(json.rank, function (i) {
+                    if(this.checkam === null){
+                        var time = "没有数据"
+                    }else{
+                        var time1 = this.checkam;
+                        var time2 = time1.substring(11);
+                        var time = time2.substring(0,8);
+                    }
+                    i = i+1;
+                    if(this.headimgurl){
+                        var  faceurl = this.headimgurl;
+                    }else{
+                        var faceurl = "/public/img/photo.gif";
+                    }
+
+                    t += '<a class="weui_media_box weui_media_appmsg a-bg"><div class="weui_media_hd"><img class="weui_media_appmsg_thumb" src="'+faceurl+'"></div><div class="weui_media_bd namek"><h4 class="weui_media_title">' + this.name + '</h4><p class="weui_media_desc">第'+i+'名</p></div><div class="weui_media_bd"><h4 class="weui_media_title book-num">' + time + '</h4></div><div class="weui_media_bd"><p class="weui_media_desc zan-num">'+this.likeam+'</p><p class="weui_media_desc zan-col"><img src="/public/img/zan1.png" /></p></div></a>'
+                });
+                $("#ranktop15").html(t);
+                $("#mname").text(json.self.name);
+                $("#mtime").text(json.self.checkam.substring(11,19));
+                $("#mnum").text(json.self.likeam);
+                $("#mrank").text("第"+ json.self.rank+"名");
+                if(json.self.headimgurl){
+                    var  faceurl = json.self.headimgurl+ "";
+                }else{
+                    var faceurl = "/public/img/photo.gif";
+                }
+                $("#mface").attr("src",faceurl);
+            }
+        },
+        error: function () {
+            $.alert("请求失败");
+        }
+    });
+</script>
+</body>
+
+</html>

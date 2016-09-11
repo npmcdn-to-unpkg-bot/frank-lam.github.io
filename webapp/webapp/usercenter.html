@@ -1,0 +1,496 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>仁润个人中心</title>
+
+		<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<meta charset="utf-8">
+
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<link href="css/iscroll.css" rel="stylesheet" type="text/css" />
+		<link href="test.css" rel="stylesheet" type="text/css" />
+		<style>
+			.banner img {
+				width: 100%;
+			}
+			
+			html,
+			body {
+				color: #222;
+				font-family: Microsoft YaHei, Helvitica, Verdana, Tohoma, Arial, san-serif;
+				margin: 0;
+				padding: 0;
+				text-decoration: none;
+			}
+			
+			body,
+			div,
+			dl,
+			dt,
+			dd,
+			ul,
+			ol,
+			li,
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6,
+			pre,
+			code,
+			form,
+			fieldset,
+			legend,
+			input,
+			textarea,
+			p,
+			blockquote,
+			th,
+			td {
+				margin: 0;
+				padding: 0;
+			}
+			
+			img {
+				border: 0;
+			}
+			
+			ol,
+			ul {
+				list-style: none outside none;
+				margin: 0;
+				padding: 0;
+			}
+			
+			a {
+				color: #000000;
+				text-decoration: none;
+			}
+			
+			.clr {
+				display: block;
+				clear: both;
+				height: 0;
+				overflow: hidden;
+			}
+			
+			.copyright {
+				padding: 8px;
+				text-align: center;
+				font-size: 14px;
+				color: #666;
+			}
+			
+			.copyright a {
+				color: #666;
+			}
+			
+			h2 {
+				font-size: 16px;
+			}
+			
+			body {
+				background-color: #eee;
+			}
+			
+			body .mainmenu:after {
+				clear: both;
+				content: " ";
+				display: block;
+			}
+			
+			body .mainmenu li {
+				float: left;
+				margin-left: 2.5%;
+				margin-top: 2.5%;
+				width: 30%;
+				border-radius: 3px;
+				overflow: hidden;
+			}
+			
+			body .mainmenu li a {
+				display: block;
+				color: #FFF;
+				text-align: center
+			}
+			
+			body .mainmenu li a b {
+				display: block;
+				height: 80px;
+			}
+			
+			body .mainmenu li a img {
+				margin: 15px auto 15px;
+				width: 50px;
+				height: 50px;
+			}
+			
+			body .mainmenu li a span {
+				display: block;
+				height: 30px;
+				line-height: 30px;
+				background-color: #FFF;
+				color: #999;
+				font-size: 14px;
+			}
+			
+			body .mainmenu li:nth-child(8n+1) {
+				background-color: #36A1DB
+			}
+			
+			body .mainmenu li:nth-child(8n+2) {
+				background-color: #678ce1
+			}
+			
+			body .mainmenu li:nth-child(8n+3) {
+				background-color: #8c67df
+			}
+			
+			body .mainmenu li:nth-child(8n+4) {
+				background-color: #84d018
+			}
+			
+			body .mainmenu li:nth-child(8n+5) {
+				background-color: #14c760
+			}
+			
+			body .mainmenu li:nth-child(8n+6) {
+				background-color: #f3b613
+			}
+			
+			body .mainmenu li:nth-child(8n+7) {
+				background-color: #ff8a4a
+			}
+			
+			body .mainmenu li:nth-child(8n+8) {
+				background-color: #fc5366
+			}
+		</style>
+
+		<script type="text/javascript" src="js/iscroll.js"></script>
+		<script type="text/javascript">
+			var myScroll;
+
+			function loaded() {
+				myScroll = new iScroll('wrapper', {
+					snap: true,
+					momentum: false,
+					hScrollbar: false,
+					onScrollEnd: function() {
+						document.querySelector('#indicator > li.active').className = '';
+						document.querySelector('#indicator > li:nth-child(' + (this.currPageX + 1) + ')').className = 'active';
+					}
+				});
+			}
+
+			document.addEventListener('DOMContentLoaded', loaded, false);
+		</script>
+
+	</head>
+
+	<body>
+
+		<!--music-->
+		<style>
+			.btn_music {
+				display: inline-block;
+				width: 35px;
+				height: 35px;
+				background: url('images/play.png') no-repeat center center;
+				background-size: 100% auto;
+				position: absolute;
+				z-index: 100;
+				left: 15px;
+				top: 20px;
+			}
+			
+			.btn_music.on {
+				background-image: url("images/stop.png");
+			}
+		</style>
+
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript">
+			var playbox = (function() {
+					//author:eric_wu
+					var _playbox = function() {
+						var that = this;
+						that.box = null;
+						that.player = null;
+						that.src = null;
+						that.on = false;
+						//
+						that.autoPlayFix = {
+							on: true, //evtName: ("ontouchstart" in window)?"touchend":"click"
+							evtName: ("ontouchstart" in window) ? "touchstart" : "mouseover"
+						}
+					}
+					_playbox.prototype = {
+						init: function(box_ele) {
+							this.box = "string" === typeof(box_ele) ? document.getElementById(box_ele) : box_ele;
+							this.player = this.box.querySelectorAll("audio")[0];
+							this.src = this.player.src;
+							this.init = function() {
+								return this;
+							}
+							this.autoPlayEvt(true);
+							return this;
+						},
+						play: function() {
+							if(this.autoPlayFix.on) {
+								this.autoPlayFix.on = false;
+								this.autoPlayEvt(false);
+							}
+							this.on = !this.on;
+							if(true == this.on) {
+								this.player.src = this.src;
+								this.player.play();
+							} else {
+								this.player.pause();
+								this.player.src = null;
+							}
+							if("function" == typeof(this.play_fn)) {
+								this.play_fn.call(this);
+							}
+						},
+						handleEvent: function(evt) {
+							this.play();
+						},
+						autoPlayEvt: function(important) {
+							if(important || this.autoPlayFix.on) {
+								document.body.addEventListener(this.autoPlayFix.evtName, this, false);
+							} else {
+								document.body.removeEventListener(this.autoPlayFix.evtName, this, false);
+							}
+						}
+					}
+					return new _playbox();
+				}
+
+			)();
+			playbox.play_fn = function() {
+				this.box.className = this.on ? "btn_music on" : "btn_music";
+			}
+		</script>
+
+		<!--<script type="text/javascript">
+$(document).ready(function(){
+	playbox.init("playbox");
+});
+</script>-->
+
+		<!--<span id="playbox" class="btn_music" onclick="playbox.init(this).play();"><audio id="audio" loop src="images/4.mp3"></audio></span>-->
+
+		<!--<div class="banner">
+
+	<!--<div id="wrapper">
+		<div id="scroller">
+			<ul id="thelist">
+				<li><p>幻灯片01</p><a href="javascript:void(0)"><img src="images/3.jpg" /></a></li>
+				<li><p>幻灯片02</p><a href="javascript:void(0)"><img src="images/4.jpg" /></a></li>
+				<li><p>幻灯片03</p><a href="javascript:void(0)"><img src="images/2.jpg" /></a></li>
+				<li><p>幻灯片04</p><a href="javascript:void(0)"><img src="images/1.gif" /></a></li>
+			</ul>
+		</div>
+	</div>-->
+
+		<!--<div id="nav">
+		<ul id="indicator">
+			<li class="active" ></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+	
+</div>-->
+
+		<div id="banner">
+
+			<div class="box1-1 fl">
+				<img id="headportrait" src="" style="" class="portaint2" />
+			</div>
+			<div class="box1-2 fl">
+				<p class="name" id="dept_and_name"></p>
+				<p class="sign">签名：自己选的路 怎么也要走完</p>
+			</div>
+			<div class="clr"></div>
+		</div>
+		<div style="background-color: white;  line-height: 25px;text-align: center;">
+			<!--<p style="font-weight: bold;">公告</p>-->
+			<p>我主动，我担当，我激情</p>
+		</div>
+		<style>
+			.mainmenu li {
+				height: 100px;
+			}
+		</style>
+
+		<ul class="mainmenu" style="margin-top: 20px;">
+
+			<li>
+				<a id="startTop" href="http://hzrrkj.gnway.cc:8888/rank.aspx"><i class="iconfont" style="height: 100px;">&#xe70d;</i><span>上班TOP15</span></a>
+			</li>
+			<li>
+				<a id="endTop">
+					<i class="iconfont" style="height: 100px;">&#xe64b;</i>
+					<span>下班TOP15</span>
+				</a>
+			</li>
+			<li>
+				<a href="/webapp/privilege.html?rand=23894923">
+					<i class="iconfont" style="height: 100px;">&#xe633;</i>
+					<span>今日特权</span>
+				</a>
+			</li>
+			<li>
+				<a href="/webapp/booklist.html">
+					<i class="iconfont" style="height: 100px;">&#xe610;</i>
+					<span>仁润书库</span>
+				</a>
+			</li>
+			<li>
+				<a href="borrow_had.html">
+					<i class="iconfont" style="height: 100px;">&#xe640;</i>
+					<span>已借图书</span>
+				</a>
+			</li>
+			<li>
+				<a href="/webapp/rank.html">
+					<i class="iconfont" style="height: 100px;">&#xe60b;</i>
+					<span>借阅排行</span>
+				</a>
+			</li>
+			<li>
+				<a href="book_apply.html">
+					<i class="iconfont" style="height: 100px;">&#xe60d;</i>
+					<span>购书申请</span>
+				</a>
+			</li>
+			<li>
+				<a href="/webapp/personal.html">
+					<i class="iconfont" style="height: 100px;">&#xe65b;</i>
+					<span>个人信息</span>
+				</a>
+			</li>
+			<li>
+				<a href="login.html">
+					<i class="iconfont" style="height: 100px;">&#xe61c;</i>
+					<span>退出登录</span>
+				</a>
+			</li>
+		</ul>
+				<!--加载js文件 开始-->
+		<script src="/Public/Js/jquery-2.1.4.js"></script>
+		<script src="/Public/Js/jquery-weui.js"></script>
+		<script src="/Public/Js/function.js"></script>
+		<!--加载js文件 结束-->
+		<script type="text/javascript">
+			
+			
+//			$('#dept_and_name').text("fdsafdasd");
+			
+			
+			
+			
+			
+//			var count = document.getElementById("thelist").getElementsByTagName("img").length;
+//			var count2 = document.getElementsByClassName("menuimg").length;
+//			for(i = 0; i < count; i++) {
+//				document.getElementById("thelist").getElementsByTagName("img").item(i).style.cssText = " width:" + document.body.clientWidth + "px";
+//			}
+//
+//			document.getElementById("scroller").style.cssText = " width:" + document.body.clientWidth * count + "px";
+//			setInterval(function() {
+//					myScroll.scrollToPage('next', 0, 400, count);
+//				}
+//
+//				, 3500);
+//			window.onresize = function() {
+//				for(i = 0; i < count; i++) {
+//					document.getElementById("thelist").getElementsByTagName("img").item(i).style.cssText = " width:" + document.body.clientWidth + "px";
+//				}
+//				document.getElementById("scroller").style.cssText = " width:" + document.body.clientWidth * count + "px";
+//			}
+//			
+getInfo();
+    function getInfo(){
+        if(getCookie("userid")==null){
+            window.location="/webapp/login.html";
+        }
+        else{
+            getInfoByUserid();
+        }
+    }
+    function getInfoByUserid() {
+        $.ajax({
+            //提交数据的类型 POST GET
+            type: "POST",
+            async: true,
+            //提交的网址
+            url: "/?action=getInfoByUserid",
+            //提交的数据
+            data: {
+                userid : getCookie("userid")
+            },
+            //返回数据的格式
+            datatype: "json", //"xml", "html", "script", "json", "jsonp", "text".
+            //在请求之前调用的函数
+            beforeSend: function() {
+                //    return true;
+            },
+            //成功返回之后调用的函数
+            success: function(data) {
+                jsonDate = JSON.parse(data);
+                var userid = jsonDate.userid;
+                // var startTop = ""
+                // var data = JSON.stringify(jsonDate); //JSON转换成string
+//						alert(data);
+				// console.log(data.cardid);
+
+                //设置 #userinfo 的值
+                //JSON返回数据 {"cardid":"73","name":"林立城","deptname":"技术开发部","password":"123456","userid":"llc73","code":1}
+                $("#dept_and_name").text(jsonDate['deptname']+"  "+jsonDate['name']);
+                $("#startTop").attr("href","/webapp/startTop.html?userid="+userid);
+				$("#endTop").attr("href","/webapp/endTop.html?userid="+userid);
+				$("#headportrait").attr("src",jsonDate['headimgurl']);
+
+
+            },
+            //调用执行后调用的函数
+            complete: function(XMLHttpRequest, textStatus) {
+//						$.showLoading();  //$.hideLoading();
+                //alert(XMLHttpRequest.responseText);
+                //alert(textStatus);
+                //HideLoading();
+            },
+            //调用出错执行的函数
+            error: function() {
+                //请求出错处理
+                // alert('ajax请求出错');
+                $.toast("AJAX请求失败", "cancel");
+            }
+        });
+    }
+			
+			
+			
+		</script>
+
+		<div class="copyright">
+			<br />
+			<br />
+			Copyright2013-2016 杭州仁润科技股份有限公司
+			<br/> All rights reserved.
+		</div>
+		<div class="copyright" style="text-align: center;"><a href="#" style="text-align: center;">更新日志</a></div>
+
+	</body>
+
+</html>

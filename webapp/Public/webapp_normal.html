@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>webapp标准页面</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+<!--加载CSS样式 开始-->
+<link rel="stylesheet" href="/Public/Css/weui.min.css">
+<link rel="stylesheet" href="/Public/Css/jquery-weui.css">
+<link rel="stylesheet" href="/Public/Css/demos.css">
+<link rel="stylesheet" href="/Public/Css/exam.css">
+<!--加载CSS样式 结束-->
+	</head>
+
+	<body ontouchstart>
+		<header class='demos-header'>
+			<h1 class="demos-title">标准测试页面</h1>
+		</header>
+		<div class="weui_cells weui_cells_form">
+			所有页面的 CSS JS 从顶级的 /Public 目录加载
+		</div>
+		<img src="http://q2.qlogo.cn/headimg_dl?bs=1&dst_uin=1002039945&src_uin=1&fid=1&spec=100&url_enc=0&referer=bu_interface&term_type=PC" />
+
+		<!--加载js文件 开始-->
+		<script src="/Public/Js/jquery-2.1.4.js"></script>
+		<script src="/Public/Js/jquery-weui.js"></script>
+		<script src="/Public/Js/function.js"></script>
+		<!--加载js文件 结束-->
+		
+		<script>
+			function ajax(){
+				$.ajax({
+				//提交数据的类型 POST GET
+				type: "POST",
+				//提交的网址
+				url: "/?action=book_application",
+				//提交的数据
+				data: {
+					isbn: isbn,
+					bookurl: url
+				},
+				//返回数据的格式
+				datatype: "json", //"xml", "html", "script", "json", "jsonp", "text".
+				//在请求之前调用的函数
+				beforeSend: function() {
+					//    return true;
+				},
+				//成功返回之后调用的函数             
+				success: function(data) {
+					jsonDate = JSON.parse(data);
+					var data = JSON.stringify(jsonDate); //JSON转换成string
+					//入库成功
+					if(jsonDate['code'] == "-1") {
+						$.hideLoading();
+						// $.toast(jsonDate['msg']);
+						$.toptip(jsonDate['msg']);
+						$('#book_isbn').val("");
+
+						// window.location="add_success.html";
+					} else {
+						$.hideLoading();
+						$.toast(jsonDate['msg']);
+					}
+				},
+				//调用执行后调用的函数
+				complete: function(XMLHttpRequest, textStatus) {
+					//alert(XMLHttpRequest.responseText);
+					//alert(textStatus);
+					//HideLoading();
+				},
+				//调用出错执行的函数
+				error: function() {
+					//请求出错处理
+					// alert('ajax请求出错');
+					$.toast("AJAX请求失败", "cancel");
+				}
+			});
+			}
+		</script>
+	</body>
+</html>

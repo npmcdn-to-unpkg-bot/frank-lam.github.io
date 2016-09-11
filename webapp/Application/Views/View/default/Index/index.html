@@ -1,0 +1,104 @@
+            <extend name="Base/common"/>
+            <block name="content">
+            <div class="alert alert-warning">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                <strong>default</strong> 默认主题
+            </div>
+            <table class="table table-hover">
+                <tbody>
+                    <tr>
+                        <td>用户名</td>
+                        <td>{{$user.user|strtoupper}}</td>
+                    </tr>
+                    <tr>
+                        <td>电子邮件</td>
+                        <td>{{$user.mail|str_replace='jike','jikexueyuan',###|strtoupper}}</td>
+                    </tr>
+                    <tr>
+                        <td>电子邮件php</td>
+                        <td>{{:strtoupper(str_replace('jike','jikexueyuan_php',$user['mail']))}}</td>
+                    </tr>
+                    <tr>
+                        <td>年龄</td>
+                        <td>{{$user['age']-1}}</td>
+                    </tr>
+                    <tr>
+                        <td>计算年龄</td>
+                        <td>{{$birthday_year|get_age}}</td>
+                    </tr>
+                    <tr>
+                        <td>手机号码</td>
+                        <td>{{$mobile|default='没有手机号码'}}</td>
+                    </tr>
+                    <tr>
+                        <td>项目目录</td>
+                        <td>{{$Think.server.DOCUMENT_ROOT}}</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            
+
+            <!-- For循环 -->
+            <div class="panel panel-default">
+                  <div class="panel-heading">
+                        <h3 class="panel-title">For标签循环输出</h3>
+                  </div>
+                  <div class="list-group">
+                        <!-- for -->
+                        <for start="0" end="5" step="1">
+                            <a href="#" class="list-group-item">使用for标签循环了{{$i+1}}次了</a>
+                        </for>
+                  </div>
+            </div>
+
+            <!-- PHP标签 -->
+            <div class="panel panel-default">
+                  <div class="panel-heading">
+                        <h3 class="panel-title">使用PHP标签实现php代码循环输出</h3>
+                  </div>
+                  <div class="list-group">
+                        <!-- php标签 -->
+                        <php>
+                            for ($i=0; $i <5 ; $i++) { 
+                                echo '<a href="#" class="list-group-item">使用php标签循环了'.($i+1).'次了</a>';
+                            } 
+                        </php>
+                  </div>
+            </div>
+            
+            <!-- literal原样输出 -->
+            <div class="panel panel-default">
+                  <div class="panel-heading">
+                        <h3 class="panel-title">原样输出</h3>
+                  </div>
+                  <div class="panel-body">
+                        <blockquote>
+                            <pre>
+                                <literal>
+                                我们可以使用{{$user.user}}的方式来输出用户名
+                                </literal>
+                            </pre>
+                        </blockquote>
+                  </div>
+            </div>
+
+            <div class="panel panel-default">
+                  <div class="panel-heading">
+                        <h3 class="panel-title">friends标签实例</h3>
+                  </div>
+                  <div class="list-group">
+                        <Jike:friends name="jike_user" uid="2" empty="没有数据">
+                            <a href="#" class="list-group-item">{{$jike_user['username']}}</a>
+                        </Jike:friends>
+                  </div>
+            </div>
+
+            </block>
+
+            <block name="header">
+                <div class="alert alert-success">
+                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                    <strong>Success</strong> 重载Header block
+                </div>
+            </block>

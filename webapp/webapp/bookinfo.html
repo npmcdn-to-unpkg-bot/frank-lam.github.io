@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>图书详情</title>
+    <!--加载CSS样式 开始-->
+    <link rel="stylesheet" href="/Public/Css/weui.min.css">
+    <link rel="stylesheet" href="/Public/Css/jquery-weui.css">
+    <link rel="stylesheet" href="/Public/Css/demos.css">
+    <link rel="stylesheet" href="/Public/Css/exam.css">
+    <!--加载CSS样式 结束-->
+    <style type="text/css">
+        .weui_media_desc {
+            /*-webkit-line-clamp:none !important;*/
+            -webkit-line-clamp: 10000 !important;
+        }
+    </style>
+</head>
+
+<body>
+<div id="book_info">
+    <div class="hd">
+        <h1 class="page_title">图书信息</h1>
+    </div>
+    <div class="weui_cells">
+        <div class="weui_media_box weui_media_text">
+            <h4 class="weui_media_title">书名</h4>
+            <p class="weui_media_desc" id="title">
+                高效能人士的七个习惯（精华版）
+            </p>
+        </div>
+        <div class="weui_media_box weui_media_text">
+            <h4 class="weui_media_title">外文名</h4>
+            <p class="weui_media_desc" id="origin_title">
+                The Seven Habits of Highly Effective People
+            </p>
+        </div>
+        <div class="weui_cell">
+            <div class="weui_cell_bd weui_cell_primary">
+                <p>封面</p>
+            </div>
+            <div class="weui_cell_ft">
+                <img id="image" style="width: 120px;" src="">
+            </div>
+        </div>
+        <div class="weui_media_box weui_media_text">
+            <h4 class="weui_media_title">作者</h4>
+            <p class="weui_media_desc" id="author">
+                [美] 史蒂芬·柯维
+            </p>
+        </div>
+        <div class="weui_media_box weui_media_text">
+            <h4 class="weui_media_title">作者简介</h4>
+            <p class="weui_media_desc" id="author_intro">史蒂芬·柯维（Stephen R.
+                Covey），哈佛大学企业管理硕士，杨百翰大学博士。他是柯维领导中心的创始人，也是富兰克林柯维公司（Franklin
+                Covey）的联合主席，曾协助众多企业、教育单位与政府机关培训领导人才。柯维在领导理论，家庭与人际关系，个人管理等领域久负盛名。</p>
+        </div>
+        <div class="weui_media_box weui_media_text">
+            <h4 class="weui_media_title">概要</h4>
+            <p class="weui_media_desc" id="summary">
+                史蒂芬・柯维（Stephen R.Covey）哈佛大学企业管理硕士，杨百翰大学博士。他是柯维领导中心的创始人，也是富兰克林柯维公司（Franklin
+                Covey）的联合主席，曾协助众多企业、教育单位与政府机关培训领导人才。柯维博士曾被《时代》杂志誉为“人类潜能的导师”，并入选为全美二十五位最有影响力的人物之一。在领导理论，家庭与人际关系，个人管理等领域久负盛名。本书自出书以来，高居美国畅销书排行榜长达七年，在全球七十个国家以二十八种语言发行共超过一亿册。　　富兰克林柯维公司是为组织和个人提供培训和管理咨询的世界顶尖级公司，与财富（Fortune）500强中80%以上的公司和成千上万个中小型企业以及政府职能部门都有建设性的合作关系。　　富兰克林柯维公司的服务与产品遍布全球，在全球38个国家设有44个分支机构。
+                关于本书　　企业领导人都知道：只有每一位员工成为高效能人士，企业才会真正成高效率企业。　　这本书几乎覆盖所有美国成年人，它是美国成年人中最具影响力的书。　　一个强大的美国是由每一位高效能的美国人决定的，不能不说与这本书有重要的关系。
+                FrankinCovey富兰克林柯维公司简介　　　当您阅读完《高效能人士的七个习惯》（The 7 Habits of Highly Effective
+                People）这本书后，是否希望获得更多的学习资讯，与更多的职业经理人探讨成功的心得？富兰克林柯维公司的培训《高效能人士的七个习惯》使您更加深入地了解书中的理论，彻底地改变思维模式，从而为您走得成功之路奠定坚实的基础。　　富兰克林柯维公司擅长于通过使用先进的培训方法和系统、完善的内容帮助个人和组织提高效能，其最著名的课程《高效能人士的七个习惯》就源于史蒂芬・柯维（Stephen
+                R.Covey）的同名著作。它所传授的内容不是某种流行时尚或管理技巧，而是经过时间的考验并且能够指导行为的基本原则。通过彻底思维的改变达到行为的改变从而加强了组织内部的管理机制、培养组织内部的共同语言和价值观；在全球每年有七十五万人次参加富兰克林柯维公司的培训，而该公司也因其优异表现连续五年入选中国三大培训公司，并在2000年被《China
+                Staff》（中国人事杂志）评为中国最杰出的培训公司。
+            </p>
+        </div>
+        <div class="weui_media_box weui_media_text">
+            <h4 class="weui_media_title">目录</h4>
+            <p class="weui_media_desc" id="catalog">
+                前言 如何善用本书 第一部分 重新探索自我 第一章 由内而外全面造就自己 第二章 七个习惯——概论 第二部分 个人的成功：从依赖到独立 第三章 习惯一：积极主动——个人愿景的原则 第四章
+                习惯二：以终为始——自我领导的原则 第五章 习惯三：要事第一——自我管理的原则 第三部分 公众的成功：从独立到互赖 第六章 你不是一座孤岛 第七章 习惯四：双赢思维——人际领导的原则 第八章
+                习惯五：知彼知己——同理心交流的原则 第九章 习惯六：统合综效——创造性合作的原则 第四部分 全面观照生命 第十章 习惯七：不断更新——平衡的自我更新的原则 第十一章 再次由内而外造就自己 附录
+                一、你是哪种类型的人？——生活重心面面观 二、第四代时间管理——高效能人士的一天
+            </p>
+        </div>
+        <div class="weui_cell">
+            <div class="weui_cell_bd weui_cell_primary">
+                <p>ISBN10</p>
+            </div>
+            <div class="weui_cell_ft" id="isbn10">7500649037</div>
+        </div>
+        <div class="weui_cell">
+            <div class="weui_cell_bd weui_cell_primary">
+                <p>ISBN13</p>
+            </div>
+            <div class="weui_cell_ft" id="isbn13">9787500649038</div>
+        </div>
+        <div class="weui_cell">
+            <div class="weui_cell_bd weui_cell_primary">
+                <p>出版社</p>
+            </div>
+            <div class="weui_cell_ft" id="publisher">中国青年出版社</div>
+        </div>
+        <div class="weui_cell">
+            <div class="weui_cell_bd weui_cell_primary">
+                <p>出版日期</p>
+            </div>
+            <div class="weui_cell_ft" id="pubdate">2011-6</div>
+        </div>
+        <div class="weui_cell">
+            <div class="weui_cell_bd weui_cell_primary">
+                <p>页码</p>
+            </div>
+            <div class="weui_cell_ft" id="pages">286</div>
+        </div>
+        <div class="weui_cell">
+            <div class="weui_cell_bd weui_cell_primary">
+                <p>价格</p>
+            </div>
+            <div class="weui_cell_ft" id="price">29.00元</div>
+        </div>
+        <div class="weui_cell">
+            <div class="weui_cell_bd weui_cell_primary">
+                <p>豆瓣</p>
+            </div>
+            <div class="weui_cell_ft">
+                <a href="#" id="douban_url">豆瓣读书详情</a>
+            </div>
+        </div>
+        <div class="weui_cell">
+            <div class="weui_cell_bd weui_cell_primary">
+                <p>库存</p>
+            </div>
+            <div class="weui_cell_ft" id="inventory">29</div>
+        </div>
+        <div class="weui_cell">
+            <div class="weui_cell_bd weui_cell_primary">
+                <p>可借</p>
+            </div>
+            <div class="weui_cell_ft" id="inventory_r">29</div>
+        </div>
+        <div class="weui_cell">
+            <div class="weui_cell_bd weui_cell_primary">
+                <p>入库时间</p>
+            </div>
+            <div class="weui_cell_ft" id="checktime">2011-6</div>
+        </div>
+        <a class="weui_btn weui_btn_primary" href="javascript:" id="borrowBook">我要借书</a>
+    </div>
+</div>
+<!--加载js文件 开始-->
+<script src="/Public/Js/jquery-2.1.4.js"></script>
+<script src="/Public/Js/jquery-weui.js"></script>
+<script src="/public/js/template.js"></script>
+<!--&lt;!&ndash; <script src="/public/js/base.js"></script>-->
+<script src="/Public/Js/function.js"></script>
+<!--加载js文件 结束-->
+<script type="text/javascript">
+    $.ajax({
+        //提交数据的类型 POST GET
+        type: "POST",
+        //提交的网址
+        url: "/?action=getBookinfo",
+
+        //提交的数据
+        data: {
+            book_id: getQueryString('book_id')
+        },
+        //返回数据的格式
+        datatype: "json", //"xml", "html", "script", "json", "jsonp", "text".
+        //在请求之前调用的函数
+        beforeSend: function () {
+            // alert("beforeSend");
+            //    return true;
+        },
+        //成功返回之后调用的函数             
+        success: function (data) {
+            // alert(data);
+            // alert("123");
+            JsonData = JSON.parse(data);
+            // $("#title").text(jsonDate['name']);
+
+            $('#title').text(JsonData['name']);
+            $('#origin_title').text(JsonData['name_en']);
+            $("#image").attr('src', JsonData['pic_url']);
+            $('#author').text(JsonData['author']);
+            $('#author_intro').text(JsonData['author_info']);
+            $('#summary').text(JsonData['summary']);
+            $('#catalog').text(JsonData['catalog']);
+            $('#isbn10').text(JsonData['ISBN10']);
+            $('#isbn13').text(JsonData['ISBN13']);
+            $('#publisher').text(JsonData['public_name']);
+            $('#pubdate').text(JsonData['public_date']);
+            $('#pages').text(JsonData['pages_size']);
+            $('#price').text(JsonData['price']);
+            $('#douban_url').attr('href', JsonData['douban_info_url']);
+            $('#inventory').text(JsonData['inventory'] + "本");
+            $('#inventory_r').text(JsonData['inventory_r'] + "本");
+
+            var str = JsonData['checktime'];
+            var checktime = str.substring(0, str.length - 4);
+
+            $('#checktime').text(checktime);
+
+
+            // // document.getElementById("bookInfo").innerHTML=author+"《"+title+"》";
+            // document.getElementById("title").innerHTML=title;
+            // document.getElementById("origin_title").innerHTML=origin_title;
+            // document.getElementById("image").src=image;
+            // document.getElementById("author").innerHTML=author;
+            // document.getElementById("author_intro").innerHTML=author_intro;
+            // document.getElementById("summary").innerHTML=summary;
+            // document.getElementById("catalog").innerHTML=catalog;
+            // document.getElementById("isbn10").innerHTML=isbn10;
+            // document.getElementById("isbn13").innerHTML=isbn13;
+            // document.getElementById("isbn10").innerHTML=isbn10;
+            // document.getElementById("publisher").innerHTML=publisher;
+            // document.getElementById("pubdate").innerHTML=pubdate;
+            // document.getElementById("pages").innerHTML=pages;
+            // document.getElementById("price").innerHTML=price;
+            // document.getElementById("douban_url").href=douban_url;
+
+
+            // alert(jsonDate['name']);
+            // //入库成功
+            // if(jsonDate['code']=="-1" ){
+            //   $.hideLoading();
+            //   // $.toast(jsonDate['msg']);
+            //   $.toptip(jsonDate['msg']);
+            //   $('#book_isbn').val("");
+            // }
+            // else{
+            //   $.hideLoading();
+            //   $.toast(jsonDate['msg']);
+            // }
+
+
+        },
+        //调用执行后调用的函数
+        complete: function (XMLHttpRequest, textStatus) {
+            //alert(XMLHttpRequest.responseText);
+            //alert(textStatus);
+            //HideLoading();
+        },
+        //调用出错执行的函数
+        error: function () {
+            //请求出错处理
+            // alert('ajax请求出错');
+            $.toast("AJAX请求失败", "cancel");
+        }
+    });
+
+    function getQueryString(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        var r = location.search.substr(1).match(reg);
+        if (r != null) return unescape(decodeURI(r[2]));
+        return null;
+    }
+
+    // 对Date的扩展，将 Date 转化为指定格式的String
+    // 月(M)、日(d)、小时(h)、分(m)、秒(s)、季度(q) 可以用 1-2 个占位符， 
+    // 年(y)可以用 1-4 个占位符，毫秒(S)只能用 1 个占位符(是 1-3 位的数字) 
+    // 例子： 
+    // (new Date()).Format("yyyy-MM-dd hh:mm:ss.S") ==> 2006-07-02 08:09:04.423 
+    // (new Date()).Format("yyyy-M-d h:m:s.S")      ==> 2006-7-2 8:9:4.18 
+    Date.prototype.Format = function (fmt) { //author: meizz
+        var o = {
+            "M+": this.getMonth() + 1, //月份 
+            "d+": this.getDate(), //日 
+            "h+": this.getHours(), //小时 
+            "m+": this.getMinutes(), //分 
+            "s+": this.getSeconds(), //秒 
+            "q+": Math.floor((this.getMonth() + 3) / 3), //季度 
+            "S": this.getMilliseconds() //毫秒 
+        };
+        if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+        for (var k in o)
+            if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+        return fmt;
+    }
+    var _url = "/index.php/Home/User/?action=book_bro_ret";
+    var user = getCookie("userid");
+    var card = parseInt(user.substr(-2));
+    var _data = {
+        book_id: getQueryString('book_id'),
+        cardid: card,
+        do_type: 1,
+        validity:10
+    };
+
+
+    $("#borrowBook").click(function () {
+        $.ajax({
+            url: _url,
+            type: "get",
+            data: _data,
+            datatype: "json",
+            success: function (json) {
+                if (json.r>0) {
+                    $.alert("恭喜您借书成功，即将进入个人中心", function() {
+                        window.top.location.href = "/webapp/usercenter.html"
+                    });
+                } else {
+                    $.alert("提交失败");
+                }
+            },
+            error: function () {
+                $.alert("提交失败")
+            }
+        });
+    });
+
+</script>
+</body>
+
+</html>

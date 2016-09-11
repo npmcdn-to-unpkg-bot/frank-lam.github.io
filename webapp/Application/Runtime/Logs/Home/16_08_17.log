@@ -1,0 +1,1384 @@
+[ 2016-08-17T10:54:12+08:00 ] ::1 /?action=getTodayRankByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: date F:\webapp\Application\Home\Controller\IndexController.class.php 第 131 行.
+
+[ 2016-08-17T10:54:13+08:00 ] ::1 /index.php/Home/User/?action=user_pri_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: start F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: limit F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: userid F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: time_add_start F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: time_add_stop F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: name F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: validity F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: status F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: order F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: seq F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+SQL: SELECT * FROM att_privilege_u  WHERE 1=1  and time_add>'2016-07-01' and time_add < '2016-08-17'  ORDER BY time_add DESC [ RunTime:0.0130s ]
+SQL: SELECT * FROM att_privilege [ RunTime:0.0080s ]
+
+[ 2016-08-17T10:54:14+08:00 ] ::1 /?action=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select * from att_userinfo where userid='llc73' [ RunTime:0.0050s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\webapp\Application\Home\Controller\IndexController.class.php 第 592 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\webapp\Application\Home\Controller\IndexController.class.php 第 316 行.
+SQL: SELECT att_userinfo.cardid, att_userinfo.name, DEPARTMENTS.DEPTNAME AS deptname, att_userinfo.password, att_userinfo.userid FROM att_userinfo INNER JOIN DEPARTMENTS ON att_userinfo.departid = DEPARTMENTS.DEPTID where att_userinfo.userid='llc73' [ RunTime:0.0040s ]
+SQL: insert into book_login_log(name,userid,logintime,ip) values('林立城','llc73',getdate(),'::1') [ RunTime:0.0060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-08-17T10:54:14+08:00 ] ::1 /?action=addWeixinInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: select * from att_userinfo where userid='llc73' [ RunTime:0.0050s ]
+
+[ 2016-08-17T10:54:14+08:00 ] ::1 /?action=getInfoByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT att_userinfo.nickname,att_userinfo.sex,att_userinfo.country,att_userinfo.province,att_userinfo.city,att_userinfo.headimgurl,att_userinfo.cardid, att_userinfo.name, DEPARTMENTS.DEPTNAME AS deptname, att_userinfo.password, att_userinfo.userid FROM att_userinfo INNER JOIN DEPARTMENTS ON att_userinfo.departid = DEPARTMENTS.DEPTID where att_userinfo.userid='llc73' [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-08-17T10:54:16+08:00 ] ::1 /?action=getTodayRankByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: date F:\webapp\Application\Home\Controller\IndexController.class.php 第 131 行.
+SQL: select count(*) as count from att_userinfo where userid='llc73' [ RunTime:0.0100s ]
+SQL: select rank from (Select rank=Row_number() Over(order By checkam asc),* From att_check Where checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00') A where A.cardid=73; [ RunTime:0.0330s ]
+
+[ 2016-08-17T10:54:16+08:00 ] ::1 /index.php/Home/User/?action=user_pri_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: start F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: limit F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: userid F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: time_add_start F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: time_add_stop F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: name F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: validity F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: status F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: order F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: seq F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+SQL: SELECT * FROM att_privilege_u  WHERE 1=1  and time_add>'2016-07-01' and time_add < '2016-08-17'  ORDER BY time_add DESC [ RunTime:0.0210s ]
+SQL: SELECT * FROM att_privilege [ RunTime:0.0140s ]
+
+[ 2016-08-17T10:54:21+08:00 ] ::1 /index.php/Home/User/?action=user_pri_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: start F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: limit F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: userid F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: time_add_start F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: time_add_stop F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: name F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: validity F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: status F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: order F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: seq F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+SQL: SELECT * FROM att_privilege_u  WHERE 1=1  and time_add>'2016-07-01' and time_add < '2016-08-17'  ORDER BY time_add DESC [ RunTime:0.0060s ]
+SQL: SELECT * FROM att_privilege [ RunTime:0.0070s ]
+
+[ 2016-08-17T10:54:21+08:00 ] ::1 /?action=getTodayRankByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: date F:\webapp\Application\Home\Controller\IndexController.class.php 第 131 行.
+SQL: select count(*) as count from att_userinfo where userid='llc73' [ RunTime:0.0100s ]
+SQL: select rank from (Select rank=Row_number() Over(order By checkam asc),* From att_check Where checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00') A where A.cardid=73; [ RunTime:0.0060s ]
+
+[ 2016-08-17T10:54:37+08:00 ] ::1 /index.php/Home/User/?action=user_pri_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: start F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: limit F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: userid F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: time_add_start F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: time_add_stop F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: name F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: validity F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: status F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: order F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: seq F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+SQL: SELECT * FROM att_privilege_u  WHERE 1=1  and time_add>'2016-07-01' and time_add < '2016-08-17'  ORDER BY time_add DESC [ RunTime:0.0040s ]
+SQL: SELECT * FROM att_privilege [ RunTime:0.0040s ]
+
+[ 2016-08-17T10:54:37+08:00 ] ::1 /?action=getTodayRankByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: date F:\webapp\Application\Home\Controller\IndexController.class.php 第 131 行.
+SQL: select count(*) as count from att_userinfo where userid='llc73' [ RunTime:0.0030s ]
+SQL: select rank from (Select rank=Row_number() Over(order By checkam asc),* From att_check Where checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00') A where A.cardid=73; [ RunTime:0.0060s ]
+
+[ 2016-08-17T10:54:50+08:00 ] ::1 /?action=getTodayRankByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: date F:\webapp\Application\Home\Controller\IndexController.class.php 第 131 行.
+SQL: select count(*) as count from att_userinfo where userid='llc73' [ RunTime:0.0140s ]
+SQL: select rank from (Select rank=Row_number() Over(order By checkam asc),* From att_check Where checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00') A where A.cardid=73; [ RunTime:0.0070s ]
+
+[ 2016-08-17T10:54:50+08:00 ] ::1 /index.php/Home/User/?action=user_pri_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.014001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: start F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: limit F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: userid F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: time_add_start F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: time_add_stop F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: name F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: validity F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: status F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: order F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: seq F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+SQL: SELECT * FROM att_privilege_u  WHERE 1=1  and time_add>'2016-07-01' and time_add < '2016-08-17'  ORDER BY time_add DESC [ RunTime:0.0050s ]
+SQL: SELECT * FROM att_privilege [ RunTime:0.0040s ]
+
+[ 2016-08-17T10:55:24+08:00 ] ::1 /index.php/Home/User/?action=user_pri_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: start F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: limit F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: userid F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: time_add_start F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: time_add_stop F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: name F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: validity F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: status F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: order F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: seq F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+SQL: SELECT * FROM att_privilege_u  WHERE 1=1  and time_add>'2016-07-01' and time_add < '2016-08-17'  ORDER BY time_add DESC [ RunTime:0.0060s ]
+SQL: SELECT * FROM att_privilege [ RunTime:0.0080s ]
+
+[ 2016-08-17T10:55:24+08:00 ] ::1 /?action=getTodayRankByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: date F:\webapp\Application\Home\Controller\IndexController.class.php 第 131 行.
+SQL: select count(*) as count from att_userinfo where userid='llc73' [ RunTime:0.0110s ]
+SQL: select rank from (Select rank=Row_number() Over(order By checkam asc),* From att_check Where checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00') A where A.cardid=73; [ RunTime:0.0080s ]
+
+[ 2016-08-17T10:55:46+08:00 ] ::1 /index.php/Home/User/?action=user_pri_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: start F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: limit F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: userid F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: time_add_start F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: time_add_stop F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: name F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: validity F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: status F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: order F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: seq F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+SQL: SELECT * FROM att_privilege_u  WHERE 1=1  and time_add>'2016-07-01' and time_add < '2016-08-17'  ORDER BY time_add DESC [ RunTime:0.0050s ]
+SQL: SELECT * FROM att_privilege [ RunTime:0.0060s ]
+
+[ 2016-08-17T10:55:46+08:00 ] ::1 /?action=getTodayRankByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: date F:\webapp\Application\Home\Controller\IndexController.class.php 第 131 行.
+SQL: select count(*) as count from att_userinfo where userid='llc73' [ RunTime:0.0090s ]
+SQL: select rank from (Select rank=Row_number() Over(order By checkam asc),* From att_check Where checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00') A where A.cardid=73; [ RunTime:0.0130s ]
+
+[ 2016-08-17T10:56:10+08:00 ] ::1 /?action=getTodayRankByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: date F:\webapp\Application\Home\Controller\IndexController.class.php 第 131 行.
+SQL: select count(*) as count from att_userinfo where userid='llc73' [ RunTime:0.0050s ]
+SQL: select rank from (Select rank=Row_number() Over(order By checkam asc),* From att_check Where checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00') A where A.cardid=73; [ RunTime:0.0060s ]
+
+[ 2016-08-17T10:56:10+08:00 ] ::1 /index.php/Home/User/?action=user_pri_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: start F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: limit F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: userid F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: time_add_start F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: time_add_stop F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: name F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: validity F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: status F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: order F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: seq F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+SQL: SELECT * FROM att_privilege_u  WHERE 1=1  and time_add>'2016-07-01' and time_add < '2016-08-17'  ORDER BY time_add DESC [ RunTime:0.0050s ]
+SQL: SELECT * FROM att_privilege [ RunTime:0.0100s ]
+
+[ 2016-08-17T10:56:25+08:00 ] ::1 /index.php/Home/User/?action=user_pri_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: start F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: limit F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: userid F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: time_add_start F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: time_add_stop F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: name F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: validity F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: status F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: order F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: seq F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+SQL: SELECT * FROM att_privilege_u  WHERE 1=1  and time_add>'2016-07-01' and time_add < '2016-08-17'  ORDER BY time_add DESC [ RunTime:0.0050s ]
+SQL: SELECT * FROM att_privilege [ RunTime:0.0080s ]
+
+[ 2016-08-17T10:56:25+08:00 ] ::1 /?action=getTodayRankByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010000s ]
+NOTIC: [8] Undefined index: date F:\webapp\Application\Home\Controller\IndexController.class.php 第 131 行.
+SQL: select count(*) as count from att_userinfo where userid='llc73' [ RunTime:0.0040s ]
+SQL: select rank from (Select rank=Row_number() Over(order By checkam asc),* From att_check Where checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00') A where A.cardid=73; [ RunTime:0.0060s ]
+
+[ 2016-08-17T10:56:50+08:00 ] ::1 /index.php/Home/User/?action=user_pri_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: start F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: limit F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: userid F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: time_add_start F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: time_add_stop F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: name F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: validity F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: status F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: order F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: seq F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+SQL: SELECT * FROM att_privilege_u  WHERE 1=1  and time_add>'2016-07-01' and time_add < '2016-08-17'  ORDER BY time_add DESC [ RunTime:0.0060s ]
+SQL: SELECT * FROM att_privilege [ RunTime:0.0050s ]
+
+[ 2016-08-17T10:56:50+08:00 ] ::1 /?action=getTodayRankByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: date F:\webapp\Application\Home\Controller\IndexController.class.php 第 131 行.
+SQL: select count(*) as count from att_userinfo where userid='llc73' [ RunTime:0.0060s ]
+SQL: select rank from (Select rank=Row_number() Over(order By checkam asc),* From att_check Where checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00') A where A.cardid=73; [ RunTime:0.0060s ]
+
+[ 2016-08-17T10:56:54+08:00 ] ::1 /?action=getTodayRankByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: date F:\webapp\Application\Home\Controller\IndexController.class.php 第 131 行.
+SQL: select count(*) as count from att_userinfo where userid='llc73' [ RunTime:0.0050s ]
+SQL: select rank from (Select rank=Row_number() Over(order By checkam asc),* From att_check Where checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00') A where A.cardid=73; [ RunTime:0.0090s ]
+
+[ 2016-08-17T10:56:54+08:00 ] ::1 /index.php/Home/User/?action=user_pri_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: start F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: limit F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: userid F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: time_add_start F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: time_add_stop F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: name F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: validity F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: status F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: order F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: seq F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+SQL: SELECT * FROM att_privilege_u  WHERE 1=1  and time_add>'2016-07-01' and time_add < '2016-08-17'  ORDER BY time_add DESC [ RunTime:0.0050s ]
+SQL: SELECT * FROM att_privilege [ RunTime:0.0260s ]
+
+[ 2016-08-17T10:58:26+08:00 ] ::1 /?action=getTodayRankByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: date F:\webapp\Application\Home\Controller\IndexController.class.php 第 131 行.
+SQL: select count(*) as count from att_userinfo where userid='llc73' [ RunTime:0.0070s ]
+SQL: select rank from (Select rank=Row_number() Over(order By checkam asc),* From att_check Where checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00') A where A.cardid=73; [ RunTime:0.0070s ]
+
+[ 2016-08-17T10:58:28+08:00 ] ::1 /?action=getTodayRankByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: date F:\webapp\Application\Home\Controller\IndexController.class.php 第 131 行.
+SQL: select count(*) as count from att_userinfo where userid='llc73' [ RunTime:0.0040s ]
+SQL: select rank from (Select rank=Row_number() Over(order By checkam asc),* From att_check Where checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00') A where A.cardid=73; [ RunTime:0.0070s ]
+
+[ 2016-08-17T10:59:36+08:00 ] ::1 /?action=getTodayRankByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: date F:\webapp\Application\Home\Controller\IndexController.class.php 第 131 行.
+SQL: select count(*) as count from att_userinfo where userid='llc73' [ RunTime:0.0070s ]
+SQL: select rank from (Select rank=Row_number() Over(order By checkam asc),* From att_check Where checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00') A where A.cardid=73; [ RunTime:0.0060s ]
+
+[ 2016-08-17T10:59:55+08:00 ] ::1 /?action=getTodayRankByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: date F:\webapp\Application\Home\Controller\IndexController.class.php 第 131 行.
+SQL: select count(*) as count from att_userinfo where userid='llc73' [ RunTime:0.0280s ]
+SQL: select rank from (Select rank=Row_number() Over(order By checkam asc),* From att_check Where checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00') A where A.cardid=73; [ RunTime:0.0110s ]
+
+[ 2016-08-17T11:00:05+08:00 ] ::1 /?action=getTodayRankByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: date F:\webapp\Application\Home\Controller\IndexController.class.php 第 131 行.
+SQL: select count(*) as count from att_userinfo where userid='llc73' [ RunTime:0.0060s ]
+SQL: select rank from (Select rank=Row_number() Over(order By checkam asc),* From att_check Where checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00') A where A.cardid=73; [ RunTime:0.0230s ]
+
+[ 2016-08-17T11:00:16+08:00 ] ::1 /?action=getTodayRankByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: date F:\webapp\Application\Home\Controller\IndexController.class.php 第 131 行.
+SQL: select count(*) as count from att_userinfo where userid='llc73' [ RunTime:0.0080s ]
+SQL: select rank from (Select rank=Row_number() Over(order By checkam asc),* From att_check Where checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00') A where A.cardid=73; [ RunTime:0.0070s ]
+
+[ 2016-08-17T11:00:46+08:00 ] ::1 /?action=getTodayRankByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: date F:\webapp\Application\Home\Controller\IndexController.class.php 第 131 行.
+NOTIC: [8] Undefined index: userid F:\webapp\Application\Home\Controller\IndexController.class.php 第 132 行.
+
+[ 2016-08-17T11:02:17+08:00 ] ::1 /?action=getTodayRankByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: date F:\webapp\Application\Home\Controller\IndexController.class.php 第 131 行.
+NOTIC: [8] Undefined index: userid F:\webapp\Application\Home\Controller\IndexController.class.php 第 132 行.
+
+[ 2016-08-17T11:02:22+08:00 ] ::1 /?action=getTodayRankByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: date F:\webapp\Application\Home\Controller\IndexController.class.php 第 131 行.
+SQL: select count(*) as count from att_userinfo where userid='llc73' [ RunTime:0.0060s ]
+SQL: select rank from (Select rank=Row_number() Over(order By checkam asc),* From att_check Where checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00') A where A.cardid=73; [ RunTime:0.0070s ]
+
+[ 2016-08-17T11:02:54+08:00 ] ::1 /?action=getTodayRankByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined index: date F:\webapp\Application\Home\Controller\IndexController.class.php 第 131 行.
+SQL: select count(*) as count from att_userinfo where userid='llc73' [ RunTime:0.0050s ]
+SQL: select rank from (Select rank=Row_number() Over(order By checkam asc),* From att_check Where checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00') A where A.cardid=73; [ RunTime:0.0060s ]
+
+[ 2016-08-17T11:02:59+08:00 ] ::1 /?action=getTodayRankByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: date F:\webapp\Application\Home\Controller\IndexController.class.php 第 131 行.
+SQL: select count(*) as count from att_userinfo where userid='llc73' [ RunTime:0.0050s ]
+SQL: select rank from (Select rank=Row_number() Over(order By checkam asc),* From att_check Where checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00') A where A.cardid=73; [ RunTime:0.0160s ]
+
+[ 2016-08-17T11:03:12+08:00 ] ::1 /?action=getTodayRankByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: date F:\webapp\Application\Home\Controller\IndexController.class.php 第 131 行.
+SQL: select count(*) as count from att_userinfo where userid='llc73' [ RunTime:0.0040s ]
+SQL: select rank from (Select rank=Row_number() Over(order By checkam asc),* From att_check Where checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00') A where A.cardid=73; [ RunTime:0.0080s ]
+
+[ 2016-08-17T11:05:19+08:00 ] ::1 /?action=getTodayRankByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined index: date F:\webapp\Application\Home\Controller\IndexController.class.php 第 131 行.
+SQL: select count(*) as count from att_userinfo where userid='llc73' [ RunTime:0.0040s ]
+SQL: select rank from (Select rank=Row_number() Over(order By checkam asc),* From att_check Where checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00') A where A.cardid=73; [ RunTime:0.0080s ]
+
+[ 2016-08-17T11:06:45+08:00 ] ::1 /?action=getTodayRankByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: date F:\webapp\Application\Home\Controller\IndexController.class.php 第 131 行.
+SQL: select count(*) as count from att_userinfo where userid='llc73' [ RunTime:0.0060s ]
+SQL: select rank from (Select rank=Row_number() Over(order By checkam asc),* From att_check Where checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00') A where A.cardid=73; [ RunTime:0.0060s ]
+
+[ 2016-08-17T11:06:48+08:00 ] ::1 /?action=getTodayRankByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: date F:\webapp\Application\Home\Controller\IndexController.class.php 第 131 行.
+SQL: select count(*) as count from att_userinfo where userid='llc73' [ RunTime:0.0150s ]
+SQL: select rank from (Select rank=Row_number() Over(order By checkam asc),* From att_check Where checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00') A where A.cardid=73; [ RunTime:0.0080s ]
+
+[ 2016-08-17T11:07:08+08:00 ] ::1 /?action=getTodayRankByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: date F:\webapp\Application\Home\Controller\IndexController.class.php 第 131 行.
+SQL: select count(*) as count from att_userinfo where userid='llc73' [ RunTime:0.0050s ]
+SQL: select rank from (Select rank=Row_number() Over(order By checkam asc),* From att_check Where checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00') A where A.cardid=73; [ RunTime:0.0170s ]
+
+[ 2016-08-17T11:07:19+08:00 ] ::1 /?action=getTodayRankByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: date F:\webapp\Application\Home\Controller\IndexController.class.php 第 131 行.
+SQL: select count(*) as count from att_userinfo where userid='llc73' [ RunTime:0.0040s ]
+SQL: select rank from (Select rank=Row_number() Over(order By checkam asc),* From att_check Where checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00') A where A.cardid=73; [ RunTime:0.0070s ]
+
+[ 2016-08-17T11:14:41+08:00 ] ::1 /?action=getTodayRankByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: date F:\webapp\Application\Home\Controller\IndexController.class.php 第 131 行.
+SQL: select count(*) as count from att_userinfo where userid='llc73' [ RunTime:0.0050s ]
+SQL: select rank from (Select rank=Row_number() Over(order By checkam asc),* From att_check Where checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00') A where A.cardid=73; [ RunTime:0.0160s ]
+
+[ 2016-08-17T11:17:27+08:00 ] ::1 /?action=getTodayRankByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: date F:\webapp\Application\Home\Controller\IndexController.class.php 第 131 行.
+SQL: select count(*) as count from att_userinfo where userid='llc73' [ RunTime:0.0050s ]
+SQL: select rank,checkam from (Select rank=Row_number() Over(order By checkam asc),* From att_check Where checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00') A where A.cardid=73; [ RunTime:0.0140s ]
+
+[ 2016-08-17T11:17:31+08:00 ] ::1 /?action=getTodayRankByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: date F:\webapp\Application\Home\Controller\IndexController.class.php 第 131 行.
+SQL: select count(*) as count from att_userinfo where userid='llc73' [ RunTime:0.0040s ]
+SQL: select rank,checkam from (Select rank=Row_number() Over(order By checkam asc),* From att_check Where checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00') A where A.cardid=73; [ RunTime:0.0160s ]
+
+[ 2016-08-17T11:17:54+08:00 ] ::1 /?action=getTodayRankByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: date F:\webapp\Application\Home\Controller\IndexController.class.php 第 131 行.
+SQL: select count(*) as count from att_userinfo where userid='llc73' [ RunTime:0.0370s ]
+SQL: select rank,checkam from (Select rank=Row_number() Over(order By checkam asc),* From att_check Where checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00') A where A.cardid=73; [ RunTime:0.2340s ]
+
+[ 2016-08-17T11:18:09+08:00 ] ::1 /?action=getTodayRankByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: date F:\webapp\Application\Home\Controller\IndexController.class.php 第 131 行.
+SQL: select count(*) as count from att_userinfo where userid='llc73' [ RunTime:0.0080s ]
+SQL: select rank,checkam from (Select rank=Row_number() Over(order By checkam asc),* From att_check Where checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00') A where A.cardid=73; [ RunTime:0.0150s ]
+
+[ 2016-08-17T11:20:51+08:00 ] ::1 /?action=getTodayRankByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: date F:\webapp\Application\Home\Controller\IndexController.class.php 第 131 行.
+SQL: select count(*) as count from att_userinfo where userid='llc73' [ RunTime:0.0080s ]
+SQL: select rank,checkam from (Select rank=Row_number() Over(order By checkam asc),* From att_check Where checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00') A where A.cardid=73; [ RunTime:0.0190s ]
+
+[ 2016-08-17T11:22:06+08:00 ] ::1 /?action=getTodayRankByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: date F:\webapp\Application\Home\Controller\IndexController.class.php 第 131 行.
+SQL: select count(*) as count from att_userinfo where userid='llc73' [ RunTime:0.0060s ]
+SQL: select rank,checkam from (Select rank=Row_number() Over(order By checkam asc),* From att_check Where checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00') A where A.cardid=73; [ RunTime:0.0080s ]
+
+[ 2016-08-17T11:22:31+08:00 ] ::1 /?action=getTodayRankByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: date F:\webapp\Application\Home\Controller\IndexController.class.php 第 131 行.
+SQL: select count(*) as count from att_userinfo where userid='llc73' [ RunTime:0.0160s ]
+SQL: select rank,checkam from (Select rank=Row_number() Over(order By checkam asc),* From att_check Where checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00') A where A.cardid=73; [ RunTime:0.0080s ]
+
+[ 2016-08-17T11:22:45+08:00 ] ::1 /?action=getTodayRankByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: date F:\webapp\Application\Home\Controller\IndexController.class.php 第 131 行.
+SQL: select count(*) as count from att_userinfo where userid='llc73' [ RunTime:0.0060s ]
+SQL: select rank,checkam from (Select rank=Row_number() Over(order By checkam asc),* From att_check Where checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00') A where A.cardid=73; [ RunTime:0.0080s ]
+
+[ 2016-08-17T11:23:34+08:00 ] ::1 /?action=getTodayRankByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: date F:\webapp\Application\Home\Controller\IndexController.class.php 第 131 行.
+SQL: select count(*) as count from att_userinfo where userid='llc73' [ RunTime:0.0040s ]
+SQL: select rank,checkam from (Select rank=Row_number() Over(order By checkam asc),* From att_check Where checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00') A where A.cardid=73; [ RunTime:0.0080s ]
+
+[ 2016-08-17T11:23:48+08:00 ] ::1 /?action=getTodayRankByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: date F:\webapp\Application\Home\Controller\IndexController.class.php 第 131 行.
+SQL: select count(*) as count from att_userinfo where userid='llc73' [ RunTime:0.0060s ]
+SQL: select rank,checkam from (Select rank=Row_number() Over(order By checkam asc),* From att_check Where checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00') A where A.cardid=73; [ RunTime:0.0070s ]
+
+[ 2016-08-17T11:25:03+08:00 ] ::1 /?action=getTodayRankByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: date F:\webapp\Application\Home\Controller\IndexController.class.php 第 131 行.
+SQL: select count(*) as count from att_userinfo where userid='llc73' [ RunTime:0.0040s ]
+SQL: select rank,checkam from (Select rank=Row_number() Over(order By checkam asc),* From att_check Where checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00') A where A.cardid=73; [ RunTime:0.0080s ]
+
+[ 2016-08-17T11:28:51+08:00 ] ::1 /?action=getTodayRankByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: date F:\webapp\Application\Home\Controller\IndexController.class.php 第 131 行.
+SQL: select count(*) as count from att_userinfo where userid='llc73' [ RunTime:0.0050s ]
+SQL: select rank,checkam from (Select rank=Row_number() Over(order By checkam asc),* From att_check Where checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00') A where A.cardid=73; [ RunTime:0.0070s ]
+
+[ 2016-08-17T11:29:38+08:00 ] ::1 /?action=getTodayRankByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: date F:\webapp\Application\Home\Controller\IndexController.class.php 第 131 行.
+SQL: select count(*) as count from att_userinfo where userid='llc73' [ RunTime:0.0060s ]
+SQL: select rank,checkam from (Select rank=Row_number() Over(order By checkam asc),* From att_check Where checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00') A where A.cardid=73; [ RunTime:0.0170s ]
+
+[ 2016-08-17T11:39:06+08:00 ] ::1 /?action=getTodayRankByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: date F:\webapp\Application\Home\Controller\IndexController.class.php 第 131 行.
+SQL: select count(*) as count from att_userinfo where userid='llc73' [ RunTime:0.0060s ]
+SQL: select rank,checkam from (Select rank=Row_number() Over(order By checkam asc),* From att_check Where checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00') A where A.cardid=73; [ RunTime:0.0090s ]
+
+[ 2016-08-17T11:39:17+08:00 ] ::1 /?action=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select * from att_userinfo where userid='yzh2' [ RunTime:0.0060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-08-17T11:39:21+08:00 ] ::1 /?action=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: select * from att_userinfo where userid='yzh2' [ RunTime:0.0040s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\webapp\Application\Home\Controller\IndexController.class.php 第 591 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\webapp\Application\Home\Controller\IndexController.class.php 第 315 行.
+SQL: SELECT att_userinfo.cardid, att_userinfo.name, DEPARTMENTS.DEPTNAME AS deptname, att_userinfo.password, att_userinfo.userid FROM att_userinfo INNER JOIN DEPARTMENTS ON att_userinfo.departid = DEPARTMENTS.DEPTID where att_userinfo.userid='yzh2' [ RunTime:0.0050s ]
+SQL: insert into book_login_log(name,userid,logintime,ip) values('叶振华','yzh2',getdate(),'::1') [ RunTime:0.0070s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-08-17T11:39:21+08:00 ] ::1 /?action=addWeixinInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: select * from att_userinfo where userid='yzh2' [ RunTime:0.0050s ]
+SQL: update att_userinfo set headimgurl='null',nickname='null',sex=1,country='null',province='null',city='null',openid='null' where userid='yzh2' [ RunTime:0.0090s ]
+
+[ 2016-08-17T11:39:22+08:00 ] ::1 /?action=getInfoByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT att_userinfo.nickname,att_userinfo.sex,att_userinfo.country,att_userinfo.province,att_userinfo.city,att_userinfo.headimgurl,att_userinfo.cardid, att_userinfo.name, DEPARTMENTS.DEPTNAME AS deptname, att_userinfo.password, att_userinfo.userid FROM att_userinfo INNER JOIN DEPARTMENTS ON att_userinfo.departid = DEPARTMENTS.DEPTID where att_userinfo.userid='yzh2' [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-08-17T11:39:23+08:00 ] ::1 /?action=getTodayRankByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: date F:\webapp\Application\Home\Controller\IndexController.class.php 第 131 行.
+SQL: select count(*) as count from att_userinfo where userid='yzh2' [ RunTime:0.0040s ]
+SQL: select rank,checkam from (Select rank=Row_number() Over(order By checkam asc),* From att_check Where checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00') A where A.cardid=2; [ RunTime:0.0150s ]
+
+[ 2016-08-17T11:42:10+08:00 ] ::1 /?action=getTodayRankByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: date F:\webapp\Application\Home\Controller\IndexController.class.php 第 131 行.
+SQL: select count(*) as count from att_userinfo where userid='yzh2' [ RunTime:0.0080s ]
+SQL: select rank,checkam from (Select rank=Row_number() Over(order By checkam asc),* From att_check Where checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00') A where A.cardid=2; [ RunTime:0.0110s ]
+
+[ 2016-08-17T11:42:14+08:00 ] ::1 /?action=getTodayRankByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: date F:\webapp\Application\Home\Controller\IndexController.class.php 第 131 行.
+SQL: select count(*) as count from att_userinfo where userid='yzh2' [ RunTime:0.0100s ]
+SQL: select rank,checkam from (Select rank=Row_number() Over(order By checkam asc),* From att_check Where checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00') A where A.cardid=2; [ RunTime:0.0520s ]
+
+[ 2016-08-17T11:54:04+08:00 ] ::1 /?action=getTodayRankByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: date F:\webapp\Application\Home\Controller\IndexController.class.php 第 140 行.
+SQL: select count(*) as count from att_userinfo where userid='yzh2' [ RunTime:0.0080s ]
+SQL: select rank,checkam from (Select rank=Row_number() Over(order By checkam asc),* From att_check Where checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00') A where A.cardid=2; [ RunTime:0.0060s ]
+
+[ 2016-08-17T12:06:10+08:00 ] ::1 /?action=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: select * from att_userinfo where userid='yzh2' [ RunTime:0.0060s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\webapp\Application\Home\Controller\IndexController.class.php 第 668 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\webapp\Application\Home\Controller\IndexController.class.php 第 392 行.
+SQL: SELECT att_userinfo.cardid, att_userinfo.name, DEPARTMENTS.DEPTNAME AS deptname, att_userinfo.password, att_userinfo.userid FROM att_userinfo INNER JOIN DEPARTMENTS ON att_userinfo.departid = DEPARTMENTS.DEPTID where att_userinfo.userid='yzh2' [ RunTime:0.0040s ]
+SQL: insert into book_login_log(name,userid,logintime,ip) values('叶振华','yzh2',getdate(),'::1') [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-08-17T12:06:10+08:00 ] ::1 /?action=addWeixinInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: select * from att_userinfo where userid='yzh2' [ RunTime:0.0040s ]
+SQL: update att_userinfo set headimgurl='null',nickname='null',sex=1,country='null',province='null',city='null',openid='null' where userid='yzh2' [ RunTime:0.0050s ]
+
+[ 2016-08-17T12:06:11+08:00 ] ::1 /?action=getInfoByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT att_userinfo.nickname,att_userinfo.sex,att_userinfo.country,att_userinfo.province,att_userinfo.city,att_userinfo.headimgurl,att_userinfo.cardid, att_userinfo.name, DEPARTMENTS.DEPTNAME AS deptname, att_userinfo.password, att_userinfo.userid FROM att_userinfo INNER JOIN DEPARTMENTS ON att_userinfo.departid = DEPARTMENTS.DEPTID where att_userinfo.userid='yzh2' [ RunTime:0.0190s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-08-17T12:06:13+08:00 ] ::1 /?action=getTodayRankByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: date F:\webapp\Application\Home\Controller\IndexController.class.php 第 140 行.
+SQL: select count(*) as count from att_userinfo where userid='yzh2' [ RunTime:0.0050s ]
+SQL: select rank,checkam from (Select rank=Row_number() Over(order By checkam asc),* From att_check Where checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00') A where A.cardid=2; [ RunTime:0.0090s ]
+
+[ 2016-08-17T12:06:16+08:00 ] ::1 /?action=update_breakfast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: update att_check set privilege_item='面包,茶叶蛋' where checkam='2016-08-17 08:12:15' [ RunTime:0.0080s ]
+
+[ 2016-08-17T14:08:34+08:00 ] ::1 /index.php/Home/User/?action=user_pri_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: start F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: limit F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: userid F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: time_add_start F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: time_add_stop F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: name F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: validity F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: status F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: order F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: seq F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+SQL: SELECT * FROM att_privilege_u  WHERE 1=1  and time_add>'2016-07-01' and time_add < '2016-08-17'  ORDER BY time_add DESC [ RunTime:0.0060s ]
+SQL: SELECT * FROM att_privilege [ RunTime:0.0040s ]
+
+[ 2016-08-17T14:08:37+08:00 ] ::1 /?action=getTodayRankByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: date F:\webapp\Application\Home\Controller\IndexController.class.php 第 152 行.
+SQL: select count(*) as count from att_userinfo where userid='rmj27' [ RunTime:0.0060s ]
+SQL: select rank,checkam from (Select rank=Row_number() Over(order By checkam asc),* From att_check Where checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00') A where A.cardid=27; [ RunTime:0.0110s ]
+
+[ 2016-08-17T14:08:38+08:00 ] ::1 /index.php/Home/User/?action=user_pri_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: start F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: limit F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: userid F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: time_add_start F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: time_add_stop F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: name F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: validity F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: status F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: order F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: seq F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+SQL: SELECT * FROM att_privilege_u  WHERE 1=1  and time_add>'2016-07-01' and time_add < '2016-08-17'  ORDER BY time_add DESC [ RunTime:0.0080s ]
+SQL: SELECT * FROM att_privilege [ RunTime:0.0050s ]
+
+[ 2016-08-17T14:08:39+08:00 ] ::1 /?action=getTodayRankByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: date F:\webapp\Application\Home\Controller\IndexController.class.php 第 152 行.
+SQL: select count(*) as count from att_userinfo where userid='rmj27' [ RunTime:0.0060s ]
+SQL: select rank,checkam from (Select rank=Row_number() Over(order By checkam asc),* From att_check Where checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00') A where A.cardid=27; [ RunTime:0.0060s ]
+
+[ 2016-08-17T14:08:40+08:00 ] ::1 /index.php/Home/User/?action=user_pri_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: start F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: limit F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: userid F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: time_add_start F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: time_add_stop F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: name F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: validity F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: status F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: order F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: seq F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+SQL: SELECT * FROM att_privilege_u  WHERE 1=1  and time_add>'2016-07-01' and time_add < '2016-08-17'  ORDER BY time_add DESC [ RunTime:0.0060s ]
+SQL: SELECT * FROM att_privilege [ RunTime:0.0210s ]
+
+[ 2016-08-17T14:08:41+08:00 ] ::1 /?action=getTodayRankByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: date F:\webapp\Application\Home\Controller\IndexController.class.php 第 152 行.
+SQL: select count(*) as count from att_userinfo where userid='rmj27' [ RunTime:0.0060s ]
+SQL: select rank,checkam from (Select rank=Row_number() Over(order By checkam asc),* From att_check Where checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00') A where A.cardid=27; [ RunTime:0.0070s ]
+
+[ 2016-08-17T14:08:44+08:00 ] ::1 /index.php/Home/User/?action=user_pri_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: start F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: limit F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: userid F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: time_add_start F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: time_add_stop F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: name F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: validity F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: status F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: order F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: seq F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+SQL: SELECT * FROM att_privilege_u  WHERE 1=1  and time_add>'2016-07-01' and time_add < '2016-08-17'  ORDER BY time_add DESC [ RunTime:0.0060s ]
+SQL: SELECT * FROM att_privilege [ RunTime:0.0060s ]
+
+[ 2016-08-17T14:08:53+08:00 ] ::1 /?action=getTodayRankByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: date F:\webapp\Application\Home\Controller\IndexController.class.php 第 152 行.
+SQL: select count(*) as count from att_userinfo where userid='rmj27' [ RunTime:0.0070s ]
+SQL: select rank,checkam from (Select rank=Row_number() Over(order By checkam asc),* From att_check Where checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00') A where A.cardid=27; [ RunTime:0.0070s ]
+
+[ 2016-08-17T14:08:54+08:00 ] ::1 /index.php/Home/User/?action=user_pri_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: start F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: limit F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: userid F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: time_add_start F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: time_add_stop F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: name F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: validity F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: status F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: order F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: seq F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+SQL: SELECT * FROM att_privilege_u  WHERE 1=1  and time_add>'2016-07-01' and time_add < '2016-08-17'  ORDER BY time_add DESC [ RunTime:0.0060s ]
+SQL: SELECT * FROM att_privilege [ RunTime:0.0060s ]
+
+[ 2016-08-17T14:08:58+08:00 ] ::1 /?action=getTodayRankByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: date F:\webapp\Application\Home\Controller\IndexController.class.php 第 152 行.
+SQL: select count(*) as count from att_userinfo where userid='rmj27' [ RunTime:0.0050s ]
+SQL: select rank,checkam from (Select rank=Row_number() Over(order By checkam asc),* From att_check Where checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00') A where A.cardid=27; [ RunTime:0.0080s ]
+
+[ 2016-08-17T14:09:44+08:00 ] ::1 /index.php/Home/User/?action=user_pri_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: start F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: limit F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: userid F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: time_add_start F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: time_add_stop F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: name F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: validity F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: status F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: order F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: seq F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+SQL: SELECT * FROM att_privilege_u  WHERE 1=1  and time_add>'2016-07-01' and time_add < '2016-08-17'  ORDER BY time_add DESC [ RunTime:0.0050s ]
+SQL: SELECT * FROM att_privilege [ RunTime:0.0040s ]
+
+[ 2016-08-17T14:25:14+08:00 ] ::1 /?action=getTodayRankByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: date F:\webapp\Application\Home\Controller\IndexController.class.php 第 144 行.
+SQL: select count(*) as count from att_userinfo where userid='rmj27' [ RunTime:0.0050s ]
+SQL: select rank,checkam from (Select rank=Row_number() Over(order By checkam asc),* From att_check Where checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00') A where A.cardid=27; [ RunTime:0.0070s ]
+
+[ 2016-08-17T14:25:15+08:00 ] ::1 /index.php/Home/User/?action=user_pri_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: start F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: limit F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: userid F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: time_add_start F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: time_add_stop F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: name F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: validity F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: status F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: order F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: seq F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+SQL: SELECT * FROM att_privilege_u  WHERE 1=1  and time_add>'2016-07-01' and time_add < '2016-08-17'  ORDER BY time_add DESC [ RunTime:0.0040s ]
+SQL: SELECT * FROM att_privilege [ RunTime:0.0060s ]
+
+[ 2016-08-17T14:25:16+08:00 ] ::1 /?action=getTodayRankByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: date F:\webapp\Application\Home\Controller\IndexController.class.php 第 144 行.
+SQL: select count(*) as count from att_userinfo where userid='rmj27' [ RunTime:0.0150s ]
+SQL: select rank,checkam from (Select rank=Row_number() Over(order By checkam asc),* From att_check Where checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00') A where A.cardid=27; [ RunTime:0.0080s ]
+
+[ 2016-08-17T14:25:17+08:00 ] ::1 /index.php/Home/User/?action=user_pri_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: start F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: limit F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: userid F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: time_add_start F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: time_add_stop F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: name F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: validity F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: status F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: order F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+NOTIC: [8] Undefined index: seq F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+SQL: SELECT * FROM att_privilege_u  WHERE 1=1  and time_add>'2016-07-01' and time_add < '2016-08-17'  ORDER BY time_add DESC [ RunTime:0.0040s ]
+SQL: SELECT * FROM att_privilege [ RunTime:0.0050s ]
+
+[ 2016-08-17T14:25:18+08:00 ] ::1 /?action=getTodayRankByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: date F:\webapp\Application\Home\Controller\IndexController.class.php 第 144 行.
+SQL: select count(*) as count from att_userinfo where userid='rmj27' [ RunTime:0.0070s ]
+SQL: select rank,checkam from (Select rank=Row_number() Over(order By checkam asc),* From att_check Where checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00') A where A.cardid=27; [ RunTime:0.0080s ]
+
+[ 2016-08-17T14:25:27+08:00 ] ::1 /?action=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: select * from att_userinfo where userid='llc73' [ RunTime:0.0060s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\webapp\Application\Home\Controller\IndexController.class.php 第 671 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\webapp\Application\Home\Controller\IndexController.class.php 第 395 行.
+SQL: SELECT att_userinfo.cardid, att_userinfo.name, DEPARTMENTS.DEPTNAME AS deptname, att_userinfo.password, att_userinfo.userid FROM att_userinfo INNER JOIN DEPARTMENTS ON att_userinfo.departid = DEPARTMENTS.DEPTID where att_userinfo.userid='llc73' [ RunTime:0.0040s ]
+SQL: insert into book_login_log(name,userid,logintime,ip) values('林立城','llc73',getdate(),'::1') [ RunTime:0.0060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-08-17T14:25:27+08:00 ] ::1 /?action=addWeixinInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: select * from att_userinfo where userid='llc73' [ RunTime:0.0050s ]
+
+[ 2016-08-17T14:25:28+08:00 ] ::1 /?action=getInfoByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT att_userinfo.nickname,att_userinfo.sex,att_userinfo.country,att_userinfo.province,att_userinfo.city,att_userinfo.headimgurl,att_userinfo.cardid, att_userinfo.name, DEPARTMENTS.DEPTNAME AS deptname, att_userinfo.password, att_userinfo.userid FROM att_userinfo INNER JOIN DEPARTMENTS ON att_userinfo.departid = DEPARTMENTS.DEPTID where att_userinfo.userid='llc73' [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-08-17T14:25:29+08:00 ] ::1 /?action=getTodayRankByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: date F:\webapp\Application\Home\Controller\IndexController.class.php 第 144 行.
+SQL: select count(*) as count from att_userinfo where userid='llc73' [ RunTime:0.0300s ]
+SQL: select rank,checkam from (Select rank=Row_number() Over(order By checkam asc),* From att_check Where checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00') A where A.cardid=73; [ RunTime:0.0080s ]
+
+[ 2016-08-17T14:25:31+08:00 ] ::1 /?action=getInfoByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT att_userinfo.nickname,att_userinfo.sex,att_userinfo.country,att_userinfo.province,att_userinfo.city,att_userinfo.headimgurl,att_userinfo.cardid, att_userinfo.name, DEPARTMENTS.DEPTNAME AS deptname, att_userinfo.password, att_userinfo.userid FROM att_userinfo INNER JOIN DEPARTMENTS ON att_userinfo.departid = DEPARTMENTS.DEPTID where att_userinfo.userid='llc73' [ RunTime:0.0060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-08-17T14:25:32+08:00 ] ::1 /?action=getTodayRankByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined index: date F:\webapp\Application\Home\Controller\IndexController.class.php 第 144 行.
+SQL: select count(*) as count from att_userinfo where userid='llc73' [ RunTime:0.0060s ]
+SQL: select rank,checkam from (Select rank=Row_number() Over(order By checkam asc),* From att_check Where checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00') A where A.cardid=73; [ RunTime:0.0150s ]
+
+[ 2016-08-17T14:25:36+08:00 ] ::1 /?action=getInfoByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT att_userinfo.nickname,att_userinfo.sex,att_userinfo.country,att_userinfo.province,att_userinfo.city,att_userinfo.headimgurl,att_userinfo.cardid, att_userinfo.name, DEPARTMENTS.DEPTNAME AS deptname, att_userinfo.password, att_userinfo.userid FROM att_userinfo INNER JOIN DEPARTMENTS ON att_userinfo.departid = DEPARTMENTS.DEPTID where att_userinfo.userid='llc73' [ RunTime:0.0100s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-08-17T14:25:38+08:00 ] ::1 /?action=getTodayRankByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: date F:\webapp\Application\Home\Controller\IndexController.class.php 第 144 行.
+SQL: select count(*) as count from att_userinfo where userid='llc73' [ RunTime:0.0050s ]
+SQL: select rank,checkam from (Select rank=Row_number() Over(order By checkam asc),* From att_check Where checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00') A where A.cardid=73; [ RunTime:0.0070s ]
+
+[ 2016-08-17T14:32:57+08:00 ] ::1 /?action=getInfoByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT att_userinfo.nickname,att_userinfo.sex,att_userinfo.country,att_userinfo.province,att_userinfo.city,att_userinfo.headimgurl,att_userinfo.cardid, att_userinfo.name, DEPARTMENTS.DEPTNAME AS deptname, att_userinfo.password, att_userinfo.userid FROM att_userinfo INNER JOIN DEPARTMENTS ON att_userinfo.departid = DEPARTMENTS.DEPTID where att_userinfo.userid='llc73' [ RunTime:0.0070s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-08-17T14:32:58+08:00 ] ::1 /?action=getAttRank&userid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select count(*) as count from att_userinfo where userid='llc73' [ RunTime:0.0050s ]
+SQL: select att_check.id, att_check.cardid, att_check.checkam, att_check.likeam, att_check.likeam_name, att_check.checkpm, 
+                att_check.likepm, att_check.likepm_name, att_check.privilege, att_userinfo.name,att_userinfo.headimgurl,att_userinfo.sign, 
+                att_userinfo.departid, att_userinfo.userid, att_userinfo.qq, att_userinfo.portraiturl, att_userinfo.mark
+FROM      att_userinfo INNER JOIN
+                att_check ON att_userinfo.cardid = att_check.cardid where att_check.cardid=73 and att_check.checkam between '2016-8-16 00:00:00' and '2016-08-17 00:00:00' [ RunTime:0.0070s ]
+SQL: Select * From (Select rank=Row_number() Over(order By checkam asc),* From att_check Where att_check.checkam between '2016-8-16 00:00:00' and '2016-08-17 00:00:00'  ) A where cardid=73 [ RunTime:0.0070s ]
+SQL: select top(15) att_check.id, att_check.cardid, att_check.checkam, att_check.likeam, att_check.likeam_name, att_check.checkpm, 
+                            att_check.likepm, att_check.likepm_name, att_check.privilege, att_userinfo.name, att_userinfo.sign, 
+                            att_userinfo.departid, att_userinfo.userid, att_userinfo.qq, att_userinfo.portraiturl, att_userinfo.mark,att_userinfo.headimgurl
+            FROM      att_userinfo INNER JOIN
+                            att_check ON att_userinfo.cardid = att_check.cardid where att_check.checkam between '2016-8-16 00:00:00' and '2016-08-17 00:00:00' order by att_check.checkpm desc; [ RunTime:0.0110s ]
+
+[ 2016-08-17T14:33:00+08:00 ] ::1 /?action=getInfoByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT att_userinfo.nickname,att_userinfo.sex,att_userinfo.country,att_userinfo.province,att_userinfo.city,att_userinfo.headimgurl,att_userinfo.cardid, att_userinfo.name, DEPARTMENTS.DEPTNAME AS deptname, att_userinfo.password, att_userinfo.userid FROM att_userinfo INNER JOIN DEPARTMENTS ON att_userinfo.departid = DEPARTMENTS.DEPTID where att_userinfo.userid='llc73' [ RunTime:0.0060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-08-17T14:33:01+08:00 ] ::1 /?action=getAttRank&userid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select count(*) as count from att_userinfo where userid='llc73' [ RunTime:0.0050s ]
+SQL: select att_check.id, att_check.cardid, att_check.checkam, att_check.likeam, att_check.likeam_name, att_check.checkpm, 
+                att_check.likepm, att_check.likepm_name, att_check.privilege, att_userinfo.name,att_userinfo.headimgurl,att_userinfo.sign, 
+                att_userinfo.departid, att_userinfo.userid, att_userinfo.qq, att_userinfo.portraiturl, att_userinfo.mark
+FROM      att_userinfo INNER JOIN
+                att_check ON att_userinfo.cardid = att_check.cardid where att_check.cardid=73 and att_check.checkam between '2016-8-17 00:00:00' and '2016-08-18 00:00:00' [ RunTime:0.0060s ]
+SQL: Select * From (Select rank=Row_number() Over(order By checkam asc),* From att_check Where att_check.checkam between '2016-8-17 00:00:00' and '2016-08-18 00:00:00'  ) A where cardid=73 [ RunTime:0.0070s ]
+SQL: select top(50) att_check.id, att_check.cardid, att_check.checkam, att_check.likeam, att_check.likeam_name, att_check.checkpm, 
+                            att_check.likepm, att_check.likepm_name, att_check.privilege, att_userinfo.name, att_userinfo.sign, 
+                            att_userinfo.departid, att_userinfo.userid, att_userinfo.qq, att_userinfo.portraiturl, att_userinfo.mark,att_userinfo.headimgurl
+            FROM      att_userinfo INNER JOIN
+                            att_check ON att_userinfo.cardid = att_check.cardid where att_check.checkam between '2016-8-17 00:00:00' and '2016-08-18 00:00:00' order by att_check.checkam; [ RunTime:0.0090s ]
+
+[ 2016-08-17T18:44:32+08:00 ] ::1 /?action=date_breakfast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.018001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-08-17T18:45:44+08:00 ] ::1 /?action=date_breakfast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select count(*) as count from att_check WHERE att_check.privilege_item LIKE '%套餐1%' and att_check.checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00' [ RunTime:0.0350s ]
+SQL: SELECT att_check.checkam,att_check.privilege_item,att_check.privilege_time,att_userinfo.name FROM att_userinfo INNER JOIN att_check ON att_check.cardid = att_userinfo.cardid where att_check.checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00' and privilege_item like '%套餐1%' [ RunTime:0.0120s ]
+
+[ 2016-08-17T18:49:03+08:00 ] ::1 /?action=date_breakfast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select count(*) as count from att_check WHERE att_check.privilege_item LIKE '%套餐1%' and att_check.checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00' [ RunTime:0.0090s ]
+SQL: SELECT att_check.checkam,att_check.privilege_item,att_check.privilege_time,att_userinfo.name FROM att_userinfo INNER JOIN att_check ON att_check.cardid = att_userinfo.cardid where att_check.checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00' and privilege_item like '%套餐1%' [ RunTime:0.0090s ]
+
+[ 2016-08-17T18:49:44+08:00 ] ::1 /?action=date_breakfast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select count(*) as count from att_check WHERE att_check.privilege_item LIKE '%套餐1%' and att_check.checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00' [ RunTime:0.1250s ]
+SQL: SELECT att_check.checkam,att_check.privilege_item,att_check.privilege_time,att_userinfo.name FROM att_userinfo INNER JOIN att_check ON att_check.cardid = att_userinfo.cardid where att_check.checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00' and privilege_item like '%套餐1%' [ RunTime:0.0580s ]
+
+[ 2016-08-17T18:49:57+08:00 ] ::1 /?action=date_breakfast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+SQL: select count(*) as count from att_check WHERE att_check.privilege_item LIKE '%套餐1%' and att_check.checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00' [ RunTime:0.0070s ]
+SQL: SELECT att_check.checkam,att_check.privilege_item,att_check.privilege_time,att_userinfo.name FROM att_userinfo INNER JOIN att_check ON att_check.cardid = att_userinfo.cardid where att_check.checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00' and privilege_item like '%套餐1%' [ RunTime:0.0080s ]
+
+[ 2016-08-17T18:50:37+08:00 ] ::1 /?action=date_breakfast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select count(*) as count from att_check WHERE att_check.privilege_item LIKE '%套餐1%' and att_check.checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00' [ RunTime:0.0080s ]
+SQL: SELECT att_check.checkam,att_check.privilege_item,att_check.privilege_time,att_userinfo.name FROM att_userinfo INNER JOIN att_check ON att_check.cardid = att_userinfo.cardid where att_check.checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00' and privilege_item like '%套餐1%' [ RunTime:0.0080s ]
+
+[ 2016-08-17T18:50:38+08:00 ] ::1 /?action=date_breakfast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: select count(*) as count from att_check WHERE att_check.privilege_item LIKE '%套餐1%' and att_check.checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00' [ RunTime:0.0070s ]
+SQL: SELECT att_check.checkam,att_check.privilege_item,att_check.privilege_time,att_userinfo.name FROM att_userinfo INNER JOIN att_check ON att_check.cardid = att_userinfo.cardid where att_check.checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00' and privilege_item like '%套餐1%' [ RunTime:0.0080s ]
+
+[ 2016-08-17T18:50:45+08:00 ] ::1 /?action=date_breakfast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select count(*) as count from att_check WHERE att_check.privilege_item LIKE '%套餐1%' and att_check.checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00' [ RunTime:0.0070s ]
+SQL: SELECT att_check.checkam,att_check.privilege_item,att_check.privilege_time,att_userinfo.name FROM att_userinfo INNER JOIN att_check ON att_check.cardid = att_userinfo.cardid where att_check.checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00' and privilege_item like '%套餐1%' [ RunTime:0.0090s ]
+NOTIC: [8] Undefined variable: namegroup F:\webapp\Application\Home\Controller\IndexController.class.php 第 175 行.
+
+[ 2016-08-17T18:53:04+08:00 ] ::1 /?action=date_breakfast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select count(*) as count from att_check WHERE att_check.privilege_item LIKE '%套餐1%' and att_check.checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00' [ RunTime:0.0480s ]
+NOTIC: [8] Undefined variable: conn F:\webapp\Application\Home\Controller\IndexController.class.php 第 134 行.
+
+[ 2016-08-17T18:53:17+08:00 ] ::1 /?action=date_breakfast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select count(*) as count from att_check WHERE att_check.privilege_item LIKE '%套餐1%' and att_check.checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00' [ RunTime:0.1470s ]
+SQL: SELECT att_check.checkam,att_check.privilege_item,att_check.privilege_time,att_userinfo.name FROM att_userinfo INNER JOIN att_check ON att_check.cardid = att_userinfo.cardid where att_check.checkam between '16-08-17 00:00:00' and '2016-08-18 00:00:00' and privilege_item like '%套餐1%' [ RunTime:0.0570s ]
+NOTIC: [8] Undefined variable: namegroup F:\webapp\Application\Home\Controller\IndexController.class.php 第 141 行.
+

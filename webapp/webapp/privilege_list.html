@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>今日特权</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+    <!--加载CSS样式 开始-->
+    <link rel="stylesheet" href="/Public/Css/weui.min.css">
+    <link rel="stylesheet" href="/Public/Css/jquery-weui.css">
+    <link rel="stylesheet" href="/Public/Css/demos.css">
+    <link rel="stylesheet" href="/Public/Css/exam.css">
+    <style>
+    a.weui_media_box {
+        font-size: 14px;
+        color: #545454;
+    }
+    
+    .weui_media_box.weui_media_appmsg .weui_media_hd {
+        margin-right: 2em;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+    }
+    .weui_media_box .weui_media_title{
+        font-size: 14px;
+    }
+    .weui_media_box{
+        padding: 5px;
+    }
+    </style>
+    <!--加载CSS样式 结束-->
+</head>
+
+<body ontouchstart>
+    <div class="hd">
+        <h4 class="page_title">我的特权</h4>
+        <h4 class="page_title" style="font-size: 20px;">renrun webapp 1.0</h4>
+    </div>
+    <div class="weui_panel weui_panel_access">
+        <div class="weui_panel_bd" id="showlist"></div>
+        <textarea id="mysid" style="display: none">
+            {var i = 0}
+            {for item in data}
+            {eval}
+            i++;
+            if(item.time_add){
+                item.time_add = item.time_add.substring(5,16);
+            }
+            if(item.time_end) item.time_end = item.time_end.substring(5,16);
+            {/eval}
+            <a href="/webapp/privilege.html?qs=${i}" class="weui_media_box weui_media_appmsg" id="privUrl">
+                <div class="weui_media_hd">
+                    <img class="weui_media_appmsg_thumb" src="/public/img/breakfast.png" alt="早餐特权">
+                </div>
+                <div class="weui_media_bd">
+                    <h4 class="weui_media_title">${item.privilege_name}</h4>
+                    <p class="weui_media_desc" style="min-width: 185px;"><span>${item.time_add}</span>&nbsp;&nbsp;到<span>&nbsp;&nbsp;${item.time_end}</span></p>
+                </div>
+                <div class="weui_media_bd">
+                    {if item.status*1 == 1}
+                        <h4 class="weui_media_title" style="float: right;padding-right: 0.3rem;color: #DE4A4A;font-size: 16px;">未使用</h4>
+                    {else}
+                        <h4 class="weui_media_title" style="float: right;padding-right: 0.3rem;color: #666;font-size: 16px;">已过期</h4>
+                    {/if}
+                </div>
+            </a>
+            {/for}
+        </textarea>
+
+            <!--
+            <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+                <div class="weui_media_hd">
+                    <img class="weui_media_appmsg_thumb" src="/public/img/birthday.png" alt="生日特权">
+                </div>
+                <div class="weui_media_bd">
+                    <h4 class="weui_media_title">生日特权</h4>
+                    <p class="weui_media_desc">2016-8-11</p>
+                </div>
+            </a>
+        <!--</div>-->
+    </div>
+    <!--加载js文件 开始-->
+    <script src="/Public/Js/jquery-2.1.4.js"></script>
+    <script src="/Public/Js/jquery-weui.js"></script>
+    <script src="/Public/Js/function.js"></script>
+    <script src="/public/js/template.js"></script>
+    <script src="/public/js/base.js"></script>
+    <script>
+        var _url = "/index.php/Home/User/?action=user_pri_list";
+        BaseControl.loadJson({url:_url,type:"post"},function (json) {
+            BaseControl.converTemplateToHtml(json, "mysid", "showlist");
+            BaseControl.SetItemToK_Id(json);
+        });
+    </script>
+    <!--加载js文件 结束-->
+</body>
+
+</html>

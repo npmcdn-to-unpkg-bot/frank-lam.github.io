@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>登录</title>
+    <link rel="stylesheet" href="dist/style/weui.min.css"/>
+    <link rel="stylesheet" href="dist/example/example.css"/>
+</head>
+<body ontouchstart>
+<div class="hd">
+    <h1 class="page_title">修改密码</h1>
+</div>
+<div class="weui_cells weui_cells_form weui_cells_form">
+    <div class="weui_cell weui_cells_form">
+        <div class="weui_cell_hd"><label class="weui_label">新密码</label></div>
+        <div class="weui_cell_bd weui_cell_primary">
+            <input class="weui_input" type="password" pattern="[0-9]*" placeholder="请输入新密码"/>
+        </div>
+    </div>
+    <div class="weui_cell weui_cells_form">
+        <div class="weui_cell_hd"><label class="weui_label">重复密码</label></div>
+        <div class="weui_cell_bd weui_cell_primary">
+            <input class="weui_input" type="password" pattern="[0-9]*" placeholder="请重复密码"/>
+        </div>
+    </div>
+</div>
+<a href="javascript:;" class="weui_btn weui_btn_primary login-btn" style="margin-top: 2rem;">确认修改</a>
+<a href="javascript:;" class="weui_btn weui_btn_primary" id="showToast">点击弹出Toast</a>
+<div id="toast" >
+    <div class="weui_mask_transparent"></div>
+    <div class="weui_toast">
+        <!--<i class="weui_icon_toast"></i>-->
+        <p class="weui_toast_content">已完成</p>
+    </div>
+</div>
+<script src="dist/example/zepto.min.js"></script>
+<script src="dist/example/router.min.js"></script>
+<script src="dist/example/example.js"></script>
+</body>
+</html>

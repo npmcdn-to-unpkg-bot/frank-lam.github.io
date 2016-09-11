@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>图书添加成功</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+  ">
+
+  <link rel="stylesheet" href="../lib/weui.min.css">
+  <link rel="stylesheet" href="../css/jquery-weui.css">
+  <link rel="stylesheet" href="css/demos.css">
+
+</head>
+
+<body ontouchstart>
+
+  <div class="weui_msg">
+    <div class="weui_icon_area"><i class="weui_icon_success weui_icon_msg"></i></div>
+    <div class="weui_text_area">
+      <h2 class="weui_msg_title">添加成功</h2>
+      <p class="weui_msg_desc" id="tips">图书《XXX》入库成功</p>
+      <p class="weui_msg_desc" id="count">当前库存：100</p>
+    </div>
+    <div class="weui_opr_area">
+      <p class="weui_btn_area">
+        <a href="admin.php" class="weui_btn weui_btn_primary">继续添加</a>
+        <a href="http://hzrrkj.gnway.cc:8080/web/booklist.html" class="weui_btn weui_btn_default">查看图书列表</a>
+      </p>
+    </div>
+
+    </div>
+    <script src="../lib/jquery-2.1.4.js"></script>
+    <script src="../js/jquery-weui.js"></script>
+    <script type="text/javascript">
+      // alert(getQueryString("book_number"));
+      $("#count").text("当前库存："+getCookie("book_number"));
+      $("#tips").text("《"+getCookie("book_title")+"》入库成功");
+
+
+      function getQueryString(name) { 
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i"); 
+        var r = location.search.substr(1).match(reg); 
+        if (r != null) return unescape(decodeURI(r[2])); return null; 
+      }
+      function getCookie(name)
+      {
+        var arr = document.cookie.match(new RegExp("(^| )"+name+"=([^;]*)(;|$)"));
+        if(arr != null)
+        return unescape(arr[2]);
+        return null;
+      }
+    </script>
+
+  </body>
+  </html>

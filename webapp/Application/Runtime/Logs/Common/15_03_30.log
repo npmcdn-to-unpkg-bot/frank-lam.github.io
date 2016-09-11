@@ -1,0 +1,42 @@
+[ 2015-03-30T00:51:15+08:00 ] ::1 /jike/index.php/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001300s ]
+ERR: 无法加载模块:Index
+
+[ 2015-03-30T13:05:32+08:00 ] ::1 /jike/index.php/Hpme/Index/list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000739s ]
+ERR: 无法加载模块:Hpme
+
+[ 2015-03-30T20:56:52+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003795s ]
+ERR: 无法加载模块:Favicon
+
+[ 2015-03-30T20:56:52+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000589s ]
+ERR: 无法加载模块:Favicon
+
+[ 2015-03-30T21:01:10+08:00 ] 127.0.0.1 /rest.svc/licensing?key=QUNIQ0E1RFBDUEg4OVI4VjhGWFpXRDI0QQ%3d%3d&time=2015%2d02%2d01%2017%3a30%3a05%20%2b800&version=8.2.1&build=1423&platform=pc&prod=Camtasia%20Studio&a=cec2ad1cf7584be13036f72d8244af12&sharedupdate=67158397-77D0-438F-9CC3-BA8284BE78F4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001209s ]
+ERR: 无法加载模块:Rest.svc
+
+[ 2015-03-30T22:56:30+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000693s ]
+ERR: 无法加载模块:Favicon
+
+[ 2015-03-30T22:56:30+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000751s ]
+ERR: 无法加载模块:Favicon
+

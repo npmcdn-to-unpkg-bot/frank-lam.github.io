@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>个人信息</title>
+    <!--加载CSS样式 开始-->
+    <link rel="stylesheet" href="/Public/Css/weui.min.css">
+    <link rel="stylesheet" href="/Public/Css/jquery-weui.css">
+    <link rel="stylesheet" href="/Public/Css/demos.css">
+    <link rel="stylesheet" href="/Public/Css/exam.css">
+    <style>
+        .weui-row .weui-col-50{
+            border: 1px solid #d9d9d9;
+            text-align: center;
+        }
+        .weui_cells{
+            background: #fbf9fe;
+            margin-top: 0;
+            color: #545454;
+        }
+        .weui_cell_ft{
+            color: #313498;
+        }
+        .row-pub p{
+            line-height: 2rem;
+            color: #666;
+        }
+        .weui_cells{
+            font-size: 14px;
+        }
+    </style>
+
+</head>
+
+<body ontouchstart>
+<div style="height: 8rem;line-height: 8rem;text-align: center;color: #fff;background: #1fbbee;font-size: 20px;">有梦想，有激情，有责任</div>
+<div class="weui_cells">
+    <div class="weui_cell">
+        <div class="weui_cell_bd weui_cell_primary">
+            <p>姓名</p>
+        </div>
+        <div class="weui_cell_ft" id="name">
+
+        </div>
+    </div>
+    <div class="weui_cell">
+        <div class="weui_cell_bd weui_cell_primary">
+            <p>工号</p>
+        </div>
+        <div class="weui_cell_ft" id="carid">
+            66
+        </div>
+    </div>
+    <div class="weui_cell">
+        <div class="weui_cell_bd weui_cell_primary">
+            <p>密码</p>
+        </div>
+        <div class="weui_cell_ft">
+            <a href="/webapp/update_password.html">修改</a>
+        </div>
+    </div>
+    <div class="weui_cell">
+        <div class="weui_cell_bd weui_cell_primary">
+            <p>已借书</p>
+        </div>
+        <div class="weui_cell_ft">
+            2本
+        </div>
+    </div>
+    <div class="weui_cell">
+        <div class="weui_cell_bd weui_cell_primary">
+            <p>借书申请</p>
+        </div>
+        <div class="weui_cell_ft">
+            未审核
+        </div>
+    </div>
+    <div class="weui-row weui-no-gutter row-pub">
+        <div class="weui-col-50">
+            <p>上班打卡</p>
+            <p>第6名</p>
+        </div>
+        <div class="weui-col-50">
+            <p>下班打卡</p>
+            <p>未打卡</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!--加载js文件 开始-->
+<script src="/Public/Js/jquery-2.1.4.js"></script>
+<script src="/Public/Js/jquery-weui.js"></script>
+<script src="/Public/Js/function.js"></script>
+
+<script>
+    var _url = "/?action=getInfoByUserid";
+    var _data = {userid: getCookie("userid")};
+    $.ajax({
+        url: _url,
+        type: "post",
+        data: _data,
+        datatype: "json",
+        success: function (json) {
+            json = JSON.parse(json);
+            if (json) {
+                $("#name").text(json.name);
+                $("#carid").text(json.cardid)
+            } else {
+                $.alert("提交失败");
+            }
+        },
+        error: function () {
+            $.alert("提交失败")
+        }
+    });
+</script>
+<!--加载js文件 结束-->
+</body>
+
+</html>

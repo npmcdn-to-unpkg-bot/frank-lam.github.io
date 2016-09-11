@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>今日特权</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+
+		<META HTTP-EQUIV="pragma" CONTENT="no-cache"> 
+		<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate"> 
+		<META HTTP-EQUIV="expires" CONTENT="0">
+		<!--加载CSS样式 开始-->
+		<link rel="stylesheet" href="/Public/Css/weui.min.css">
+		<link rel="stylesheet" href="/Public/Css/jquery-weui.css">
+		<link rel="stylesheet" href="/Public/Css/demos.css">
+		<link rel="stylesheet" href="/Public/Css/exam.css">
+		<!--加载CSS样式 结束-->
+	</head>
+
+	<body ontouchstart>
+
+		<div class="hd">
+			<h4 class="page_title">明日早餐特权</h4>
+			<h5 class="page_title" style="font-size: 16px;" id="head_tips">renrun webapp 1.0</h5>
+		</div>		
+		<div id="breakfast_form" style="display: none;">
+			<div class="weui_cells weui_cells_form">
+				<div class="weui_cell">
+					<div class="weui_cell_hd">
+						<label for="breakfast" class="weui_label" id="choise">早餐选择</label>
+					</div>
+					<div class="weui_cell_bd weui_cell_primary">
+						<input class="weui_input" id="breakfast" type="text" value="" placeholder="请选择早餐" readonly="">
+					</div>
+				</div>
+			</div>
+			<p style="width:92%;margin:0.5rem auto 5rem auto;color:#0d66af;text-align: center;" id="select_tips"></p>
+			<a href="javascript:;" class="weui_btn weui_btn_primary" onclick="submit_breakfast()">确认提交</a>
+		</div>
+
+		<!--加载js文件 开始-->
+		<script src="/Public/Js/jquery-2.1.4.js"></script>
+		<script src="/Public/Js/jquery-weui.js"></script>
+		<script src="/Public/Js/function.js"></script>
+		<script src="/public/js/template.js"></script>
+		<script src="/public/js/base.js"></script>
+		<script src="/Public/webapp_js/config_value.js"></script>
+		<script>
+			getRank();
+
+			var qs = getParam("qs"); //获得当前遍历的列数
+			//			var _url = "/index.php/Home/User/?action=user_pri_list";
+			//			BaseControl.loadJson({
+			//				url: _url,
+			//				type: "post"
+			//			}, function(json) {
+			//				//        BaseControl.converTemplateToHtml(json, "mysid", "showlist");
+			//				BaseControl.SetItemToK_Id(json);
+			//				var teid = json.data[qs - 1].privilege_id * 1;
+			//				if(teid == 1) {
+			//					$("#choise").text("早餐特权")
+			//				} else if(teid == 2) {
+			//					$("#choise").text("购书特权")
+			//				} else if(teid == 3) {
+			//					$("#choise").text("购书特权")
+			//				} else {
+			//					$("#choise").text("其他特权")
+			//				}
+			//			});
+			$("#breakfast").select({
+				title: "请选择早餐套餐",
+				max: "1",
+				multi: true,
+				items: [
+				{
+					title: "套餐1：牛奶（新品）",
+					value: 1
+				}
+				
+				
+//				,
+//				{
+//					title: "套餐1：锅贴！！！",
+//					value: 1
+//				}, 
+//				{
+//					title: "套餐2：生煎包",
+//					value: 2
+//				}
+//				, {
+//					title: "套餐3：小馄饨",
+//					value: 3
+//				}, {
+//					title: "套餐4：葱油拌面",
+//					value: 4
+//				}, {
+//					title: "套餐5：白米粥+茶叶蛋",
+//					value: 5
+//				}, {
+//					title: "套餐6：豆腐花+茶叶蛋",
+//					value: 6
+//				}, {
+//					title: "套餐7：豆浆+茶叶蛋",
+//					value: 7
+//				}
+				
+				]
+			});
+			
+			showItem();
+			function showItem(){
+				$.ajax({
+					type: "POST",
+					url: "/?action=select_breakfast",
+					data: {
+						checkam: getCookie('checkam')
+					},
+					datatype: "json", //"xml", "html", "script", "json", "jsonp", "text".
+					success: function(data) {
+						JsonData = JSON.parse(data);
+						var data = JSON.stringify(data); //JSON转换成string
+//						var rank = parseInt(JsonData['rank']);
+//						var checkam = JsonData['checkam'];
+//						SetCookie('checkam',checkam);
+//						if(rank <= 23) {
+//							$('#head_tips').html('庆祝webapp1.0早餐特权第一次上线，今日九点前打卡将获得一次早餐特权！今日打卡时间:' + checkam + '，请尽快下单预订明日早饭，有效期为一天。');
+//							$('#breakfast_form').show();
+//						} else {
+//							$('#head_tips').html('好遗憾，你的今日打卡时间是:' + checkam + ',只有九点前到达的才将获得特权。明日早起吧ㄟ(⊙ω⊙ㄟ)');
+//						}
+//						alert(JsonData['show']);
+//						alert(JsonData['privilege_item']);
+						if(JsonData['show']=='1'){
+							$("#select_tips").html('亲，每个人只能选择一个哦！<br/>在此之前你已经选择：'+JsonData['privilege_item']+'，但是可以重新提交改选呢。');
+							$("#select_tips").show();
+						}
+					}
+				});
+			}
+			
+			
+			function getRank() {
+				$.ajax({
+					type: "POST",
+					url: "/?action=getTodayRankByUserid",
+					data: {
+						userid: getCookie('userid')
+					},
+					datatype: "json", //"xml", "html", "script", "json", "jsonp", "text".
+					success: function(data) {
+						JsonData = JSON.parse(data);
+						var data = JSON.stringify(data); //JSON转换成string
+						var rank = parseInt(JsonData['rank']);
+						var checkam = JsonData['checkam'];
+						SetCookie('checkam',checkam);
+						var topvalue=parseInt(getTopOfPrivilege().value);
+						var begintime=getValidTimeOfPrivilege().begintime;
+						var endtime=getValidTimeOfPrivilege().endtime;
+//						var nowtime=time();
+
+						var now=new Date();
+						var hours=now.getHours();
+						var minutes=now.getMinutes();
+						var nowtime=hours+':'+minutes;
+//						alert(123);
+
+						if(!CompareDate(nowtime,begintime)){
+							$('#head_tips').html('活动时间：'+begintime+"~"+endtime+'，活动暂未开始，敬请期待。');
+						}
+						else if(time_range(begintime,endtime,nowtime)){
+							if(rank <= topvalue) {
+							$('#head_tips').html('打卡TOP'+topvalue+'将获得一份早餐特权。今日打卡排名:' + rank + '，请尽快下单预订明日早饭，有效期为一天。');
+							$('#breakfast_form').show();
+							} else {
+								$('#head_tips').html('好遗憾，你的今日打卡排名是:' + rank + '，只有TOP'+topvalue+'才能获得特权。明日早起吧ㄟ(⊙ω⊙ㄟ)');
+							}
+						}else if(CompareDate(nowtime,endtime)){
+							$('#head_tips').html('活动时间：'+begintime+"~"+endtime+'。活动已经结束，明日早起吧~');
+						}
+						
+					},
+					error: function() {
+						$.toast("AJAX请求失败", "cancel");
+					}
+				});
+			}
+
+			function submit_breakfast() {
+				$.showLoading(); //$.hideLoading();
+				var breakfast_item=$('#breakfast').val();
+				var checkam=getCookie('checkam');
+//				alert(breakfast_item);
+				
+				$.ajax({
+					type: "POST",
+					url: "/?action=update_breakfast",
+					data: {
+						breakfast_item:breakfast_item,
+						checkam: checkam
+					},
+					datatype: "json", //"xml", "html", "script", "json", "jsonp", "text".
+					success: function(data) {
+						JsonData = JSON.parse(data);
+						var data = JSON.stringify(data); //JSON转换成string
+//						var rank = parseInt(JsonData['rank']);
+//						var checkam = JsonData['checkam'];
+						if(JsonData['code']=='1'){
+//							alert('提交成功');
+//							$.toast("提交成功", "cancel");
+							$.toptip('提交成功','success');
+//							window.location = "/webapp/usercenter.html";
+							
+							$.alert("提交成功，如果想要修改可重新选择。点击确定进入个人中心", function() {
+									window.top.location.href = "/webapp/usercenter.html"
+							});
+						}
+
+					},
+					error: function() {
+						//请求出错处理
+						// alert('ajax请求出错');
+						$.toast("AJAX请求失败", "cancel");
+					},
+										//调用执行后调用的函数
+					complete: function(XMLHttpRequest, textStatus) {
+						$.hideLoading();
+					},
+				});
+
+			}
+		</script>
+		<!--加载js文件 结束-->
+	</body>
+
+</html>

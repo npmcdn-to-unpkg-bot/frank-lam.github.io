@@ -1,0 +1,12 @@
+{
+  "name": "仁润wenapp",
+  "version": "0.3.0",
+  "description": "webapp 1.0 接口说明文档",
+  "title": "接口文档",
+  "url" : "http://hzrrkj.gnway.cc:8080/",
+  "sampleUrl": "http://hzrrkj.gnway.cc:8080/",
+  "template": {
+    "withCompare": true,
+    "withGenerator": true
+  }
+}

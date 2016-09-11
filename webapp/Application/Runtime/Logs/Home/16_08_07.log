@@ -1,0 +1,488 @@
+[ 2016-08-07T14:23:36+08:00 ] ::1 /?action=book_application
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.017001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017001s ]
+NOTIC: [8] Undefined index: userid E:\project\webapp\Application\Home\Controller\IndexController.class.php 第 673 行.
+NOTIC: [8] Undefined index: isbn10 E:\project\webapp\Application\Home\Controller\IndexController.class.php 第 789 行.
+SQL: insert into book_apply(isbn,bookurl,mobile,purchase_reason,userid,checktime) values('','','','','',getdate()) [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.029002s ]
+INFO: [ app_end ] --END-- [ RunTime:0.029002s ]
+
+[ 2016-08-07T14:23:41+08:00 ] ::1 /?action=book_application
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: userid E:\project\webapp\Application\Home\Controller\IndexController.class.php 第 673 行.
+NOTIC: [8] Undefined index: isbn10 E:\project\webapp\Application\Home\Controller\IndexController.class.php 第 789 行.
+SQL: insert into book_apply(isbn,bookurl,mobile,purchase_reason,userid,checktime) values('','','','','',getdate()) [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-08-07T14:23:42+08:00 ] ::1 /?action=book_application
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: userid E:\project\webapp\Application\Home\Controller\IndexController.class.php 第 673 行.
+NOTIC: [8] Undefined index: isbn10 E:\project\webapp\Application\Home\Controller\IndexController.class.php 第 789 行.
+SQL: insert into book_apply(isbn,bookurl,mobile,purchase_reason,userid,checktime) values('','','','','',getdate()) [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-08-07T14:33:31+08:00 ] ::1 /?action=book_application
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: userid E:\project\webapp\Application\Home\Controller\IndexController.class.php 第 673 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-08-07T14:33:32+08:00 ] ::1 /?action=book_application
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: userid E:\project\webapp\Application\Home\Controller\IndexController.class.php 第 673 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-08-07T14:33:32+08:00 ] ::1 /?action=book_application
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined index: userid E:\project\webapp\Application\Home\Controller\IndexController.class.php 第 673 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-08-07T14:33:32+08:00 ] ::1 /?action=book_application
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined index: userid E:\project\webapp\Application\Home\Controller\IndexController.class.php 第 673 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-08-07T14:35:11+08:00 ] ::1 /?action=book_application
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: userid E:\project\webapp\Application\Home\Controller\IndexController.class.php 第 674 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007001s ]
+
+[ 2016-08-07T14:35:13+08:00 ] ::1 /?action=book_application
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: userid E:\project\webapp\Application\Home\Controller\IndexController.class.php 第 674 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-08-07T14:35:14+08:00 ] ::1 /?action=book_application
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: userid E:\project\webapp\Application\Home\Controller\IndexController.class.php 第 674 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-08-07T14:35:25+08:00 ] ::1 /?action=book_application
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-08-07T14:35:29+08:00 ] ::1 /?action=book_application
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: isbn10 E:\project\webapp\Application\Home\Controller\IndexController.class.php 第 810 行.
+NOTIC: [8] Undefined index: isbn13 E:\project\webapp\Application\Home\Controller\IndexController.class.php 第 810 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-08-07T14:35:29+08:00 ] ::1 /?action=book_application
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: isbn10 E:\project\webapp\Application\Home\Controller\IndexController.class.php 第 810 行.
+NOTIC: [8] Undefined index: isbn13 E:\project\webapp\Application\Home\Controller\IndexController.class.php 第 810 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-08-07T14:35:30+08:00 ] ::1 /?action=book_application
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: isbn10 E:\project\webapp\Application\Home\Controller\IndexController.class.php 第 810 行.
+NOTIC: [8] Undefined index: isbn13 E:\project\webapp\Application\Home\Controller\IndexController.class.php 第 810 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-08-07T14:35:30+08:00 ] ::1 /?action=book_application
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined index: isbn10 E:\project\webapp\Application\Home\Controller\IndexController.class.php 第 810 行.
+NOTIC: [8] Undefined index: isbn13 E:\project\webapp\Application\Home\Controller\IndexController.class.php 第 810 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-08-07T14:35:31+08:00 ] ::1 /?action=book_application
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: isbn10 E:\project\webapp\Application\Home\Controller\IndexController.class.php 第 810 行.
+NOTIC: [8] Undefined index: isbn13 E:\project\webapp\Application\Home\Controller\IndexController.class.php 第 810 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-08-07T14:38:09+08:00 ] ::1 /?action=book_application
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: isbn10 E:\project\webapp\Application\Home\Controller\IndexController.class.php 第 810 行.
+NOTIC: [8] Undefined index: isbn13 E:\project\webapp\Application\Home\Controller\IndexController.class.php 第 810 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-08-07T14:38:14+08:00 ] ::1 /?action=book_application
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: isbn10 E:\project\webapp\Application\Home\Controller\IndexController.class.php 第 810 行.
+NOTIC: [8] Undefined index: isbn13 E:\project\webapp\Application\Home\Controller\IndexController.class.php 第 810 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-08-07T14:38:32+08:00 ] ::1 /?action=book_application
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: isbn10 E:\project\webapp\Application\Home\Controller\IndexController.class.php 第 808 行.
+NOTIC: [8] Undefined index: isbn13 E:\project\webapp\Application\Home\Controller\IndexController.class.php 第 808 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-08-07T14:38:56+08:00 ] ::1 /?action=book_application
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: isbn10 E:\project\webapp\Application\Home\Controller\IndexController.class.php 第 808 行.
+NOTIC: [8] Undefined index: isbn13 E:\project\webapp\Application\Home\Controller\IndexController.class.php 第 808 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-08-07T14:41:15+08:00 ] ::1 /?action=book_application
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [8] Undefined index: isbn10 E:\project\webapp\Application\Home\Controller\IndexController.class.php 第 808 行.
+NOTIC: [8] Undefined index: isbn13 E:\project\webapp\Application\Home\Controller\IndexController.class.php 第 808 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-08-07T17:13:16+08:00 ] ::1 /?action=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: select * from att_userinfo where userid='llc73' [ RunTime:0.2140s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\project\webapp\Application\Home\Controller\IndexController.class.php 第 372 行.
+SQL: SELECT att_userinfo.cardid, att_userinfo.name, DEPARTMENTS.DEPTNAME AS deptname, att_userinfo.password, att_userinfo.userid FROM att_userinfo INNER JOIN DEPARTMENTS ON att_userinfo.departid = DEPARTMENTS.DEPTID where att_userinfo.userid='llc73' [ RunTime:0.1610s ]
+ERR: SQLSTATE[23000]: [Microsoft][SQL Server Native Client 11.0][SQL Server]不能将值 NULL 插入列 'id'，表 'menjinkaoqin.dbo.book_login_log'；列不允许有 Null 值。INSERT 失败。
+
+[ 2016-08-07T17:13:18+08:00 ] ::1 /?action=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: select * from att_userinfo where userid='llc73' [ RunTime:0.0540s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\project\webapp\Application\Home\Controller\IndexController.class.php 第 372 行.
+SQL: SELECT att_userinfo.cardid, att_userinfo.name, DEPARTMENTS.DEPTNAME AS deptname, att_userinfo.password, att_userinfo.userid FROM att_userinfo INNER JOIN DEPARTMENTS ON att_userinfo.departid = DEPARTMENTS.DEPTID where att_userinfo.userid='llc73' [ RunTime:0.0530s ]
+ERR: SQLSTATE[23000]: [Microsoft][SQL Server Native Client 11.0][SQL Server]不能将值 NULL 插入列 'id'，表 'menjinkaoqin.dbo.book_login_log'；列不允许有 Null 值。INSERT 失败。
+
+[ 2016-08-07T17:13:19+08:00 ] ::1 /?action=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: select * from att_userinfo where userid='llc73' [ RunTime:0.0650s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\project\webapp\Application\Home\Controller\IndexController.class.php 第 372 行.
+SQL: SELECT att_userinfo.cardid, att_userinfo.name, DEPARTMENTS.DEPTNAME AS deptname, att_userinfo.password, att_userinfo.userid FROM att_userinfo INNER JOIN DEPARTMENTS ON att_userinfo.departid = DEPARTMENTS.DEPTID where att_userinfo.userid='llc73' [ RunTime:0.0550s ]
+ERR: SQLSTATE[23000]: [Microsoft][SQL Server Native Client 11.0][SQL Server]不能将值 NULL 插入列 'id'，表 'menjinkaoqin.dbo.book_login_log'；列不允许有 Null 值。INSERT 失败。
+
+[ 2016-08-07T17:13:27+08:00 ] ::1 /?action=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: select * from att_userinfo where userid='llc73' [ RunTime:0.0460s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\project\webapp\Application\Home\Controller\IndexController.class.php 第 372 行.
+SQL: SELECT att_userinfo.cardid, att_userinfo.name, DEPARTMENTS.DEPTNAME AS deptname, att_userinfo.password, att_userinfo.userid FROM att_userinfo INNER JOIN DEPARTMENTS ON att_userinfo.departid = DEPARTMENTS.DEPTID where att_userinfo.userid='llc73' [ RunTime:0.0470s ]
+ERR: SQLSTATE[23000]: [Microsoft][SQL Server Native Client 11.0][SQL Server]不能将值 NULL 插入列 'id'，表 'menjinkaoqin.dbo.book_login_log'；列不允许有 Null 值。INSERT 失败。
+
+[ 2016-08-07T17:13:42+08:00 ] ::1 /?action=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: select * from att_userinfo where userid='llc73' [ RunTime:0.0580s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\project\webapp\Application\Home\Controller\IndexController.class.php 第 372 行.
+SQL: SELECT att_userinfo.cardid, att_userinfo.name, DEPARTMENTS.DEPTNAME AS deptname, att_userinfo.password, att_userinfo.userid FROM att_userinfo INNER JOIN DEPARTMENTS ON att_userinfo.departid = DEPARTMENTS.DEPTID where att_userinfo.userid='llc73' [ RunTime:0.0760s ]
+ERR: SQLSTATE[23000]: [Microsoft][SQL Server Native Client 11.0][SQL Server]不能将值 NULL 插入列 'id'，表 'menjinkaoqin.dbo.book_login_log'；列不允许有 Null 值。INSERT 失败。
+
+[ 2016-08-07T17:13:47+08:00 ] ::1 /?action=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: select * from att_userinfo where userid='llc73' [ RunTime:0.0530s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\project\webapp\Application\Home\Controller\IndexController.class.php 第 372 行.
+SQL: SELECT att_userinfo.cardid, att_userinfo.name, DEPARTMENTS.DEPTNAME AS deptname, att_userinfo.password, att_userinfo.userid FROM att_userinfo INNER JOIN DEPARTMENTS ON att_userinfo.departid = DEPARTMENTS.DEPTID where att_userinfo.userid='llc73' [ RunTime:0.0770s ]
+ERR: SQLSTATE[23000]: [Microsoft][SQL Server Native Client 11.0][SQL Server]不能将值 NULL 插入列 'id'，表 'menjinkaoqin.dbo.book_login_log'；列不允许有 Null 值。INSERT 失败。
+
+[ 2016-08-07T17:14:15+08:00 ] ::1 /?action=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: select * from att_userinfo where userid='llc73' [ RunTime:0.0620s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\project\webapp\Application\Home\Controller\IndexController.class.php 第 372 行.
+SQL: SELECT att_userinfo.cardid, att_userinfo.name, DEPARTMENTS.DEPTNAME AS deptname, att_userinfo.password, att_userinfo.userid FROM att_userinfo INNER JOIN DEPARTMENTS ON att_userinfo.departid = DEPARTMENTS.DEPTID where att_userinfo.userid='llc73' [ RunTime:0.0650s ]
+ERR: SQLSTATE[23000]: [Microsoft][SQL Server Native Client 11.0][SQL Server]不能将值 NULL 插入列 'id'，表 'menjinkaoqin.dbo.book_login_log'；列不允许有 Null 值。INSERT 失败。
+
+[ 2016-08-07T17:15:13+08:00 ] ::1 /?action=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: select * from att_userinfo where userid='llc73' [ RunTime:0.0520s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\project\webapp\Application\Home\Controller\IndexController.class.php 第 372 行.
+SQL: SELECT att_userinfo.cardid, att_userinfo.name, DEPARTMENTS.DEPTNAME AS deptname, att_userinfo.password, att_userinfo.userid FROM att_userinfo INNER JOIN DEPARTMENTS ON att_userinfo.departid = DEPARTMENTS.DEPTID where att_userinfo.userid='llc73' [ RunTime:0.0470s ]
+ERR: SQLSTATE[23000]: [Microsoft][SQL Server Native Client 11.0][SQL Server]不能将值 NULL 插入列 'id'，表 'menjinkaoqin.dbo.book_login_log'；列不允许有 Null 值。INSERT 失败。
+
+[ 2016-08-07T17:15:19+08:00 ] ::1 /?action=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: select * from att_userinfo where userid='llc73' [ RunTime:0.0430s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\project\webapp\Application\Home\Controller\IndexController.class.php 第 372 行.
+SQL: SELECT att_userinfo.cardid, att_userinfo.name, DEPARTMENTS.DEPTNAME AS deptname, att_userinfo.password, att_userinfo.userid FROM att_userinfo INNER JOIN DEPARTMENTS ON att_userinfo.departid = DEPARTMENTS.DEPTID where att_userinfo.userid='llc73' [ RunTime:0.0470s ]
+ERR: SQLSTATE[23000]: [Microsoft][SQL Server Native Client 11.0][SQL Server]不能将值 NULL 插入列 'id'，表 'menjinkaoqin.dbo.book_login_log'；列不允许有 Null 值。INSERT 失败。
+
+[ 2016-08-07T17:15:20+08:00 ] ::1 /?action=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: select * from att_userinfo where userid='llc73' [ RunTime:0.0560s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\project\webapp\Application\Home\Controller\IndexController.class.php 第 372 行.
+SQL: SELECT att_userinfo.cardid, att_userinfo.name, DEPARTMENTS.DEPTNAME AS deptname, att_userinfo.password, att_userinfo.userid FROM att_userinfo INNER JOIN DEPARTMENTS ON att_userinfo.departid = DEPARTMENTS.DEPTID where att_userinfo.userid='llc73' [ RunTime:0.0510s ]
+ERR: SQLSTATE[23000]: [Microsoft][SQL Server Native Client 11.0][SQL Server]不能将值 NULL 插入列 'id'，表 'menjinkaoqin.dbo.book_login_log'；列不允许有 Null 值。INSERT 失败。
+
+[ 2016-08-07T17:15:21+08:00 ] ::1 /?action=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: select * from att_userinfo where userid='llc73' [ RunTime:0.0440s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\project\webapp\Application\Home\Controller\IndexController.class.php 第 372 行.
+SQL: SELECT att_userinfo.cardid, att_userinfo.name, DEPARTMENTS.DEPTNAME AS deptname, att_userinfo.password, att_userinfo.userid FROM att_userinfo INNER JOIN DEPARTMENTS ON att_userinfo.departid = DEPARTMENTS.DEPTID where att_userinfo.userid='llc73' [ RunTime:0.0430s ]
+ERR: SQLSTATE[23000]: [Microsoft][SQL Server Native Client 11.0][SQL Server]不能将值 NULL 插入列 'id'，表 'menjinkaoqin.dbo.book_login_log'；列不允许有 Null 值。INSERT 失败。
+
+[ 2016-08-07T17:18:45+08:00 ] ::1 /?action=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: select * from att_userinfo where userid='llc73' [ RunTime:0.0510s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\project\webapp\Application\Home\Controller\IndexController.class.php 第 372 行.
+SQL: SELECT att_userinfo.cardid, att_userinfo.name, DEPARTMENTS.DEPTNAME AS deptname, att_userinfo.password, att_userinfo.userid FROM att_userinfo INNER JOIN DEPARTMENTS ON att_userinfo.departid = DEPARTMENTS.DEPTID where att_userinfo.userid='llc73' [ RunTime:0.1550s ]
+ERR: SQLSTATE[23000]: [Microsoft][SQL Server Native Client 11.0][SQL Server]不能将值 NULL 插入列 'id'，表 'menjinkaoqin.dbo.book_login_log'；列不允许有 Null 值。INSERT 失败。
+
+[ 2016-08-07T17:19:49+08:00 ] ::1 /?action=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: select * from att_userinfo where userid='llc73' [ RunTime:0.0490s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\project\webapp\Application\Home\Controller\IndexController.class.php 第 372 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-08-07T17:19:49+08:00 ] ::1 /?action=getInfoByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT att_userinfo.cardid, att_userinfo.name, DEPARTMENTS.DEPTNAME AS deptname, att_userinfo.password, att_userinfo.userid FROM att_userinfo INNER JOIN DEPARTMENTS ON att_userinfo.departid = DEPARTMENTS.DEPTID where att_userinfo.userid='llc73' [ RunTime:0.0440s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-08-07T17:19:52+08:00 ] ::1 /?action=getAttRank&userid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: top E:\project\webapp\Application\Home\Controller\IndexController.class.php 第 233 行.
+SQL: select count(*) as count from att_userinfo where userid='llc73' [ RunTime:0.0520s ]
+NOTIC: [8] Undefined variable: topSQL E:\project\webapp\Application\Home\Controller\IndexController.class.php 第 268 行.
+SQL: select  count(*) as total from att_check where att_check.checkam between '2016-7-7 00:00:00' and '2016-07-08 00:00:00'; [ RunTime:0.0750s ]
+SQL: select att_check.id, att_check.cardid, att_check.checkam, att_check.likeam, att_check.likeam_name, att_check.checkpm, 
+                att_check.likepm, att_check.likepm_name, att_check.privilege, att_userinfo.name, att_userinfo.sign, 
+                att_userinfo.departid, att_userinfo.userid, att_userinfo.qq, att_userinfo.portraiturl, att_userinfo.mark
+FROM      att_userinfo INNER JOIN
+                att_check ON att_userinfo.cardid = att_check.cardid where att_check.cardid=73 and att_check.checkam between '2016-7-7 00:00:00' and '2016-07-08 00:00:00' [ RunTime:0.1580s ]
+SQL: Select * From (Select rank=Row_number() Over(order By checkam asc),* From att_check Where att_check.checkam between '2016-7-7 00:00:00' and '2016-07-08 00:00:00'  ) A where cardid=73 [ RunTime:0.0740s ]
+NOTIC: [8] Undefined variable: topSQL E:\project\webapp\Application\Home\Controller\IndexController.class.php 第 301 行.
+SQL: select  att_check.id, att_check.cardid, att_check.checkam, att_check.likeam, att_check.likeam_name, att_check.checkpm, 
+                att_check.likepm, att_check.likepm_name, att_check.privilege, att_userinfo.name, att_userinfo.sign, 
+                att_userinfo.departid, att_userinfo.userid, att_userinfo.qq, att_userinfo.portraiturl, att_userinfo.mark
+FROM      att_userinfo INNER JOIN
+                att_check ON att_userinfo.cardid = att_check.cardid where att_check.checkam between '2016-7-7 00:00:00' and '2016-07-08 00:00:00' order by att_check.checkam; [ RunTime:0.0470s ]
+
+[ 2016-08-07T17:19:55+08:00 ] ::1 /?action=getInfoByUserid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT att_userinfo.cardid, att_userinfo.name, DEPARTMENTS.DEPTNAME AS deptname, att_userinfo.password, att_userinfo.userid FROM att_userinfo INNER JOIN DEPARTMENTS ON att_userinfo.departid = DEPARTMENTS.DEPTID where att_userinfo.userid='llc73' [ RunTime:0.0390s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-08-07T17:58:53+08:00 ] ::1 /?action=getAttRank
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+
+[ 2016-08-07T18:01:30+08:00 ] ::1 /?action=getAttRank
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+

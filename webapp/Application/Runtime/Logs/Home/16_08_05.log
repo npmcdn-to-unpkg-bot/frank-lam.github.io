@@ -1,0 +1,13 @@
+[ 2016-08-05T13:43:26+08:00 ] ::1 /?action=getBookinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000500s ]
+INFO: [ app_init ] --END-- [ RunTime:0.032004s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.020502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.020502s ]
+SQL: select * from book_base where id='' [ RunTime:0.0725s ]
+NOTIC: [8] Undefined offset: 0 E:\project\webapp\Application\Home\Controller\IndexController.class.php 第 426 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.027503s ]
+INFO: [ app_end ] --END-- [ RunTime:0.027503s ]
+

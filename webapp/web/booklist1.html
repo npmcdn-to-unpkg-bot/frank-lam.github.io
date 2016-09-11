@@ -1,0 +1,141 @@
+
+
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+        <title>书列表</title>
+        <!--加载CSS样式 开始-->
+        <link rel="stylesheet" href="/Public/Css/weui.min.css">
+        <link rel="stylesheet" href="/Public/Css/jquery-weui.css">
+        <link rel="stylesheet" href="/Public/Css/demos.css">
+        <link rel="stylesheet" href="/Public/Css/exam.css">
+        <!--加载CSS样式 结束-->
+        <!-- <link rel="stylesheet" href="css/Pager.css"> -->
+        <style>
+            .bl-tit {
+                text-align: center;
+                font-size: 24px;
+                font-weight: bold;
+            }
+            
+            #pager ul.pages {
+                display: block;
+                border: none;
+                text-transform: uppercase;
+                font-size: 10px;
+                margin: 10px 0 20px;
+                padding: 0;
+            }
+            
+            #pager ul.pages li {
+                list-style: none;
+                float: left;
+                border: 1px solid #ccc;
+                text-decoration: none;
+                margin: 0 5px 0 0;
+                padding: 5px;
+            }
+            
+            #pager ul.pages li:hover {
+                border: 1px solid #003f7e;
+            }
+            
+            #pager ul.pages li.pgEmpty {
+                border: 1px solid #eee;
+                color: #eee;
+            }
+            
+            #pager ul.pages li.pgCurrent {
+                border: 1px solid #003f7e;
+                color: #000;
+                font-weight: 700;
+                background-color: #eee;
+            }
+        </style>
+    </head>
+
+    <body ontouchstart>
+        <div class="hd">
+            <h1 class="page_title">书列表</h1>
+        </div>
+        <div class="weui_cells weui_cells_access" id="bookList">
+            <!--<a class="weui_cell" href="www.baidu.com">
+                <div class="weui_cell_hd">
+                    <img src="" alt="icon" style="width:20px;margin-right:5px;display:block">
+                </div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <p id="bookName">物种起源，少儿彩绘版</p>
+                </div>
+
+            </a>-->
+        </div>
+        <div id="pager">
+            <div id="prev"></div>
+            <div id="next"></div>
+        </div>
+        <div id="list"></div>
+        <!-- <div id="result"></div> -->
+        <!--加载js文件 开始-->
+        <div id="public"></div>
+        <script src="/Public/Js/jquery-2.1.4.js"></script>
+        <script src="/Public/Js/jquery-weui.js"></script>
+        <script src="/Public/Js/function.js"></script>
+        <!--加载js文件 结束-->
+        <script type="text/javascript">
+            $("#public").load("tabar.html")
+            var lim = 10;
+            var zhiXing = false;
+            var pagecount = 0;
+            getJ();
+            // alert(pagecount);
+
+            function getJ() {
+                $.ajax({
+                    url: "/index.php/Home/User/booklist?limit=" + lim,
+                    type: 'post',
+                    async: false,
+                    dataType: 'json',
+                    // timeout: 1000,
+                    error: function() {
+                        $.alert('加载de失败');
+                    },
+                    success: function(json) {
+                        if(json.code * 1 == 1) {
+                            zhiXing = true;
+                            total = json.tot * 1;
+                            // 总共多少页
+                            pagecount = Math.ceil(total / lim);
+
+                            console.log(total);
+                            console.log(pagecount);
+                            var t = "";
+                            $.each(json.bList, function(i) {
+                                t += '<a class="weui_cell" href="bookinfo.html?book_id=' + json.bList[i].id + ' "><div class="weui_cell_hd"><img src="' + json.bList[i].pic_url + '" alt="icon" style="width:20px;margin-right:5px;display:block"></div><div class="weui_cell_bd weui_cell_primary"><p>' + json.bList[i].name + '</p></div></a>'
+                            })
+                            $("#bookList").html(t);
+                            // 总书页数
+
+                        } else {
+                            $.alert("加载失败");
+                        }
+                    }
+                });
+
+            }
+            /*function setTime (){
+                setInterval(setTime,1000)
+                if(zhiXing){
+                    alert(pagecount);
+                    zhiXing = false;
+                }
+
+            }
+            setTime();*/
+        </script>
+    </body>
+
+</html>
+<!-- var blen = Math.ceil(json.bList.length)/10 $("#pager").pager({ pagenumber: 1, pagecount: blen, buttonClickCallback: PageClick }); PageClick = function(pageclickednumber) { $("#pager").pager({ pagenumber: pageclickednumber, pagecount: blen, buttonClickCallback: PageClick }); $("#result").html("当前第" + pageclickednumber + "页"); } -->

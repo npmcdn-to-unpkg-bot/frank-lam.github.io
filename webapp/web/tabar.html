@@ -1,0 +1,77 @@
+<!-- <!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>书列表</title>
+    加载CSS样式 开始
+    <link rel="stylesheet" href="/Public/Css/weui.min.css">
+    <link rel="stylesheet" href="/Public/Css/jquery-weui.css">
+    <link rel="stylesheet" href="/Public/Css/demos.css">
+    <link rel="stylesheet" href="/Public/Css/exam.css">
+    加载CSS样式 结束
+</head>
+
+<body ontouchstart>
+    <div class="weui_tab">
+        <div class="weui_tab_bd" id="tabcon">
+        </div>
+        <div class="weui_tabbar">
+            <a href="javascript:;" class="weui_tabbar_item weui_bar_item_on" id="bookL">
+                <div class="weui_tabbar_icon">
+                    <img src="/public/img/book-icon.png">
+                </div>
+                <p class="weui_tabbar_label">书库</p>
+            </a>
+            <a href="javascript:;" class="weui_tabbar_item">
+                <div class="weui_tabbar_icon">
+                    <img src="/public/img/edit-icon.png">
+                </div>
+                <p class="weui_tabbar_label">编辑</p>
+            </a>
+            <a href="javascript:;" class="weui_tabbar_item">
+                <div class="weui_tabbar_icon">
+                    <img src="/public/img/rev-icon.png">
+                </div>
+                <p class="weui_tabbar_label">审核</p>
+            </a>
+        </div>
+    </div>
+    加载js文件 开始
+    <script src="/Public/Js/jquery-2.1.4.js"></script>
+    <script src="/Public/Js/jquery-weui.js"></script>
+    <script src="/Public/Js/function.js"></script>
+    <script>
+        $("#tabcon").load("booklist1.html");
+        function loadHml(e,url){
+            $(e).click(function(){
+                $("#tabcon").load(url)
+            })
+        }
+       loadHml("#bookL",)
+    </script>
+    加载js文件 结束
+</body>
+
+</html> -->
+<div class="weui_tabbar" style="position:fixed;bottom:0;">
+    <a href="javascript:;" class="weui_tabbar_item weui_bar_item_on" id="bookL">
+        <div class="weui_tabbar_icon">
+            <img src="/public/img/book-icon.png">
+        </div>
+        <p class="weui_tabbar_label">书库</p>
+    </a>
+    <a href="javascript:;" class="weui_tabbar_item">
+        <div class="weui_tabbar_icon">
+            <img src="/public/img/edit-icon.png">
+        </div>
+        <p class="weui_tabbar_label">编辑</p>
+    </a>
+    <a href="javascript:;" class="weui_tabbar_item">
+        <div class="weui_tabbar_icon">
+            <img src="/public/img/rev-icon.png">
+        </div>
+        <p class="weui_tabbar_label">审核</p>
+    </a>
+</div>

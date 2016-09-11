@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>登录</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+		<!--加载CSS样式 开始-->
+		<link rel="stylesheet" href="/Public/Css/weui.min.css">
+		<link rel="stylesheet" href="/Public/Css/jquery-weui.css">
+		<link rel="stylesheet" href="/Public/Css/demos.css">
+		<link rel="stylesheet" href="/Public/Css/exam.css">
+		<!--加载CSS样式 结束-->
+	</head>
+
+	<body id="loginpage" ontouchstart>
+		<div class="hd">
+			<h4 class="page_title">用户登录</h4>
+			<h4 class="page_title" style="font-size: 20px;">renrun webapp 1.0</h4>
+		</div>
+		<div class="weui_cells weui_cells_form weui_cells_form">
+			<div class="weui_cell dla">
+				<div class="weui_cell_hd"><label class="weui_label">账号</label></div>
+				<div class="weui_cell_bd weui_cell_primary">
+					<input class="weui_input" type="text" id="userid" placeholder="姓名首字母+工号" />
+				</div>
+			</div>
+			<div class="weui_cell weui_cells_form">
+				<div class="weui_cell_hd"><label class="weui_label">密码</label></div>
+				<div class="weui_cell_bd weui_cell_primary">
+					<input class="weui_input" type="password" id="pwd" placeholder="初始123456" />
+				</div>
+			</div>
+		</div>
+		<a class="weui_btn weui_btn_primary login-btn" style="margin-top: 2rem;" onclick="trylogin()">登录</a>
+		<img id="headurl" src="" style="height: 100px;" />
+		<!--加载js文件 开始-->
+		<script src="/Public/Js/jquery-2.1.4.js"></script>
+		<script src="/Public/Js/jquery-weui.js"></script>
+		<script src="/Public/Js/function.js"></script>
+		<!--加载js文件 结束-->
+
+		<script>
+			delCookie("userid");
+			SetCookie("headimgurl", getQueryString("headimgurl"));
+			SetCookie("nickname", getQueryString("nickname"));
+			SetCookie("sex", getQueryString("sex"));
+			SetCookie("country", getQueryString("country"));
+			SetCookie("province", getQueryString("province"));
+			SetCookie("city", getQueryString("city"));
+			SetCookie("openid", getQueryString("openid"));
+			
+			if(getCookie("openid")!='null' && getQueryString("openid")!='null'){
+//				alert('尝试微信登录');
+				tryWeixinLogin();
+			}
+
+			function trylogin() {
+				//				alert(getCookie("userid"));
+				var userid = $("#userid").val();
+				var pwd = $("#pwd").val();
+				if(getStrSize(userid) == "0") {
+					$.toptip("请输入账号");
+					return false;
+				} else if(getStrSize(pwd) == "0") {
+					$.toptip("请输入密码");
+					return false;
+				} else {
+					login();
+				}
+			}
+
+			function tryWeixinLogin() {
+		
+				$.ajax({
+					//提交数据的类型 POST GET
+					type: "POST",
+					//提交的网址
+					url: "/?action=tryLoginWeixin",
+					//提交的数据
+					data: {
+						openid:getCookie('openid')
+					},
+					//返回数据的格式
+					datatype: "json", //"xml", "html", "script", "json", "jsonp", "text".
+					//成功返回之后调用的函数             
+					success: function(data) {
+						jsonDate = JSON.parse(data);
+						var data = JSON.stringify(jsonDate); //JSON转换成string
+						//入库成功
+						if(jsonDate['code'] == '1') {
+//							alert(jsonDate['userid']);
+							SetCookie('userid',jsonDate['userid']);
+							window.location = "/webapp/usercenter.html";
+						}
+//						else{
+//							alert('微信没有登录成功');
+//						}
+					},
+				});
+			}
+
+			function login() {
+				$.showLoading(); //$.hideLoading();
+				var userid = $("#userid").val();
+				var pwd = $("#pwd").val();
+				$.ajax({
+					//提交数据的类型 POST GET
+					type: "POST",
+					//提交的网址
+					url: "/?action=login",
+					//提交的数据
+					data: {
+						userid: userid,
+						password: pwd
+					},
+					//返回数据的格式
+					datatype: "json", //"xml", "html", "script", "json", "jsonp", "text".
+					//在请求之前调用的函数
+					beforeSend: function() {
+						//    return true;
+					},
+					//成功返回之后调用的函数
+					success: function(data) {
+						jsonDate = JSON.parse(data);
+						var data = JSON.stringify(jsonDate); //JSON转换成string
+						//						alert(data);
+						if(jsonDate['code'] == "0") {
+							$.toptip(jsonDate['msg']);
+							if(jsonDate['msg'] == "用户名不存在") {
+								$("#userid").val("");
+								$("#userid").focus();
+							}
+							if(jsonDate['msg'] == "密码错误") {
+								$("#pwd").val("");
+								$("#pwd").focus();
+							}
+						}
+						if(jsonDate['code'] == "1") {
+							//							$.toast("登录成功");
+							SetCookie('userid', userid);
+							SetCookie('password', pwd);
+
+							addWeixinInfo();
+							if(pwd * 1 == 123456) {
+								$.alert("您的密码为初始密码，太不安全了，请点击确认修改密码。", function() {
+									window.top.location.href = "/webapp/update_password.html"
+								});
+							} else {
+								window.location = "/webapp/usercenter.html";
+							}
+						}
+					},
+					//调用执行后调用的函数
+					complete: function(XMLHttpRequest, textStatus) {
+						$.hideLoading();
+
+					},
+					//调用出错执行的函数
+					error: function() {
+						$.hideLoading();
+						//请求出错处理
+						// alert('ajax请求出错');
+						$.toast("AJAX请求失败", "cancel");
+					}
+				});
+			}
+			//添加微信来的信息到数据库
+			function addWeixinInfo() {
+				$.ajax({
+					//提交数据的类型 POST GET
+					type: "POST",
+					//提交的网址
+					url: "/?action=addWeixinInfo",
+					//提交的数据
+					data: {
+						headimgurl: getCookie("headimgurl"),
+						nickname: getCookie("nickname"),
+						sex: getCookie("sex"),
+						country: getCookie("country"),
+						province: getCookie("province"),
+						city: getCookie("city"),
+						userid: getCookie("userid"),
+						openid: getCookie("openid")
+					},
+					//返回数据的格式
+					datatype: "json", //"xml", "html", "script", "json", "jsonp", "text".
+					//在请求之前调用的函数
+					beforeSend: function() {
+						//    return true;
+					},
+					//成功返回之后调用的函数             
+					success: function(data) {
+						jsonDate = JSON.parse(data);
+						var data = JSON.stringify(jsonDate); //JSON转换成string
+//						alert(data);
+//						alert(getCookie("openid"));
+						//							alert(data);
+						//入库成功s
+						//							alert(data);
+					},
+					//调用执行后调用的函数
+					complete: function(XMLHttpRequest, textStatus) {
+						//alert(XMLHttpRequest.responseText);
+						//alert(textStatus);
+						//HideLoading();
+					},
+					//调用出错执行的函数
+					error: function() {
+						//请求出错处理
+						// alert('ajax请求出错');
+						$.toast("AJAX请求失败", "cancel");
+					}
+				});
+
+			}
+		</script>
+	</body>
+
+</html>

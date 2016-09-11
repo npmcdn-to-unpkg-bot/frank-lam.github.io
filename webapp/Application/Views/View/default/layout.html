@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <include file="Public/head"/>
+    </head>
+    <body>
+        <include file="Public/navbar" home="主页"/>
+        <div class="container">
+            <div class="col-md-2 list-group">
+                <a class="list-group-item" href="{{:U('index')}}">主页</a>
+                <a class="list-group-item"  href="{{:U('friends')}}">好友</a>
+            </div>
+            <div class="col-md-10">
+                {__CONTENT__}
+            </div>
+        </div>
+        <include file="Public/js"/>
+    </body>
+</html>

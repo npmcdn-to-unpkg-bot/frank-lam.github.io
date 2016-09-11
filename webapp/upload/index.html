@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Title Page</title>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <div id="container">  
+            <fieldset>  
+                <legend class="img"><img width="100%" src="css/logo.png" /></legend>  
+                <form action="" method="post" name="myform" id="myform" onsubmit="return false" enctype="multipart/form-data">  
+                    <strong>亲，请选择你要上传的文件</strong>  
+                    <div class="file"><input type="file" id="fileToUpload" name="fileToUpload" /></div>  
+                    <select id="product">  
+                            <option value="" <?php if(empty($pname)){ echo "selected" ;} ?> >请选择产品</option>  
+                            <option value="tuan" <?php if($pname == '2000tuan'){ echo "selected" ;} ?> >团</option>              
+                        </select>  
+                        <button id="postBtn" >Submit</button>  
+                </form>  
+                <div id="info"></div>  
+                <div style="position:relative; top:40px; left:20px;">  
+                    <a id="loading" style="display:none"><img width="10%" src="css/loading.gif" /></a>  
+                </div>  
+                <a href="#" id="img_link" target="_blank">  
+                    <div id="img_url">buding</div>  
+                    <br/>  
+                    <img class="preview" id="preview" src="" style="display:none;margin:0 auto" />  
+                </a>  
+            </fieldset>  
+        </div> 
+
+        <script type="text/javascript">  
+            $('#postBtn').click(function(){  
+                $('#preview').hide();  
+                $('#img_url').hide();  
+                $('#loading')  
+                    .ajaxStart(function(){  
+                        $(this).show();  
+                    })  
+                    .ajaxComplete(function(){  
+                        $(this).hide();  
+                    });  
+                if($('#fileToUpload').val() == ""){  
+                    $('#info').html("亲，还没选择文件呢");  
+                    var jObject={"Url":"","Height":413};  
+                    var jString=JSON.stringify(jObject);  
+                    window.parent.postMessage(jString,'*');  
+                    return false;  
+                }   
+                if($('#product').val() == ""){  
+                    $('#info').html("亲，还没选择产品呢");  
+                    $('#info').css("color","#e9af32");  
+                    var jObject={"Url":"","Height":413};  
+                    var jString=JSON.stringify(jObject);  
+                    window.parent.postMessage(jString,'*');  
+                    return false;  
+                }   
+                var val = $('#product').val();  
+                $.ajaxFileUpload({    
+                    url:'ajaxupload.php',  
+                    secureuri:false,  
+                    fileElementId:'fileToUpload',  
+                    dataType: 'text',  
+                    data:{product:val},  
+                    success: function (data, status)  
+                    {  
+                        if(data.search(/http:\/\//i) < 0 ){  
+                            $('#info').html(data);  
+                            var jObject={"Url":"","Height":413};  
+                            var jString=JSON.stringify(jObject);  
+                            window.parent.postMessage(jString,'*');  
+                        }else{  
+                            $('#info').html("您上传的文件为:<br/>");  
+                            $('#preview').attr("src",data);  
+                            $('#img_link').attr("href",data);  
+                            $('#img_url').html(data);  
+                            $('#preview').show();  
+                            $('#img_url').show();  
+                            $('#preview').load(function(){  
+                                var imgH=$('#preview').height();  
+                                var jObject={"Url":data,"Height":imgH+228,"oid":"<?php echo @$_REQUEST['oid']; ?>"};  
+                                var jString=JSON.stringify(jObject);  
+                                window.parent.postMessage(jString,'*');  
+                            });  
+                        }  
+                    },  
+                    error: function (data, status, e){    
+                        $('#info').html(data+e);  
+                    }  
+                });  
+            });  
+        </script>  
+
+        <!-- jQuery -->
+        <script src="//code.jquery.com/jquery.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+         <script src="Hello World"></script>
+    </body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>webapp control center</title>
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<!-- jQuery -->
+		<script src="http://code.jquery.com/jquery.js"></script>
+		<!-- Bootstrap JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+
+		<link rel="stylesheet" href="../lib/weui.min.css">
+		<link rel="stylesheet" href="../css/jquery-weui.css">
+		<style type="text/css">
+			*{
+				font-family: 'Microsoft Yahei';
+			}
+		</style>
+	</head>
+	<body>
+
+
+		<div class="container" style="margin-top: 20px;">
+			<h2 style="text-align: center;">项目开发控制中心 404</h2>
+			<br/>
+			<div class="alert alert-info text-center" role="alert">
+				<strong>链接已经修改，请转向</strong><a href="/Public/control.html">/Public/control.html</a>
+
+			</div>
+
+		</div>
+		<script src="../lib/jquery-2.1.4.js"></script>
+		<script src="../js/jquery-weui.js"></script>
+		<script type="text/javascript">
+			function init(){
+				// var result = confirm("是否确定初始化");
+			 //    if(result){//true
+			 //        initdata();
+			 //    } 
+
+
+	            $.confirm("是否要初始化", function() {
+	              // $.toast("添加成功!",function(){
+	              // 	window.location="http://www.baidu.com";
+	              // });
+	              initdata();
+	              // window.location="add_success.html";
+
+	            }, function() {
+	              //取消操作
+	            });
+	    
+			}
+
+
+
+		
+			function initdata(){
+				$.ajax({
+				    //提交数据的类型 POST GET
+				    type: "POST",
+				    //提交的网址
+				    url: "/?action=init",
+
+				    //提交的数据
+				    // data: { isbn13: book_isbn , intro: book_intro , count: book_number},
+				    //返回数据的格式
+				    datatype: "json",//"xml", "html", "script", "json", "jsonp", "text".
+				    //在请求之前调用的函数
+				    beforeSend: function () {
+				    	// alert("beforeSend");
+				    	//    return true;
+				    },
+				    //成功返回之后调用的函数             
+				    success: function (data) {
+				        //$("#msg").html(decodeURI(data));
+				        // jsonDate = JSON.parse(data);
+				        //入库成功
+				        // if(jsonDate['code']=="1" || jsonDate['code']=="2"){
+				        // 	$.toast("入库成功");
+				        // 	SetCookie("book_number",jsonDate['book_number']);
+				        // 	SetCookie("book_title",$("#title").text());
+				        // 	SetCookie("isbn13",book_isbn);
+
+				        // 	window.location="add_success.html";
+				        // }
+				        // alert(data);
+				        $.toast(data,'text');
+				    },
+				    //调用出错执行的函数
+				    error: function () {
+				        //请求出错处理
+
+				        $.toast("AJAX请求失败", "cancel");
+				    }
+				});
+			}
+		</script>
+	</body>
+</html>

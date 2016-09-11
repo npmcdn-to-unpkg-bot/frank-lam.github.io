@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>书列表</title>
+    <!--加载CSS样式 开始-->
+    <link rel="stylesheet" href="/Public/Css/weui.min.css">
+    <link rel="stylesheet" href="/Public/Css/jquery-weui.css">
+    <link rel="stylesheet" href="/Public/Css/demos.css">
+    <link rel="stylesheet" href="/Public/Css/exam.css">
+    <!--加载CSS样式 结束-->
+    <!-- <link rel="stylesheet" href="css/Pager.css"> -->
+    <style>
+        .weui_media_box .weui_media_desc {
+            line-height: 1.4;
+            margin-top: 1rem;
+        }
+
+        .weui_cells {
+            margin-top: 0;
+        }
+        .weui_cells_title{
+            color: #333;
+        }
+    </style>
+</head>
+
+<body ontouchstart>
+<div class="hd">
+    <h1 class="page_title">审核详情</h1>
+</div>
+<div class="weui_panel weui_panel_access">
+    <!--<div class="weui_panel_hd">文字组合列表</div>-->
+    <div class="weui_cells">
+        <div class="weui_cell">
+            <div class="weui_cell_bd weui_cell_primary">
+                <p>申请人</p>
+            </div>
+            <div class="weui_cell_ft">
+                杜泽
+            </div>
+        </div>
+        <div class="weui_cell">
+            <div class="weui_cell_bd weui_cell_primary">
+                <p>申请时间</p>
+            </div>
+            <div class="weui_cell_ft">
+                1231.2342
+            </div>
+        </div>
+        <div class="weui_cell">
+            <div class="weui_cell_bd weui_cell_primary">
+                <p>申请书名</p>
+            </div>
+            <div class="weui_cell_ft">
+                明日的太阳要出来
+            </div>
+        </div>
+        <div class="weui_cell">
+            <div class="weui_cell_bd weui_cell_primary">
+                <p>到书通知</p>
+            </div>
+            <div class="weui_cell_ft">
+                是
+            </div>
+        </div>
+        <div class="weui_cell">
+            <div class="weui_cell_bd weui_cell_primary">
+                <p>ISBN</p>
+            </div>
+            <div class="weui_cell_ft">
+                9234235234
+            </div>
+        </div>
+    </div>
+    <div class="weui_panel_bd">
+        <div class="weui_media_box weui_media_text">
+            <h4 class="weui_media_title">申请理由</h4>
+            <p class="weui_media_desc">我非常喜欢这本书</p>
+        </div>
+    </div>
+    <div class="weui_cells_title">拒绝理由</div>
+    <div class="weui_cells weui_cells_form">
+        <div class="weui_cell">
+            <div class="weui_cell_bd weui_cell_primary">
+                <textarea class="weui_textarea" placeholder="如果拒绝，请输入拒绝理由" rows="3"></textarea>
+                <div class="weui_textarea_counter"><span>0</span>/200</div>
+            </div>
+        </div>
+    </div>
+    <a href="javascript:;" class="weui_btn weui_btn_primary" style="margin-top: 10px;">确认申请</a>
+    <a href="javascript:;" class="weui_btn weui_btn_warn" id="refuse-btn">拒绝申请</a>
+    <div style="height: 3rem;"></div>
+    <div id="public"></div>
+    <script src="/Public/Js/jquery-2.1.4.js"></script>
+    <script src="/Public/Js/jquery-weui.js"></script>
+    <script src="/Public/Js/function.js"></script>
+    <script>
+        /*$("#refuse-btn").click(function () {
+            $.prompt({
+                title: '拒绝理由',
+                input: '输入拒绝理由',
+                empty: false, // 是否允许为空
+                onOK: function (input) {
+                    //点击确认
+                },
+                onCancel: function () {
+                    //点击取消
+                }
+            });
+        })*/
+    </script>
+    <!--加载js文件 结束-->
+</body>
+
+</html>

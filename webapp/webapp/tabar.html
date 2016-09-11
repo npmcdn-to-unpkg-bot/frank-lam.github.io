@@ -1,0 +1,31 @@
+<div class="weui_tabbar" style="position:fixed;bottom:0;">
+    <a href="/webapp/admin_booklist.html" class="weui_tabbar_item" id="bookL">
+        <div class="weui_tabbar_icon">
+            <img src="/public/img/book-icon.png">
+        </div>
+        <p class="weui_tabbar_label">书库</p>
+    </a>
+    <a href="javascript:;" class="weui_tabbar_item" id="edit">
+        <div class="weui_tabbar_icon">
+            <img src="/public/img/edit-icon.png">
+        </div>
+        <p class="weui_tabbar_label">编辑</p>
+    </a>
+    <a href="/webapp/admin_review.html" class="weui_tabbar_item" id="review">
+        <div class="weui_tabbar_icon">
+            <img src="/public/img/rev-icon.png">
+        </div>
+        <p class="weui_tabbar_label">审核</p>
+    </a>
+</div>
+<script>
+    if (window.location.pathname == "/webapp/admin_booklist.html"){
+        $("#bookL").addClass("weui_bar_item_on");
+    }
+     if (window.location.pathname == "/webapp/admin_review.html"){
+        $("#review").addClass("weui_bar_item_on");
+    }
+    if (window.location.pathname == "/webapp/review_info.html"){
+        $("#review").addClass("weui_bar_item_on");
+    }
+</script>

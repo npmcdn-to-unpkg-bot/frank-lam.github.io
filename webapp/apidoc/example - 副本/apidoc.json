@@ -1,0 +1,20 @@
+{
+  "name": "仁润wenapp",
+  "version": "0.3.0",
+  "description": "这里是接口的描述",
+  "title": "网站标题",
+  "url" : "https://api.github.com/v1",
+  "sampleUrl": "https://api.github.com/v1",
+  "header": {
+    "title": "仁润webapp header",
+    "filename": "header.md"
+  },
+  "footer": {
+    "title": "仁润webapp footer",
+    "filename": "footer.md"
+  },
+  "template": {
+  	"withCompare": true,
+  	"withGenerator": true
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "name": "仁润员工在线社区",
+  "version": "0.3.0",
+  "description": "webapp 1.0 接口说明文档",
+  "title": "接口文档",
+  "url" : "http://hzrrkj.gnway.cc:8080",
+  "sampleUrl": "http://hzrrkj.gnway.cc:8080",
+  "template": {
+  	"withCompare": true,
+  	"withGenerator": true
+  }
+}
+
+
+{
+  "name": "仁润员工在线社区",
+  "version": "0.3.0",
+  "description": "webapp 1.0 接口说明文档",
+  "title": "接口文档",
+  "url" : "http://localhost:8088",
+  "sampleUrl": "http://localhost:8088",
+  "template": {
+    "withCompare": true,
+    "withGenerator": true
+  }
+}
+
+
+{
+  "name": "仁润员工在线社区",
+  "version": "0.3.0",
+  "description": "webapp 1.0 接口说明文档",
+  "title": "接口文档",
+  "url" : "http://www.ifrank.loan",
+  "sampleUrl": "http://www.ifrank.loan",
+  "template": {
+    "withCompare": true,
+    "withGenerator": true
+  }
+}
+
+{
+  "name": "仁润员工在线社区",
+  "version": "0.3.0",
+  "description": "webapp 1.0 接口说明文档",
+  "title": "接口文档",
+  "url" : "http://att.renrunkeji.cn",
+  "sampleUrl": "http://att.renrunkeji.cn",
+  "template": {
+    "withCompare": true,
+    "withGenerator": true
+  }
+}

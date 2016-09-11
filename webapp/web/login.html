@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>仁润webapp 1.0==用户登录</title>
+    <link rel="stylesheet" href="dist/lib/weui.css">
+    <link rel="stylesheet" href="dist/css/jquery-weui.css">
+    <link rel="stylesheet" href="css/exam.css">
+</head>
+<body>
+<div class="hd">
+    <h4 class="page_title">用户登录</h4>
+    <h4 class="page_title" style="font-size: 20px;">renrun webapp 1.0</h4>
+</div>
+<div class="weui_cells weui_cells_form weui_cells_form">
+    <div class="weui_cell dla">
+        <div class="weui_cell_hd"><label class="weui_label">帐户名</label></div>
+        <div class="weui_cell_bd weui_cell_primary">
+            <input class="weui_input" type="text" id="username" pattern="[0-9]*" placeholder="请输入账号"/>
+        </div>
+    </div>
+    <div class="weui_cell weui_cells_form">
+        <div class="weui_cell_hd"><label class="weui_label">密码</label></div>
+        <div class="weui_cell_bd weui_cell_primary">
+            <input class="weui_input" type="password" id="password" pattern="[0-9]*" placeholder="请输入密码"/>
+        </div>
+    </div>
+</div>
+<a href="javascript:;" class="weui_btn weui_btn_primary login-btn" style="margin-top: 2rem;">登录</a>
+<script src="dist/lib/jquery-2.1.4.js"></script>
+<script src="dist/js/jquery-weui.js"></script>
+<script>
+
+
+
+    $(".login-btn").click(function () {
+        var user = $("#username").val();
+        var password = $("#password").val();
+        $.ajax({
+            type: "post",
+            url: "/?action=login",
+            data: {userid: user, password: password},
+            dataType: "json",
+            success: function (json) {
+                if (json.code * 1 == 1) {
+                    if (password * 1 == "123456") {
+                        window.top.location.href = "booklist.html"
+                    } else {
+                        $.alert("请修改默认密码",function(){
+                            window.top.location.href = "mmxg.html";
+                        });
+                    }
+                } else {
+                    $.alert("提交失败")
+                }
+            },
+            error: function () {
+                $.alert("服务器吃饭去了")
+            }
+        });
+    })
+</script>
+</body>
+</html>

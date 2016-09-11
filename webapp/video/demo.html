@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Video.js | HTML5 Video Player</title>
+
+  <!-- Chang URLs to wherever Video.js files will be hosted -->
+  <link href="video-js.css" rel="stylesheet" type="text/css">
+  <!-- video.js must be in the <head> for older IEs to work. -->
+  <script src="video.js"></script>
+
+  <!-- Unless using the CDN hosted version, update the URL to the Flash SWF -->
+  <script>
+    videojs.options.flash.swf = "video-js.swf";
+  </script>
+
+
+</head>
+<body>
+
+  <video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="640" height="264"
+      poster="http://video-js.zencoder.com/oceans-clip.png"
+      data-setup="{}">
+    <source src="http://att.renrunkeji.cn/oceans.mp4" type='video/mp4' />
+    <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
+    <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
+    <track kind="captions" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
+    <track kind="subtitles" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
+  </video>
+
+
+
+
+  <!-- <object id="myPlayer" height="375" width="440" classid="CLSID:6BF52A52-394A-11d3-B153-00C04F79FAA6"> 
+  <param value="oceans.mp4" name="URL" /> 
+  <param value="1" name="rate" /> 
+  <param value="0" name="balance" /> 
+  <param value="" name="defaultFrame" /> 
+  <param value="1" name="playCount" /> 
+  <param value="0" name="autoStart" /> 
+  <param value="0" name="currentMarker" /> 
+  <param value="-1" name="invokeURLs" /> 
+  <param value="" name="baseURL" /> 
+  <param value="50" name="volume" /> 
+  <param value="0" name="mute" /> 
+  <param value="1" name="stretchToFit" /> 
+  <param value="0" name="windowlessVideo" /> 
+  <param value="-1" name="enabled" /> 
+  <param value="-1" name="enableContextMenu" /> 
+  <param value="0" name="fullScreen" /> 
+  <param value="" name="SAMIStyle" /> 
+  <param value="" name="SAMILang" /> 
+  <param value="" name="SAMIFilename" /> 
+  <param value="" name="captioningID" /></object>
+ -->
+</body>
+</html>

@@ -1,0 +1,584 @@
+[ 2016-07-25T01:38:00+08:00 ] 123.151.42.61 http://www.baidu.com/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+NOTIC: [8] Undefined index: action E:\xampp\htdocs\Application\Home\Controller\IndexController.class.php 第 42 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010001s ]
+
+[ 2016-07-25T13:37:47+08:00 ] 123.151.42.61 http://www.baidu.com/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.020001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+NOTIC: [8] Undefined index: action E:\xampp\htdocs\Application\Home\Controller\IndexController.class.php 第 42 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009000s ]
+
+[ 2016-07-25T18:45:35+08:00 ] 101.226.51.227 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+NOTIC: [8] Undefined index: action E:\xampp\htdocs\Application\Home\Controller\IndexController.class.php 第 42 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009001s ]
+
+[ 2016-07-25T19:25:28+08:00 ] 93.80.2.251 t7.proxy-checks.com:443
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: action E:\xampp\htdocs\Application\Home\Controller\IndexController.class.php 第 42 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-25T19:25:40+08:00 ] 93.80.2.251 37.235.56.23:443
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: action E:\xampp\htdocs\Application\Home\Controller\IndexController.class.php 第 42 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-25T19:49:03+08:00 ] 172.16.1.139 /?action=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: userid E:\xampp\htdocs\Application\Home\Controller\IndexController.class.php 第 64 行.
+NOTIC: [8] Undefined index: password E:\xampp\htdocs\Application\Home\Controller\IndexController.class.php 第 65 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-25T19:49:15+08:00 ] 172.16.1.139 /?action=add_library
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-25T19:53:21+08:00 ] 180.153.201.79 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: action E:\xampp\htdocs\Application\Home\Controller\IndexController.class.php 第 42 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-25T19:55:25+08:00 ] 172.16.1.139 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-25T19:55:27+08:00 ] 172.16.1.139 /?action=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-25T19:55:30+08:00 ] 172.16.1.139 /?action=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-25T19:55:31+08:00 ] 172.16.1.139 /?action=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-25T19:55:39+08:00 ] 172.16.1.139 /?action=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-25T19:55:50+08:00 ] 172.16.1.139 /?action=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: userid E:\xampp\htdocs\Application\Home\Controller\IndexController.class.php 第 64 行.
+NOTIC: [8] Undefined index: password E:\xampp\htdocs\Application\Home\Controller\IndexController.class.php 第 65 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-25T19:56:00+08:00 ] 172.16.1.139 /?action=add_library
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: isbn13 E:\xampp\htdocs\Application\Home\Controller\IndexController.class.php 第 126 行.
+NOTIC: [8] Undefined index: intro E:\xampp\htdocs\Application\Home\Controller\IndexController.class.php 第 127 行.
+NOTIC: [8] Undefined index: count E:\xampp\htdocs\Application\Home\Controller\IndexController.class.php 第 128 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-25T19:56:36+08:00 ] 220.184.206.88 /?action=add_library
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-25T19:59:40+08:00 ] 220.184.206.88 /?action=add_library
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-25T19:59:43+08:00 ] 220.184.206.88 /?action=add_library
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-25T20:03:21+08:00 ] 220.184.206.88 /?action=add_library
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-25T20:03:45+08:00 ] 220.184.206.88 /?action=add_library
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-25T20:05:27+08:00 ] 220.184.206.88 /?action=add_library
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-25T20:06:45+08:00 ] 220.184.206.88 /?action=add_library
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'publisher' E:\xampp\htdocs\Application\Home\Controller\IndexController.class.php 第 132 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-25T20:09:09+08:00 ] 220.184.206.88 /?action=add_library
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-25T20:10:14+08:00 ] 220.184.206.88 /?action=add_library
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-25T20:11:58+08:00 ] 220.184.206.88 /?action=add_library
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-25T20:14:19+08:00 ] 220.184.206.88 /?action=add_library
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-25T20:15:01+08:00 ] 220.184.206.88 /?action=add_library
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: insert into book_library(ISBN13,ISBN10,time,status) values('9787532242481','1255555426',getdate(),'1'); [ RunTime:0.0070s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-25T20:16:42+08:00 ] 220.184.206.88 /?action=add_library
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: insert into book_library(ISBN13,ISBN10,time,status) values('9787532242481','753224248X',getdate(),'1'); [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-25T20:17:52+08:00 ] 220.184.206.88 /?action=add_library
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: insert into book_library(ISBN13,ISBN10,time,status) values('9787532242481','753224248X',getdate(),'1'); [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-07-25T20:18:26+08:00 ] 220.184.206.88 /?action=add_library
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: insert into book_library(ISBN13,ISBN10,time,status) values('9787532242481','753224248X',getdate(),'1'); [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-25T20:21:19+08:00 ] 220.184.206.88 /?action=add_library
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: insert into book_library(ISBN13,ISBN10,time,status) values('9787532242481','753224248X',getdate(),'1'); [ RunTime:0.0000s ]
+ERR: SQLSTATE[42000]: [Microsoft][SQL Native Client][SQL Server]'X' 附近有语法错误。
+
+[ 2016-07-25T20:21:23+08:00 ] 220.184.206.88 /?action=add_library
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: insert into book_library(ISBN13,ISBN10,time,status) values('9787532242481','753224248X',getdate(),'1'); [ RunTime:0.0000s ]
+ERR: SQLSTATE[42000]: [Microsoft][SQL Native Client][SQL Server]'X' 附近有语法错误。
+
+[ 2016-07-25T20:21:32+08:00 ] 220.184.206.88 /?action=add_library
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: insert into book_library(ISBN13,ISBN10,time,status) values('9787532242481','753224248X',getdate(),'1'); [ RunTime:0.0000s ]
+ERR: SQLSTATE[42000]: [Microsoft][SQL Native Client][SQL Server]'X' 附近有语法错误。
+
+[ 2016-07-25T20:21:40+08:00 ] 220.184.206.88 /?action=add_library
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: insert into book_library(ISBN13,ISBN10,time,status) values('9787532242481','753224248X',getdate(),'1'); [ RunTime:0.0000s ]
+ERR: SQLSTATE[42000]: [Microsoft][SQL Native Client][SQL Server]'X' 附近有语法错误。
+
+[ 2016-07-25T20:22:27+08:00 ] 220.184.206.88 /?action=add_library
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: insert into book_library(ISBN13,ISBN10,time,status) values('9787532242481','753224248X',getdate(),'1'); [ RunTime:0.0010s ]
+SQL: select count(*) as exist from book_base where isbn13='9787532242481' or isbn10='753224248X'; [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-25T20:22:35+08:00 ] 220.184.206.88 /?action=add_library
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: insert into book_library(ISBN13,ISBN10,time,status) values('9787532242481','753224248X',getdate(),'1'); [ RunTime:0.0010s ]
+SQL: select count(*) as exist from book_base where isbn13='9787532242481' or isbn10='753224248X'; [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-25T20:23:23+08:00 ] 220.184.206.88 /?action=add_library
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: insert into book_library(ISBN13,ISBN10,time,status) values('9787532242481','753224248X',getdate(),'1'); [ RunTime:0.0010s ]
+SQL: select count(*) as count from book_base where isbn13='9787532242481' or isbn10='753224248X'; [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-25T20:23:59+08:00 ] 220.184.206.88 /?action=add_library
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: insert into book_library(ISBN13,ISBN10,time,status) values('9787532242481','753224248X',getdate(),'1'); [ RunTime:0.0010s ]
+SQL: select count(*) as count from book_base where isbn13='9787532242481' or isbn10='753224248X'; [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-25T20:24:03+08:00 ] 220.184.206.88 /?action=add_library
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: insert into book_library(ISBN13,ISBN10,time,status) values('9787532242481','753224248X',getdate(),'1'); [ RunTime:0.0000s ]
+SQL: select count(*) as count from book_base where isbn13='9787532242481' or isbn10='753224248X'; [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-25T20:24:44+08:00 ] 220.184.206.88 /?action=add_library
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: insert into book_library(ISBN13,ISBN10,time,status) values('9787532242481','753224248X',getdate(),'1'); [ RunTime:0.0010s ]
+SQL: select count(*) as count from book_base where isbn13='9787532242481' or isbn10='753224248X'; [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-25T20:24:47+08:00 ] 220.184.206.88 /?action=add_library
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: insert into book_library(ISBN13,ISBN10,time,status) values('9787532242481','753224248X',getdate(),'1'); [ RunTime:0.0000s ]
+SQL: select count(*) as count from book_base where isbn13='9787532242481' or isbn10='753224248X'; [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-25T20:25:03+08:00 ] 220.184.206.88 /?action=add_library
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: insert into book_library(ISBN13,ISBN10,time,status) values('9787532242481','753224248X',getdate(),'1'); [ RunTime:0.0010s ]
+SQL: select count(*) as count from book_base where isbn13='9787532242481' or isbn10='753224248X'; [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-25T20:41:33+08:00 ] 220.184.206.88 /?action=add_library
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-25T20:41:54+08:00 ] 220.184.206.88 /?action=add_library
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-25T20:42:10+08:00 ] 220.184.206.88 /?action=add_library
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-25T20:45:11+08:00 ] 220.184.206.88 /?action=add_library
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-25T20:52:35+08:00 ] 220.184.206.88 /?action=add_library
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: insert into book_library(ISBN13,ISBN10,time,status) values('9787532242481','753224248X',getdate(),'1'); [ RunTime:0.0000s ]
+SQL: select count(*) as count from book_base where isbn13='9787532242481' or isbn10='753224248X'; [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-25T20:53:22+08:00 ] 220.184.206.88 /?action=add_library
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: insert into book_library(ISBN13,ISBN10,time,status) values('9787532242481','753224248X',getdate(),'1'); [ RunTime:0.0000s ]
+SQL: select count(*) as count from book_base where isbn13='9787532242481' or isbn10='753224248X'; [ RunTime:0.0000s ]
+SQL: insert into book_base(ISBN13,ISBN10,name,name_en,pic_url,author,author_info,summary,catalog,public_name,public_date,pages_size,price,douban_info_url,checktime) values('9787532242481','753224248X','西方字体设计一百年','','https://img3.doubanio.com/lpic/s5717076.jpg','路易斯·布莱克威尔','','本书以每十年为一单位，对20世纪字体的设计历史以及平面设计中的种种问题进行了分析。本书讲述了当今字体设计的各种趋势，这些趋势就是在这一个又一个十年中可见的一种连续变化。本书所涵盖的主题包括：大规划生产的形成；艺术指导的诞生；线格的出现（以及后来遭到的反对）；非印刷媒介的发明与Macintosh系统的采用，以及该系统如何带领那些数字技术催生的新一代设计师向前发展。
+
+　　在20世纪90年代，数字技术引发了一场关于平面设计和字体设计实践的革命。本书实际是路易斯·布莱克威尔经典研究的修订版，它援引了最新的实例，并对数字革命所带来的一些显著变化作出分析，布莱克威尔特别关注了显示屏使用类型的发展以及其它同因特网出现相关的各项新发明。本书还介绍了设计师在工作中发现的一些因各种变革而带来的不利结果，在绪论部分中，作者还提出了字体造型设计以及用户在新千年中所面临的问题。
+　　本书配有300幅以上的插图，对现代字体设计行业中先驱性的设计试验进行了人文意义上的评定，并结合有一篇简洁的历史背景介绍。本书用通俗易懂的语言，使设计师、学生以及一般读者得以了解20世纪西方字体设计的发展以及字体设计在未来实践中所要遇到的各种关键问题。','','上海人民美术出版社','2005-1','209','78.00元','https://book.douban.com/subject/1312474/',getdate()); [ RunTime:0.0190s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-25T20:57:25+08:00 ] 220.184.206.88 /?action=add_library
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: insert into book_library(ISBN13,ISBN10,time,status) values('9787532242481','753224248X',getdate(),'1'); [ RunTime:0.0010s ]
+SQL: select count(*) as count from book_base where isbn13='9787532242481' or isbn10='753224248X'; [ RunTime:0.0000s ]
+SQL: insert into book_base(ISBN13,ISBN10,name,name_en,pic_url,author,author_info,summary,catalog,public_name,public_date,pages_size,price,douban_info_url,checktime) values('9787532242481','753224248X','西方字体设计一百年','(>﹏<。)～呜呜呜……~暂无外文名','https://img3.doubanio.com/lpic/s5717076.jpg','路易斯·布莱克威尔','(>﹏<。)～呜呜呜……~暂无作者简介','本书以每十年为一单位，对20世纪字体的设计历史以及平面设计中的种种问题进行了分析。本书讲述了当今字体设计的各种趋势，这些趋势就是在这一个又一个十年中可见的一种连续变化。本书所涵盖的主题包括：大规划生产的形成；艺术指导的诞生；线格的出现（以及后来遭到的反对）；非印刷媒介的发明与Macintosh系统的采用，以及该系统如何带领那些数字技术催生的新一代设计师向前发展。
+
+　　在20世纪90年代，数字技术引发了一场关于平面设计和字体设计实践的革命。本书实际是路易斯·布莱克威尔经典研究的修订版，它援引了最新的实例，并对数字革命所带来的一些显著变化作出分析，布莱克威尔特别关注了显示屏使用类型的发展以及其它同因特网出现相关的各项新发明。本书还介绍了设计师在工作中发现的一些因各种变革而带来的不利结果，在绪论部分中，作者还提出了字体造型设计以及用户在新千年中所面临的问题。
+　　本书配有300幅以上的插图，对现代字体设计行业中先驱性的设计试验进行了人文意义上的评定，并结合有一篇简洁的历史背景介绍。本书用通俗易懂的语言，使设计师、学生以及一般读者得以了解20世纪西方字体设计的发展以及字体设计在未来实践中所要遇到的各种关键问题。','(>﹏<。)～呜呜呜……~暂无目录','上海人民美术出版社','2005-1','209','78.00元','https://book.douban.com/subject/1312474/',getdate()); [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-25T20:58:53+08:00 ] 220.184.206.88 /?action=add_library
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: insert into book_library(ISBN13,ISBN10,time,status) values('9787532242481','753224248X',getdate(),'1'); [ RunTime:0.0000s ]
+SQL: select count(*) as count from book_base where isbn13='9787532242481' or isbn10='753224248X'; [ RunTime:0.0000s ]
+SQL: insert into book_base(ISBN13,ISBN10,name,name_en,pic_url,author,author_info,summary,catalog,public_name,public_date,pages_size,price,douban_info_url,checktime) values('9787532242481','753224248X','西方字体设计一百年','(>﹏<。)～呜呜呜……~暂无外文名','https://img3.doubanio.com/lpic/s5717076.jpg','路易斯·布莱克威尔','(>﹏<。)～呜呜呜……~暂无作者简介','本书以每十年为一单位，对20世纪字体的设计历史以及平面设计中的种种问题进行了分析。本书讲述了当今字体设计的各种趋势，这些趋势就是在这一个又一个十年中可见的一种连续变化。本书所涵盖的主题包括：大规划生产的形成；艺术指导的诞生；线格的出现（以及后来遭到的反对）；非印刷媒介的发明与Macintosh系统的采用，以及该系统如何带领那些数字技术催生的新一代设计师向前发展。
+
+　　在20世纪90年代，数字技术引发了一场关于平面设计和字体设计实践的革命。本书实际是路易斯·布莱克威尔经典研究的修订版，它援引了最新的实例，并对数字革命所带来的一些显著变化作出分析，布莱克威尔特别关注了显示屏使用类型的发展以及其它同因特网出现相关的各项新发明。本书还介绍了设计师在工作中发现的一些因各种变革而带来的不利结果，在绪论部分中，作者还提出了字体造型设计以及用户在新千年中所面临的问题。
+　　本书配有300幅以上的插图，对现代字体设计行业中先驱性的设计试验进行了人文意义上的评定，并结合有一篇简洁的历史背景介绍。本书用通俗易懂的语言，使设计师、学生以及一般读者得以了解20世纪西方字体设计的发展以及字体设计在未来实践中所要遇到的各种关键问题。','(>﹏<。)～呜呜呜……~暂无目录','上海人民美术出版社','2005-1','209','78.00元','https://book.douban.com/subject/1312474/',getdate()); [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-25T20:59:37+08:00 ] 220.184.206.88 /?action=add_library
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: insert into book_library(ISBN13,ISBN10,time,status) values('9787532242481','753224248X',getdate(),'1'); [ RunTime:0.0010s ]
+SQL: select count(*) as count from book_base where isbn13='9787532242481' or isbn10='753224248X'; [ RunTime:0.0000s ]
+SQL: insert into book_base(ISBN13,ISBN10,name,name_en,pic_url,author,author_info,summary,catalog,public_name,public_date,pages_size,price,douban_info_url,checktime) values('9787532242481','753224248X','西方字体设计一百年','(>﹏<。)～呜呜呜……~暂无外文名','https://img3.doubanio.com/lpic/s5717076.jpg','路易斯·布莱克威尔','(>﹏<。)～呜呜呜……~暂无作者简介','本书以每十年为一单位，对20世纪字体的设计历史以及平面设计中的种种问题进行了分析。本书讲述了当今字体设计的各种趋势，这些趋势就是在这一个又一个十年中可见的一种连续变化。本书所涵盖的主题包括：大规划生产的形成；艺术指导的诞生；线格的出现（以及后来遭到的反对）；非印刷媒介的发明与Macintosh系统的采用，以及该系统如何带领那些数字技术催生的新一代设计师向前发展。
+
+　　在20世纪90年代，数字技术引发了一场关于平面设计和字体设计实践的革命。本书实际是路易斯·布莱克威尔经典研究的修订版，它援引了最新的实例，并对数字革命所带来的一些显著变化作出分析，布莱克威尔特别关注了显示屏使用类型的发展以及其它同因特网出现相关的各项新发明。本书还介绍了设计师在工作中发现的一些因各种变革而带来的不利结果，在绪论部分中，作者还提出了字体造型设计以及用户在新千年中所面临的问题。
+　　本书配有300幅以上的插图，对现代字体设计行业中先驱性的设计试验进行了人文意义上的评定，并结合有一篇简洁的历史背景介绍。本书用通俗易懂的语言，使设计师、学生以及一般读者得以了解20世纪西方字体设计的发展以及字体设计在未来实践中所要遇到的各种关键问题。','(>﹏<。)～呜呜呜……~暂无目录','上海人民美术出版社','2005-1','209','78.00元','https://book.douban.com/subject/1312474/',getdate()); [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

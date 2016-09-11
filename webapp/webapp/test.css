@@ -1,0 +1,90 @@
+
+@font-face {font-family: 'iconfont';
+    src: url('/Public/iconfonts/iconfont.eot'); /* IE9*/
+    src: url('/Public/iconfonts/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('/Public/iconfonts/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('/Public/iconfonts/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('/Public/iconfonts/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:55px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+    height: 200px;
+    }
+
+#banner {
+	width: 100%;
+	height: 150px;
+	background: #1fbbee;
+	color: white;
+	/*border-top: 5px solid white;
+				border-left: 5px solid white;*/
+}
+
+.box1-1 {
+	width:38%;
+	height:100%;
+/* 	background-color:orange; */
+	border-radius:2px solid white;
+	text-align:center;
+
+}
+
+.box1-2 {
+	width:62%;
+	height:100%;
+
+/* 	background-color:red; */
+}
+
+.portaint2 {
+	width:75px;
+	height:75px;
+	border-radius:75px;
+	margin-top:30px;
+	border:2px solid white;
+
+}
+
+
+
+.portaint {
+	width: 70px;
+	height: 70px;
+	border-radius: 70px;
+	border: 2px solid white;
+
+	margin-left: 35%;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.clr {
+	clear: both;
+}
+
+p{
+	
+}
+
+.name{
+	margin-left:-10px;
+	margin-top:50px;
+	font-size:16px;
+	font-weight:bolder;
+}
+.sign{
+	margin-left:-10px;
+	margin-top:3px;
+	font-size:14px;
+}

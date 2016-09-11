@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>购书申请</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+		
+		<!--加载CSS样式 开始-->
+		<link rel="stylesheet" href="/Public/Css/weui.min.css">
+		<link rel="stylesheet" href="/Public/Css/jquery-weui.css">
+		<link rel="stylesheet" href="/Public/Css/demos.css">
+		<!--加载CSS样式 结束-->
+
+	</head>
+	<body ontouchstart>
+		<header class='demos-header'>
+			<h1 class="demos-title">购书申请</h1>
+		</header>
+		<div class="weui_cells weui_cells_form">
+			<div class="weui_cell">
+				<div class="weui_cell_hd"><label class="weui_label">ISBN</label></div>
+				<div class="weui_cell_bd weui_cell_primary">
+					<input class="weui_input" type="tel" placeholder="请输入图书ISBN" maxlength="13" id="book_isbn">
+				</div>
+			</div>
+			<div class="weui_cell">
+				<div class="weui_cell_hd"><label class="weui_label">购买链接</label></div>
+				<div class="weui_cell_bd weui_cell_primary">
+					<input class="weui_input" type="tel" placeholder="请输入京东、当当、淘宝图书链接" id="book_url">
+				</div>
+			</div>
+
+			<div class="weui_cell weui_cell_switch">
+				<div class="weui_cell_hd weui_cell_primary">到书通知</div>
+				<div class="weui_cell_ft">
+					<input class="weui_switch" type="checkbox" id="book_inform">
+				</div>
+			</div>
+			<div class="weui_cell" id="telphone_inform" style="display: none;">
+				<div class="weui_cell_hd"><label class="weui_label">手机号</label></div>
+				<div class="weui_cell_bd weui_cell_primary">
+					<input class="weui_input" type="tel" placeholder="请输入你的手机号" maxlength="11" id="book_mobile">
+				</div>
+			</div>
+
+			<div class="weui_cells_title">购书申请</div>
+			<div class="weui_cell">
+
+				<div class="weui_cell_bd weui_cell_primary">
+					<textarea class="weui_textarea" placeholder="这里请填写你的购书申请理由(☆_☆)/~~，不少于20字" rows="3" id="book_apply"></textarea>
+					<div class="weui_textarea_counter">
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="weui_btn_area">
+			<a class="weui_btn weui_btn_primary" href="javascript:" id="submitapply">提交申请</a>
+		</div>
+
+		<!--加载js文件 开始-->
+		<script src="/Public/Js/jquery-2.1.4.js"></script>
+		<script src="/Public/Js/jquery-weui.js"></script>
+		<!--加载js文件 结束-->
+
+		<script>
+			//$("#telphone_inform").hide();
+			var switch_btn = false;
+			$("#book_inform").click(function() {
+				switch_btn = switch_btn ? false : true;
+				if(switch_btn) {
+					$("#telphone_inform").fadeIn();
+				} else {
+					$("#telphone_inform").hide();
+					$("#book_mobile").val("");
+				}
+				//  		alert(switch_btn);
+			});
+
+			$("#submitapply").click(function() {
+				//      var tel = $('#tel').val();
+				//      var code = $('#code').val();
+				//      if(!tel || !/1[3|4|5|7|8]\d{9}/.test(tel)) $.toptip('请输入手机号');
+				//      else if(!code || !/\d{6}/.test(code)) $.toptip('请输入六位手机验证码');
+				//      else $.toptip('提交成功', 'success');
+				var isbn = $("#book_isbn").val();
+				var url = $("#book_url").val();
+				var mobile = $("#book_mobile").val();
+				var apply = $("#book_apply").val();
+				if(isbn == '') {
+					$.toptip("ISBN为空");
+					$("#book_isbn").focus();
+					return;
+				}
+				// alert(getStrSize(isbn));
+				if(!(getStrSize(isbn) == 10 || getStrSize(isbn) == 13)) {
+					$.toptip("请输入10位或13位ISBN");
+					$("#book_isbn").focus();
+					return;
+				}
+				if(url == '') {
+					$.toptip("链接地址为空");
+					$("#book_url").focus();
+					return;
+				}
+				if(switch_btn && mobile == '') {
+					$.toptip("请填写手机号");
+					$("#book_mobile").focus();
+					return;
+				}
+				if(switch_btn && getStrSize(mobile) != 11) {
+					$.toptip("请输入11位手机号");
+					$("#book_mobile").focus();
+					return;
+				}
+				if(apply == '') {
+					$.toptip("申请理由不得为空");
+					$("#book_apply").focus();
+					return;
+				}
+				if(getStrSize(apply) <= 20) {
+					$.toptip("申请理由不得少于20字！");
+					$("#book_apply").focus();
+					return;
+				}
+
+				$.showLoading();  //$.hideLoading();
+				$.ajax({
+					//提交数据的类型 POST GET
+					type: "POST",
+					//提交的网址
+					url: "/?action=book_application",
+
+					//提交的数据
+					data: {
+						isbn: isbn,
+						bookurl: url,
+						mobile: mobile,
+						purchase_reason: apply,
+						btnswitch: switch_btn,
+						userid: 'linlicheng2009'
+					},
+					//返回数据的格式
+					datatype: "json", //"xml", "html", "script", "json", "jsonp", "text".
+					//在请求之前调用的函数
+					beforeSend: function() {
+						// alert("beforeSend");
+						//    return true;
+					},
+					//成功返回之后调用的函数             
+					success: function(data) {
+						// alert(data);
+						//$("#msg").html(decodeURI(data));
+						jsonDate = JSON.parse(data);
+						//入库成功
+						if(jsonDate['code'] == "-1") {
+							$.hideLoading();
+							// $.toast(jsonDate['msg']);
+							$.toptip(jsonDate['msg']);
+							$('#book_isbn').val("");
+
+							// window.location="add_success.html";
+						} else {
+							$.hideLoading();
+							$.toast(jsonDate['msg']);
+						}
+
+						// alert(jsonDate['code']);
+						// window.location="add_success.html";
+
+						// if (jsonDate['code'] == "-1") {
+						//     $("#username").val("");
+						//     showError('账号不存在!', $("#username"));
+						//     $("#username").focus();
+						// }
+						// else if (jsonDate['code'] == "0") {
+						//     $("#password").val("");
+						//     showError('密码错误!', $("#password"));
+						//     $("#password").focus();
+						// }
+						// else if (jsonDate['code'] == "1") {
+						//     window.location.href = "amaze/admin_index.aspx";
+						// }
+
+						//if (jsonDate['code'] == "1") {
+
+						//    setTimeout(function () {
+						//        //第三方扩展皮肤
+						//        layer.alert('登录成功', {
+						//            icon: 5
+						//        })
+						//    }, 5000)
+						//    window.location.href = "userspace.aspx";
+						//} 
+
+						////第三方扩展皮肤
+						//layer.alert('密码错误', {
+						//    icon: 5
+						//})
+
+					},
+					//调用执行后调用的函数
+					complete: function(XMLHttpRequest, textStatus) {
+						//alert(XMLHttpRequest.responseText);
+						//alert(textStatus);
+						//HideLoading();
+					},
+					//调用出错执行的函数
+					error: function() {
+						//请求出错处理
+						// alert('ajax请求出错');
+						$.toast("AJAX请求失败", "cancel");
+					}
+				});
+
+				// $.toptip('提交成功', 'success');
+			});
+
+			function getStrSize(str) {
+				var realLength = 0,
+					len = str.length,
+					charCode = -1;
+				for(var i = 0; i < len; i++) {
+					charCode = str.charCodeAt(i);
+					if(charCode >= 0 && charCode <= 128) realLength += 1;
+					else realLength += 2;
+				}
+				return realLength;
+			};
+		</script>
+	</body>
+
+</html>

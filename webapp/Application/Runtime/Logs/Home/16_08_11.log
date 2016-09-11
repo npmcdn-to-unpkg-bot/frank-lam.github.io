@@ -1,0 +1,10 @@
+[ 2016-08-11T19:59:06+08:00 ] ::1 /index.php/Home/User/?action=privilege_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.027503s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.014502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014502s ]
+NOTIC: [8] Undefined index: id F:\webapp\Application\Home\Controller\UserController.class.php 第 1125 行.
+SQL: SELECT * FROM att_privilege WHERE 1=1  [ RunTime:0.0680s ]
+

@@ -1,0 +1,244 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="keywords" content="jquery,ui,easy,easyui,web">
+	<meta name="description" content="easyui help you build your web page easily!">
+	<title>今日上班打卡排名</title>
+	<link rel="stylesheet" type="text/css" href="css/easyui.css">
+	<link rel="stylesheet" type="text/css" href="manage/themes/bootstrap/easyui.css">
+	<link rel="stylesheet" type="text/css" href="css/icon.css">
+	<link rel="stylesheet" type="text/css" href="css/demo.css">
+	<style type="text/css">
+		#fm{
+			margin:0;
+			padding:10px 30px;
+		}
+		.ftitle{
+			font-size:14px;
+			font-weight:bold;
+			color:#666;
+			padding:5px 0;
+			margin-bottom:10px;
+			border-bottom:1px solid #ccc;
+		}
+		.fitem{
+			margin-bottom:5px;
+		}
+		.fitem label{
+			display:inline-block;
+			width:80px;
+		}
+		.panel{
+			float: left;
+			margin-left: 20px;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery-1.6.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easyui.min.js"></script>
+	<script type="text/javascript">
+		// var url;
+		// function newUser(){
+		// 	$('#dlg').dialog('open').dialog('setTitle','New User');
+		// 	$('#fm').form('clear');
+		// 	url = 'save_user.php';
+		// }
+		// function editUser(){
+		// 	var row = $('#dg').datagrid('getSelected');
+		// 	if (row){
+		// 		$('#dlg').dialog('open').dialog('setTitle','Edit User');
+		// 		$('#fm').form('load',row);
+		// 		url = 'update_user.php?id='+row.id;
+		// 	}
+		// }
+		// function saveUser(){
+		// 	$('#fm').form('submit',{
+		// 		url: url,
+		// 		onSubmit: function(){
+		// 			return $(this).form('validate');
+		// 		},
+		// 		success: function(result){
+		// 			var result = eval('('+result+')');
+		// 			if (result.success){
+		// 				$('#dlg').dialog('close');		// close the dialog
+		// 				$('#dg').datagrid('reload');	// reload the user data
+		// 			} else {
+		// 				$.messager.show({
+		// 					title: 'Error',
+		// 					msg: result.msg
+		// 				});
+		// 			}
+		// 		}
+		// 	});
+		// }
+		// function removeUser(){
+		// 	var row = $('#dg').datagrid('getSelected');
+		// 	if (row){
+		// 		$.messager.confirm('Confirm','Are you sure you want to remove this user?',function(r){
+		// 			if (r){
+		// 				$.post('remove_user.php',{id:row.id},function(result){
+		// 					if (result.success){
+		// 						$('#dg').datagrid('reload');	// reload the user data
+		// 					} else {
+		// 						$.messager.show({	// show error message
+		// 							title: 'Error',
+		// 							msg: result.msg
+		// 						});
+		// 					}
+		// 				},'json');
+		// 			}
+		// 		});
+		// 	}
+		// }
+
+		function doSearch(){
+
+			var dateStr=$('.validatebox-text').val();
+			var dateTime=new Date(dateStr);
+			dateTime=formatDate(dateTime);
+			// alert(dateTime);
+
+
+			// alert();
+			$('#dg').datagrid('load',{
+				// date: $('#date').val()
+				// date: $('.validatebox-text').val()
+				date : dateTime
+			});
+
+
+			$('#date_statistical').datagrid('load',{
+				// date: $('#date').val()
+				// date: $('.validatebox-text').val()
+				date : dateTime
+			});
+		}
+
+
+		function formatDate(date) { 
+		    var y = date.getFullYear();  
+		    var m = date.getMonth() + 1;  
+		    m = m < 10 ? '0' + m : m;  
+		    var d = date.getDate();  
+		    d = d < 10 ? ('0' + d) : d;  
+		    return y + '-' + m + '-' + d;  
+		};  
+
+
+		function myformatter(date){
+					var y = date.getFullYear();
+					var m = date.getMonth()+1;
+					var d = date.getDate();
+					return y+'-'+(m<10?('0'+m):m)+'-'+(d<10?('0'+d):d);
+				}
+		function myparser(s){
+			if (!s) return new Date();
+			var ss = (s.split('-'));
+			var y = parseInt(ss[0],10);
+			var m = parseInt(ss[1],10);
+			var d = parseInt(ss[2],10);
+			if (!isNaN(y) && !isNaN(m) && !isNaN(d)){
+				return new Date(y,m-1,d);
+			} else {
+				return new Date();
+			}
+		}
+
+		//页面加载  
+		 $(document).ready(function(){
+		 　  var curr_time = new Date();     
+		  　 $("#date_box").datebox("setValue",myformatter(curr_time));  
+		 });
+//		$(function(){ 
+//		    //设置时间  
+//		    var curr_time = new Date();
+//			$("#date_box").datebox("setValue",myformatter(curr_time));  
+////		  　 $("#txtEndTime").datebox("setValue",myformatter(curr_time));  
+//		 　 //获取时间  
+////		 　 var beginTime=$("#txtBeginTime").datebox("getValue");  
+////		 　 var endTime=$("#txtEndTime").datebox("getValue");  
+//		}); 
+	</script>
+</head>
+<body>
+
+	<div id="tb" style="padding:5px;height:auto">
+<!-- 		<div style="margin-bottom:5px">
+			<a href="#" class="easyui-linkbutton" iconCls="icon-add" plain="true"></a>
+			<a href="#" class="easyui-linkbutton" iconCls="icon-edit" plain="true"></a>
+			<a href="#" class="easyui-linkbutton" iconCls="icon-save" plain="true"></a>
+			<a href="#" class="easyui-linkbutton" iconCls="icon-cut" plain="true"></a>
+			<a href="#" class="easyui-linkbutton" iconCls="icon-remove" plain="true"></a>
+		</div> -->
+		<div>
+			日期选择: <input id="date_box" class="easyui-datebox" style="width:120px" data-options="formatter:myformatter,parser:myparser">
+<!-- 			To: <input class="easyui-datebox" style="width:80px">
+			Language:  -->
+			<!-- <input class="easyui-combobox" style="width:100px" url="data/combobox_data.json" valueField="id" textField="text"> -->
+			<a href="#" class="easyui-linkbutton" iconCls="icon-search" onclick="doSearch()">search</a>
+		</div>
+	</div>
+	<!--<h2 style="text-align: center;font-family: 'Microsoft Yahei';font-size:20px;">今日早餐特权列表</h2>-->
+	<table id="dg" title="早餐获得者列表" class="easyui-datagrid" style="width:50%;height:700px;float: left;"
+			url="/?action=getAttRankList"
+			toolbar="#tb"
+			rownumbers="true" fitColumns="true" singleSelect="true">
+		<thead>
+			<tr>
+				<th field="name" width="20">姓名</th>
+				<th field="checkam" width="30">打卡时间</th>
+				<th field="privilege_item" width="30">已选早餐</th>
+				<th field="privilege_time" width="30">提交时间</th>
+			</tr>
+		</thead>
+	</table>
+
+	<table id="date_statistical" title="数据统计" class="easyui-datagrid" style="width:45%;height:700px;float:left;"
+			url="/?action=date_breakfast"
+			toolbar="#toolbar"
+			rownumbers="true" fitColumns="true" singleSelect="true">
+		<thead>
+			<tr>
+				<th field="item" width="20">项目</th>
+				<th field="count" width="10">数量</th>
+				<th field="namegroup" width="50">姓名</th>
+			</tr>
+		</thead>
+	</table>
+
+	 <!-- pagination="true" 这个 可以设置分页的功能-->
+
+<!-- 	<div id="toolbar">
+		<a href="#" class="easyui-linkbutton" iconCls="icon-add" plain="true" onclick="newUser()">New User</a>
+		<a href="#" class="easyui-linkbutton" iconCls="icon-edit" plain="true" onclick="editUser()">Edit User</a>
+		<a href="#" class="easyui-linkbutton" iconCls="icon-remove" plain="true" onclick="removeUser()">Remove User</a>
+	</div> -->
+	
+	<div id="dlg" class="easyui-dialog" style="width:400px;height:280px;padding:10px 20px"
+			closed="true" buttons="#dlg-buttons">
+		<div class="ftitle">User Information</div>
+		<form id="fm" method="post" novalidate>
+			<div class="fitem">
+				<label>First Name:</label>
+				<input name="firstname" class="easyui-validatebox" required="true">
+			</div>
+			<div class="fitem">
+				<label>Last Name:</label>
+				<input name="lastname" class="easyui-validatebox" required="true">
+			</div>
+			<div class="fitem">
+				<label>Phone:</label>
+				<input name="phone">
+			</div>
+			<div class="fitem">
+				<label>Email:</label>
+				<input name="email" class="easyui-validatebox" validType="email">
+			</div>
+		</form>
+	</div>
+<!-- 	<div id="dlg-buttons">
+		<a href="#" class="easyui-linkbutton" iconCls="icon-ok" onclick="saveUser()">Save</a>
+		<a href="#" class="easyui-linkbutton" iconCls="icon-cancel" onclick="javascript:$('#dlg').dialog('close')">Cancel</a>
+	</div> -->
+</body>
+</html>
